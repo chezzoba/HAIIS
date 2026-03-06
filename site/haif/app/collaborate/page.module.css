@@ -1,0 +1,255 @@
+/* Collaborate Hero */
+.collaborate-hero {
+  padding: 4rem 2rem 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #e6f7ff 0%, #b3e0ff 100%);
+}
+
+.collaborate-hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Who Section */
+.who-section {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.who-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.section-description {
+  text-align: center;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+}
+
+.who-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.who-card {
+  padding: 2rem;
+  background: var(--card-background-color);
+  border: 1px solid var(--muted-border-color);
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.who-card:hover {
+  transform: translateY(-4px);
+}
+
+.who-card h3 {
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.who-card p {
+  color: var(--muted-color);
+  line-height: 1.6;
+}
+
+/* Types Section */
+.types-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+}
+
+.types-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.type-card {
+  padding: 2rem;
+  background: white;
+  border: 1px solid var(--muted-border-color);
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+
+.type-card:hover {
+  transform: translateY(-4px);
+}
+
+.type-card h3 {
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.type-card p {
+  color: var(--muted-color);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.type-card ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: var(--muted-color);
+}
+
+.type-card li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Form Section */
+.form-section {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.collaborate-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+}
+
+.submit-button {
+  padding: 1rem 2rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 1rem;
+}
+
+.submit-button:hover:not(:disabled) {
+  background: var(--primary-hover);
+}
+
+.submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.success-message {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem;
+  background: #f0fff4;
+  border: 1px solid #00a86b;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.success-message h3 {
+  margin-bottom: 1rem;
+  color: #00a86b;
+}
+
+.success-message p {
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .collaborate-hero,
+  .who-section,
+  .types-section,
+  .form-section {
+    padding: 3rem 1rem;
+  }
+
+  .who-grid,
+  .types-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .checkbox-group {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .who-card,
+  .type-card {
+    padding: 1.5rem;
+  }
+}

@@ -43,11 +43,10 @@ export default function Navbar() {
           </button>
 
           <ul className={`${styles.navLinks} ${isMenuOpen ? styles.show : ''}`}>
-            <li><a href="#framework" onClick={() => setIsMenuOpen(false)}>Framework</a></li>
-            <li><a href="#use-cases" onClick={() => setIsMenuOpen(false)}>Use Cases</a></li>
-            <li><a href="#documentation" onClick={() => setIsMenuOpen(false)}>Documentation</a></li>
-            <li><a href="#research" onClick={() => setIsMenuOpen(false)}>Research</a></li>
-            <li><a href="#collaborate" onClick={() => setIsMenuOpen(false)}>Collaborate</a></li>
+            <li><a href="/framework" onClick={() => setIsMenuOpen(false)}>Framework</a></li>
+            <li><a href="/documentation" onClick={() => setIsMenuOpen(false)}>Documentation</a></li>
+            <li><a href="/collaborate" onClick={() => setIsMenuOpen(false)}>Collaborate</a></li>
+            <li><a href="/about" onClick={() => setIsMenuOpen(false)}>About</a></li>
           </ul>
         </nav>
       </header>

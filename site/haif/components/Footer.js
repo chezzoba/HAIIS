@@ -4,11 +4,11 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.links}>
-        <a href="#roadmap">Framework Roadmap</a>
-        <a href="#updates">Updates</a>
-        <a href="#newsletter">Newsletter</a>
-        <a href="#privacy">Privacy</a>
-        <a href="#contact">Contact</a>
+        <a href="/framework#roadmap">Framework Roadmap</a>
+        <a href="/about#evolution">Updates</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/collaborate">Contact</a>
+        <a href="https://github.com/chezzoba/HAIF" target='_blank' >Contribute</a>
       </div>
       <p>Copyright © {(new Date()).getFullYear()}. Open source under MIT License.</p>
     </footer>

@@ -11,8 +11,8 @@ export default function Home() {
         <h1>Healthcare AI Framework</h1>
         <h2>Secure, compliant, scalable AI implementations in the cloud</h2>
         <div className="hero-cta">
-          <a href="#quickstart" role="button">Start Quickstart →</a>
-          <a href="#framework" role="button" className="secondary">Explore Framework →</a>
+          <a href="/collaborate" role="button">Work with us →</a>
+          <a href="/framework" role="button" className="secondary">Explore Framework →</a>
         </div>
         <p className="hero-tagline">
           Free and open-access • Compliance-by-design • Proven in regulated environments
@@ -45,29 +45,29 @@ export default function Home() {
           <div className="card">
             <h3>Compliance-by-Design Architecture Patterns</h3>
             <p>Embed HIPAA/GxP directly into AI blueprints</p>
-            <a href="#patterns">Learn More →</a>
+            <a href="/framework#components">Learn More →</a>
           </div>
           <div className="card">
             <h3>Security Controls & Data Governance</h3>
             <p>Consistent security controls across all cloud providers with secure data governance for AI lifecycle</p>
-            <a href="#security">Learn More →</a>
+            <a href="/framework#components">Learn More →</a>
           </div>
           <div className="card">
             <h3>AI Risk Assessment Methodology</h3>
             <p>Healthcare-specific risk evaluation</p>
-            <a href="#risk">Learn More →</a>
+            <a href="/framework#components">Learn More →</a>
           </div>
           <div className="card">
             <h3>Implementation Playbooks</h3>
             <p>Step-by-step deployment guides</p>
-            <a href="#playbooks">Learn More →</a>
+            <a href="/framework#components">Learn More →</a>
           </div>
         </div>
       </section>
 
       {/* Section 3: Who It's For */}
       <section id="audience">
-        <h2>Trusted by Healthcare Leaders</h2>
+        <h2>Designed to be Trusted by Healthcare Leaders</h2>
         <div className="grid-4">
           <div className="card">
             <h3>Hospital CIOs & CTOs</h3>
@@ -94,18 +94,18 @@ export default function Home() {
         <div className="grid-3">
           <div className="card">
             <h3>📖 Read Quickstart</h3>
-            <p>15-minute guide to get started with the framework</p>
-            <a href="#documentation" role="button">Start Reading</a>
+            <p>Get started</p>
+            <a href="/documentation" role="button">Start Reading</a>
           </div>
           <div className="card">
-            <h3>💡 Browse Use Cases</h3>
-            <p>See real-world implementations and success stories</p>
-            <a href="#use-cases" role="button">View Use Cases</a>
+            <h3>💡 See Use Cases</h3>
+            <p>See real-world applications of AI</p>
+            <a href="https://ep.jhu.edu/news/ai-in-healthcare-applications-and-impact" role="button" target='_blank' >View Use Cases</a>
           </div>
           <div className="card">
-            <h3>🤝 Join Collaboration</h3>
+            <h3>🤝 Collaborate</h3>
             <p>Become an early adopter and shape the framework</p>
-            <a href="#collaborate" role="button">Join Waitlist</a>
+            <a href="/collaborate" role="button">Collaborate</a>
           </div>
         </div>
       </section>
