@@ -8,7 +8,7 @@ export default function Footer() {
         <a href="/about#evolution">Updates</a>
         <a href="/privacy">Privacy</a>
         <a href="/collaborate">Contact</a>
-        <a href="https://github.com/chezzoba/HAIF" target='_blank' >Contribute</a>
+        <a href="https://github.com/chezzoba/HAIIS" target='_blank' >Contribute</a>
       </div>
       <p>Copyright © {(new Date()).getFullYear()}. Open source under MIT License.</p>
     </footer>

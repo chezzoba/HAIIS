@@ -10,7 +10,7 @@ export default function Privacy() {
       {/* Hero Section */}
       <section className={styles['privacy-hero']}>
         <h1>Privacy Policy</h1>
-        <p className={styles.subtitle}>How we handle your information on the Healthcare AI Framework website</p>
+        <p className={styles.subtitle}>How we handle your information on the Healthcare AI Implementation Standards website</p>
       </section>
 
       {/* Privacy Content */}
@@ -18,7 +18,7 @@ export default function Privacy() {
         <div className={styles['privacy-section']}>
           <h2>Information We Collect</h2>
           <p>
-            The Healthcare AI Framework website is designed to be privacy-respecting. We collect minimal information:
+            The Healthcare AI Implementation Standards website is designed to be privacy-respecting. We collect minimal information:
           </p>
           <ul>
             <li><strong>Collaboration form submissions:</strong> When you submit the collaboration form, we collect the information you provide (organization, role, use case, cloud platforms, message)</li>
@@ -84,7 +84,7 @@ export default function Privacy() {
         <div className={styles['privacy-section']}>
           <h2>Framework Content</h2>
           <p>
-            The Healthcare AI Framework itself:
+            The Healthcare AI Implementation Standards itself:
           </p>
           <ul>
             <li>Is open source under the MIT License</li>

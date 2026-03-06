@@ -10,7 +10,7 @@ export default function Documentation() {
       {/* Hero Section */}
       <section className={styles['doc-hero']}>
         <h1>Documentation</h1>
-        <p className={styles.subtitle}>Step-by-step guides, templates, and resources for implementing the Healthcare AI Framework</p>
+        <p className={styles.subtitle}>Step-by-step guides, templates, and resources for implementing the Healthcare AI Implementation Standards</p>
       </section>
 
       {/* Step-by-Step Guide */}

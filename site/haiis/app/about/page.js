@@ -18,7 +18,7 @@ export default function About() {
         <h2>The Problem We're Solving</h2>
         <div className={styles['origin-content']}>
           <p>
-            The Healthcare AI Framework was born from a simple observation: healthcare organizations 
+            The Healthcare AI Implementation Standards was born from a simple observation: healthcare organizations 
             were struggling to implement AI not because of technical limitations, but because of the 
             complex intersection of regulatory requirements, security concerns, and multi-cloud realities.
           </p>

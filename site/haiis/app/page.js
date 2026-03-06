@@ -8,7 +8,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="hero">
-        <h1>Healthcare AI Framework</h1>
+        <h1>Healthcare AI Implementation Standards</h1>
         <h2>Secure, compliant, scalable AI implementations in the cloud</h2>
         <div className="hero-cta">
           <a href="/collaborate" role="button">Work with us →</a>

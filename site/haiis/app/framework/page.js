@@ -11,7 +11,7 @@ export default function Framework() {
 
       {/* Hero Diagram Section */}
       <section className={styles['framework-hero']}>
-        <h1>HAIF Core Pillars</h1>
+        <h1>HAIIS Core Pillars</h1>
         <div className={styles['diagram-container']}>
           <Image 
             src="/img/pillarsdiagram.png" 

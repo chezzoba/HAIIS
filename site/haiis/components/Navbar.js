@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import styles from './Navbar.module.css';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [isHidden, setIsHidden] = useState(false);
@@ -30,7 +31,7 @@ export default function Navbar() {
     <>
       <header className={`${styles.header} ${isHidden ? styles.hidden : ''}`}>
         <nav className={styles.nav}>
-          <a href="/" className={styles.logo}>Healthcare AI Framework</a>
+          <Link href="/" className={styles.logo}>Healthcare AI Implementation Standards</Link>
           
           <button 
             className={styles.menuBtn}
@@ -43,10 +44,10 @@ export default function Navbar() {
           </button>
 
           <ul className={`${styles.navLinks} ${isMenuOpen ? styles.show : ''}`}>
-            <li><a href="/framework" onClick={() => setIsMenuOpen(false)}>Framework</a></li>
-            <li><a href="/documentation" onClick={() => setIsMenuOpen(false)}>Documentation</a></li>
-            <li><a href="/collaborate" onClick={() => setIsMenuOpen(false)}>Collaborate</a></li>
-            <li><a href="/about" onClick={() => setIsMenuOpen(false)}>About</a></li>
+            <li><Link href="/framework" onClick={() => setIsMenuOpen(false)}>Framework</Link></li>
+            <li><Link href="/documentation" onClick={() => setIsMenuOpen(false)}>Documentation</Link></li>
+            <li><Link href="/collaborate" onClick={() => setIsMenuOpen(false)}>Collaborate</Link></li>
+            <li><Link href="/about" onClick={() => setIsMenuOpen(false)}>About</Link></li>
           </ul>
         </nav>
       </header>

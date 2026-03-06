@@ -1,26 +1,26 @@
-# Healthcare AI Framework (HAIF)
+# Healthcare AI Implementation Standards (HAIIS)
 
 A comprehensive, cloud-agnostic AI implementation framework for the U.S. healthcare industry, enabling secure, compliant, and scalable adoption of advanced AI technologies across major cloud platforms such as Azure and AWS.
 
 ## Overview
 
-The Healthcare AI Framework (HAIF) enables healthcare organizations to securely adopt and scale advanced AI technologies—including generative AI and machine learning—regardless of their underlying cloud infrastructure choices. This framework is informed by real-world experience with healthcare clients and is publicly available online at no cost.
+The Healthcare AI Implementation Standards (HAIIS) enables healthcare organizations to securely adopt and scale advanced AI technologies—including generative AI and machine learning—regardless of their underlying cloud infrastructure choices. This framework is informed by real-world experience with healthcare clients and is publicly available online at no cost.
 
 ## Framework Components
 
-### 1. Compliance-by-Design Architecture Patterns
+### Compliance-by-Design Architecture Patterns
 Reusable technical blueprints that embed regulatory requirements (HIPAA, GxP) directly into AI implementation patterns. Built on experience working with pharmaceutical companies on AI solutions that must meet strict regulatory standards.
 
-### 2. Security Control Mapping System
+### Security Control Mapping System
 Comprehensive mapping between AI components and security requirements across different cloud providers, enabling organizations to implement consistent security controls regardless of cloud platform.
 
-### 3. Data Governance Protocols
+### Data Governance Protocols
 Standardized approaches for managing sensitive data across AI training, inference, and monitoring processes. These protocols maintain compliance while enabling innovation in healthcare AI systems.
 
-### 4. AI Risk Assessment Methodology
+### AI Risk Assessment Methodology
 Structured approach to evaluate and mitigate risks specific to AI deployments in regulated environments, incorporating both technical and governance considerations.
 
-### 5. Implementation Playbooks
+### Implementation Playbooks
 Step-by-step guides tailored to specific industry use cases that provide concrete implementation paths for healthcare organizations.
 ## Project Structure
 
@@ -31,7 +31,7 @@ This repository contains:
 
 ## Website
 
-The framework is presented through a Next.js web application located in the `site/haif/` directory. The website includes:
+The framework is presented through a Next.js web application located in the `site/haiis/` directory. The website includes:
 - Framework overview and components
 - Documentation
 - Collaboration information
@@ -39,7 +39,7 @@ The framework is presented through a Next.js web application located in the `sit
 
 ## Getting Started with the Website
 
-Navigate to the `site/haif/` directory and run:
+Navigate to the `site/haiis/` directory and run:
 
 ```bash
 npm run dev

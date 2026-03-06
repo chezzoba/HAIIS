@@ -2,8 +2,8 @@ import "@picocss/pico/css/pico.min.css";
 import "./globals.css";
 
 export const metadata = {
-  title: "Healthcare AI Framework",
-  description: "Secure, compliant, scalable AI implementation framework for healthcare across AWS, Azure, and Google Cloud. Free and open-access.",
+  title: "Healthcare AI Implementation Standards",
+  description: "Secure, compliant, scalable AI implementation standards for healthcare across AWS, Azure, and Google Cloud. Free and open-access.",
 };
 
 export default function RootLayout({ children }) {
