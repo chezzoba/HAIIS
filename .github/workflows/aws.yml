@@ -1,0 +1,52 @@
+name: Terraform Deployment of Next.JS Application
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  id-token: write # required to use OIDC authentication
+  contents: read # required to checkout the code from the repo
+
+env:
+  AWS_REGION : us-east-1 # Change to reflect Region
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-24.04
+    environment: production
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v2
+      with:
+        role-to-assume: ${{ secrets.AWS_IAM_ROLE }}
+        role-session-name: GitHub_to_AWS_via_FederatedOIDC
+        role-duration-seconds: 1000 # the ttl of the session, in seconds.
+        aws-region: ${{ env.AWS_REGION }}
+
+    - name: Use Next.js Cache
+      uses: actions/cache@v4
+      with:
+        path: |
+          ~/.npm
+          ${{ github.workspace }}/site/haiis/.next/cache
+        key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
+        restore-keys: |
+          ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
+    
+    - name: Build Web Application
+      run: cd site/haiis && npm i && npm run build
+    
+    - name: Initialize terraform
+      run: cd site && terraform init
+
+    - name: Deploy Application
+      shell: bash
+      env:
+        CFLE_KEY: ${{ secrets.CLOUDFLARE_API_KEY }}
+      run: |
+        cd site; TF_VAR_cloudflare_key=$CFLE_KEY terraform apply -auto-approve
