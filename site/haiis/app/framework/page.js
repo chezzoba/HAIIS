@@ -5,6 +5,7 @@ import styles from './page.module.css';
 
 export default function Framework() {
   const dwidth = 1200;
+  const curYear = (new Date()).getFullYear();
   return (
     <>
       <Navbar />
@@ -206,7 +207,7 @@ export default function Framework() {
         <h2>Framework Roadmap</h2>
         <div className={styles['timeline']}>
           <div className={styles['timeline-item']}>
-            <div className={styles['timeline-year']}>2026</div>
+            <div className={styles['timeline-year']}>{curYear}</div>
             <div className={styles['timeline-content']}>
               <h3>Foundation</h3>
               <p>Define the initial framework structure, publish draft concepts, and open collaboration channels</p>
@@ -214,7 +215,7 @@ export default function Framework() {
           </div>
 
           <div className={styles['timeline-item']}>
-            <div className={styles['timeline-year']}>2026–2027</div>
+            <div className={styles['timeline-year']}>{curYear + 1}-{curYear + 2}</div>
             <div className={styles['timeline-content']}>
               <h3>Validation</h3>
               <p>Review and refine draft framework components through feedback and early implementation discussions</p>
@@ -222,7 +223,7 @@ export default function Framework() {
           </div>
 
           <div className={styles['timeline-item']}>
-            <div className={styles['timeline-year']}>2027–2028</div>
+            <div className={styles['timeline-year']}>{curYear + 2}-{curYear + 3}</div>
             <div className={styles['timeline-content']}>
               <h3>Documentation Expansion</h3>
               <p>Publish implementation guides, templates, and practical examples</p>
@@ -230,7 +231,7 @@ export default function Framework() {
           </div>
 
           <div className={styles['timeline-item']}>
-            <div className={styles['timeline-year']}>2028+</div>
+            <div className={styles['timeline-year']}>{curYear + 3}+</div>
             <div className={styles['timeline-content']}>
               <h3>Scaling</h3>
               <p>Support education, partnerships, and broader grams, and continuous refinement based on community input</p>
