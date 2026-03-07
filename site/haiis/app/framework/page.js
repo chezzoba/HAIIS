@@ -12,6 +12,9 @@ export default function Framework() {
       {/* Hero Diagram Section */}
       <section className={styles['framework-hero']}>
         <h1>HAIIS Core Pillars</h1>
+        <p style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 2rem' }}>
+          The HAIIS framework is organized around five draft components intended to address common implementation barriers in healthcare AI.
+        </p>
         <div className={styles['diagram-container']}>
           <Image 
             src="/img/pillarsdiagram.png" 
@@ -45,7 +48,7 @@ export default function Framework() {
             <span className={styles.checkmark}>✓</span>
             <div>
               <h3>Open-access</h3>
-              <p>No licensing fees, freely available to all</p>
+              <p>Intended to be made publicly available without restrictive licensing barriers</p>
             </div>
           </div>
           <div className={styles['principle-item']}>
@@ -79,7 +82,7 @@ export default function Framework() {
               <p>Healthcare organizations struggle to implement AI while meeting regulatory requirements like HIPAA, GxP, and FDA standards.</p>
               
               <h4>Solution Overview</h4>
-              <p>Reusable technical blueprints that embed regulatory requirements directly into AI implementation patterns, ensuring compliance from day one.</p>
+              <p>Draft implementation patterns designed to help teams embed HIPAA-, GxP-, and FDA-relevant considerations into system architecture from the outset.</p>
               
               <h4>Target Users</h4>
               <p>Cloud architects, IT leaders, compliance teams</p>
@@ -104,7 +107,7 @@ export default function Framework() {
               <p>Inconsistent security controls across different cloud providers create gaps and compliance risks.</p>
               
               <h4>Solution Overview</h4>
-              <p>Comprehensive mapping between AI components and security requirements across cloud platforms, enabling consistent security implementation.</p>
+              <p>Cross-cloud guidance for aligning security controls across AI workloads and healthcare data environments.</p>
               
               <h4>Target Users</h4>
               <p>Security architects, cloud engineers, compliance officers</p>
@@ -129,7 +132,7 @@ export default function Framework() {
               <p>Managing sensitive healthcare data across AI training, inference, and monitoring lacks standardized approaches.</p>
               
               <h4>Solution Overview</h4>
-              <p>Standardized protocols for managing sensitive data throughout the AI lifecycle while maintaining compliance and enabling innovation.</p>
+              <p>Reusable approaches for data handling, access, lineage, and oversight across the AI lifecycle.</p>
               
               <h4>Target Users</h4>
               <p>Data governance teams, AI engineers, privacy officers</p>
@@ -154,7 +157,7 @@ export default function Framework() {
               <p>AI introduces unique risks in healthcare that traditional risk frameworks don't adequately address.</p>
               
               <h4>Solution Overview</h4>
-              <p>Structured approach to evaluate and mitigate risks specific to AI deployments in regulated healthcare environments.</p>
+              <p>A structured approach for identifying and mitigating healthcare-specific AI implementation risks.</p>
               
               <h4>Target Users</h4>
               <p>Risk managers, compliance teams, AI project leads</p>
@@ -179,7 +182,7 @@ export default function Framework() {
               <p>Healthcare organizations need concrete, step-by-step guidance for implementing AI solutions.</p>
               
               <h4>Solution Overview</h4>
-              <p>Detailed guides tailored to specific healthcare use cases, providing clear implementation paths from concept to production.</p>
+              <p>Step-by-step guides intended to help teams move from concept to controlled deployment.</p>
               
               <h4>Target Users</h4>
               <p>Project managers, implementation teams, technical leads</p>
@@ -203,34 +206,34 @@ export default function Framework() {
         <h2>Framework Roadmap</h2>
         <div className={styles['timeline']}>
           <div className={styles['timeline-item']}>
-            <div className={styles['timeline-year']}>2023</div>
+            <div className={styles['timeline-year']}>2026</div>
             <div className={styles['timeline-content']}>
-              <h3>Initial Patterns</h3>
-              <p>Document first compliance-by-design patterns based on successful implementations at pharmaceutical companies and healthcare systems</p>
+              <h3>Foundation</h3>
+              <p>Define the initial framework structure, publish draft concepts, and open collaboration channels</p>
             </div>
           </div>
 
           <div className={styles['timeline-item']}>
-            <div className={styles['timeline-year']}>2028</div>
+            <div className={styles['timeline-year']}>2026–2027</div>
             <div className={styles['timeline-content']}>
-              <h3>Validation Phase</h3>
-              <p>Test patterns with early adopters, refine based on real-world feedback, and expand to include security control mappings</p>
+              <h3>Validation</h3>
+              <p>Review and refine draft framework components through feedback and early implementation discussions</p>
             </div>
           </div>
 
           <div className={styles['timeline-item']}>
-            <div className={styles['timeline-year']}>2030</div>
+            <div className={styles['timeline-year']}>2027–2028</div>
             <div className={styles['timeline-content']}>
-              <h3>Framework Formalization</h3>
-              <p>Organize patterns into the five core components, create implementation playbooks, and launch the open-source framework</p>
+              <h3>Documentation Expansion</h3>
+              <p>Publish implementation guides, templates, and practical examples</p>
             </div>
           </div>
 
           <div className={styles['timeline-item']}>
-            <div className={styles['timeline-year']}>2032+</div>
+            <div className={styles['timeline-year']}>2028+</div>
             <div className={styles['timeline-content']}>
-              <h3>Community Growth</h3>
-              <p>Expanding through collaboration, training programs, and continuous refinement based on community input</p>
+              <h3>Scaling</h3>
+              <p>Support education, partnerships, and broader grams, and continuous refinement based on community input</p>
             </div>
           </div>
         </div>

@@ -49,8 +49,8 @@ export default function Collaborate() {
 
       {/* Hero Section */}
       <section className={styles['collaborate-hero']}>
-        <h1>Ready to pilot the framework?</h1>
-        <p className={styles.subtitle}>Join our early adopter program and help shape the future of healthcare AI implementation</p>
+        <h1>Interested in evaluating or shaping the framework?</h1>
+        <p className={styles.subtitle}>We are seeking early collaborators to help review, evaluate, and refine draft framework components for real-world healthcare AI use cases</p>
       </section>
 
       {/* Who We Want Section */}
@@ -84,47 +84,27 @@ export default function Collaborate() {
       {/* Collaboration Types Section */}
       <section id="collaboration-types" className={styles['types-section']}>
         <h2>Collaboration Types</h2>
-        <p className={styles['section-description']}>Choose how you'd like to engage with the framework</p>
+        <p className={styles['section-description']}>There are several ways organizations and practitioners can contribute to framework development</p>
         
         <div className={styles['types-grid']}>
           <div className={styles['type-card']}>
-            <h3>Pilot Validation</h3>
-            <p>Test framework patterns in your production environment and provide feedback</p>
-            <ul>
-              <li>Implement framework components</li>
-              <li>Share implementation challenges</li>
-              <li>Provide real-world validation</li>
-            </ul>
+            <h3>Evaluation / Early Adoption</h3>
+            <p>Review draft framework components in the context of real organizational needs, provide feedback on implementation challenges, and help identify gaps, priorities, and practical improvements.</p>
           </div>
 
           <div className={styles['type-card']}>
-            <h3>Curriculum Partnership</h3>
-            <p>Co-develop training materials and educational programs</p>
-            <ul>
-              <li>Create course content</li>
-              <li>Develop certification programs</li>
-              <li>Train-the-trainer initiatives</li>
-            </ul>
+            <h3>Education and Curriculum Collaboration</h3>
+            <p>Co-develop educational materials, implementation examples, and training pathways that make healthcare AI implementation more accessible to technical teams.</p>
           </div>
 
           <div className={styles['type-card']}>
-            <h3>Case Study</h3>
-            <p>Share your success story and implementation experience</p>
-            <ul>
-              <li>Document your journey</li>
-              <li>Share metrics and outcomes</li>
-              <li>Inspire other organizations</li>
-            </ul>
+            <h3>Implementation Experience Sharing</h3>
+            <p>Share lessons learned, non-confidential implementation patterns, and practical observations that may help improve future framework releases.</p>
           </div>
 
           <div className={styles['type-card']}>
-            <h3>Advisory</h3>
-            <p>Help shape future framework releases and priorities</p>
-            <ul>
-              <li>Provide strategic guidance</li>
-              <li>Review new components</li>
-              <li>Participate in working groups</li>
-            </ul>
+            <h3>Advisory Input</h3>
+            <p>Provide subject matter feedback on priorities, scope, and future framework directions.</p>
           </div>
         </div>
       </section>

@@ -9,13 +9,16 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero">
         <h1>Healthcare AI Implementation Standards</h1>
-        <h2>Secure, compliant, scalable AI implementations in the cloud</h2>
+        <h2>Practical, open-access guidance for secure and compliant healthcare AI implementation</h2>
+        <p style={{ marginTop: '1rem', fontSize: '1.1rem', maxWidth: '800px', margin: '1rem auto' }}>
+          A cloud-agnostic framework in development to help healthcare organizations implement AI with stronger compliance, governance, security, and risk management.
+        </p>
         <div className="hero-cta">
           <a href="/collaborate" role="button">Work with us →</a>
           <a href="/framework" role="button" className="secondary">Explore Framework →</a>
         </div>
         <p className="hero-tagline">
-          Free and open-access • Compliance-by-design • Proven in regulated environments
+          Open-access • Compliance-by-design • Informed by work in regulated healthcare environments
         </p>
       </section>
 
@@ -67,23 +70,19 @@ export default function Home() {
 
       {/* Section 3: Who It's For */}
       <section id="audience">
-        <h2>Designed to be Trusted by Healthcare Leaders</h2>
-        <div className="grid-4">
+        <h2>Who this framework is for</h2>
+        <div className="grid-3">
           <div className="card">
-            <h3>Hospital CIOs & CTOs</h3>
-            <p>Strategic AI adoption for healthcare systems</p>
+            <h3>Hospitals and Health Systems</h3>
+            <p>Guidance for teams evaluating or implementing AI in regulated clinical and operational environments</p>
           </div>
           <div className="card">
-            <h3>Pharma IT Architects</h3>
-            <p>Compliant AI solutions for drug development</p>
+            <h3>Pharma and Life Sciences Teams</h3>
+            <p>Implementation patterns for compliant AI workflows in research, documentation, and regulated data environments</p>
           </div>
           <div className="card">
-            <h3>Healthtech Founders</h3>
-            <p>Build secure, scalable AI products</p>
-          </div>
-          <div className="card">
-            <h3>Compliance & Governance Teams</h3>
-            <p>Risk management and regulatory alignment</p>
+            <h3>Healthtech and Medical Device Builders</h3>
+            <p>Practical guidance for secure, governed AI deployment in healthcare products and platforms</p>
           </div>
         </div>
       </section>
@@ -99,7 +98,7 @@ export default function Home() {
           </div>
           <div className="card">
             <h3>💡 See Use Cases</h3>
-            <p>See real-world applications of AI</p>
+            <p>Explore example healthcare AI use cases</p>
             <a href="https://ep.jhu.edu/news/ai-in-healthcare-applications-and-impact" role="button" target='_blank' >View Use Cases</a>
           </div>
           <div className="card">

@@ -13,14 +13,22 @@ export default function About() {
         <p className={styles['hero-subtitle']}>How we're bridging the gap between policy and practice in healthcare AI</p>
       </section>
 
+      {/* Project Status Section */}
+      <section id="status" className={styles['origin-section']}>
+        <h2>Project Status</h2>
+        <div className={styles['origin-content']}>
+          <p>
+            HAIIS is an early-stage, open-access framework initiative focused on practical implementation guidance for healthcare AI. The project is currently in its foundation phase, with initial framework components, documentation, and collaboration pathways being developed for public release.
+          </p>
+        </div>
+      </section>
+
       {/* Origin Story Section */}
       <section id="origin" className={styles['origin-section']}>
         <h2>The Problem We're Solving</h2>
         <div className={styles['origin-content']}>
           <p>
-            The Healthcare AI Implementation Standards was born from a simple observation: healthcare organizations 
-            were struggling to implement AI not because of technical limitations, but because of the 
-            complex intersection of regulatory requirements, security concerns, and multi-cloud realities.
+            Healthcare AI Implementation Standards (HAIIS) was created to address a recurring implementation gap in healthcare AI: many organizations understand the policy and compliance requirements, but lack concrete technical guidance for putting them into practice across real systems and cloud environments.
           </p>
           
           <div className={styles['problem-list']}>
@@ -60,47 +68,29 @@ export default function About() {
           <div className={styles['solution-statement']}>
             <h3>Our Approach</h3>
             <p>
-              We started by documenting real-world implementation challenges from healthcare organizations, 
-              then worked backward to create patterns that address regulatory requirements directly in the 
-              technical architecture. The framework emerged from solving concrete problems like  
-              report writing automation, medical imaging analysis, and natural language processing for 
-              healthcare data.
+              This initiative is informed by implementation challenges observed in regulated healthcare and life sciences environments, including issues related to compliance architecture, multicloud security, data governance, and AI risk management. HAIIS aims to translate those recurring challenges into practical, reusable patterns and documentation.
             </p>
           </div>
         </div>
       </section>
 
-      <section id="evolution">
-        <h2>Evolution Plan</h2>
-        <div className={styles.timeline}>
-          <div className={styles['timeline-item']}>
-            <div className={styles['timeline-marker']}>0-18 mo</div>
-            <div className={styles['timeline-content']}>
-              <h3>Foundation Phase</h3>
-              <p>Publish core patterns and validate with 2-3 healthcare organizations</p>
-            </div>
-          </div>
-          <div className={styles['timeline-item']}>
-            <div className={styles['timeline-marker']}>18-36 mo</div>
-            <div className={styles['timeline-content']}>
-              <h3>Scaling Phase</h3>
-              <p>Launch train-the-trainer program and comprehensive documentation</p>
-            </div>
-          </div>
-          <div className={styles['timeline-item']}>
-            <div className={styles['timeline-marker']}>36-42 mo</div>
-            <div className={styles['timeline-content']}>
-              <h3>Partnership Phase</h3>
-              <p>Establish curriculum partnerships with educational institutions</p>
-            </div>
-          </div>
-          <div className={styles['timeline-item']}>
-            <div className={styles['timeline-marker']}>42-48 mo</div>
-            <div className={styles['timeline-content']}>
-              <h3>Maturity Phase</h3>
-              <p>Launch certification program and establish industry working group</p>
-            </div>
-          </div>
+      {/* Founder Section */}
+      <section id="founder" className={styles['origin-section']}>
+        <h2>Founder</h2>
+        <div className={styles['origin-content']}>
+          <p>
+            HAIIS is being developed by Kaizad Wadia, a cloud and AI architect with experience in regulated healthcare environments and multicloud implementation. The initiative reflects a broader goal: making practical healthcare AI implementation guidance more accessible across organizations rather than confining it to proprietary or employer-specific contexts.
+          </p>
+        </div>
+      </section>
+
+      {/* Scope Section */}
+      <section id="scope" className={styles['origin-section']}>
+        <h2>What HAIIS is (and is not)</h2>
+        <div className={styles['origin-content']}>
+          <p>
+            HAIIS is not a regulatory authority, certification body, or substitute for legal or compliance review. It is an open-access implementation framework intended to help organizations operationalize healthcare AI more consistently and responsibly.
+          </p>
         </div>
       </section>
 
@@ -135,9 +125,7 @@ export default function About() {
         <h2>Built for the Healthcare Community</h2>
         <div className={styles['community-content']}>
           <p>
-            The framework isn't a theoretical exercise but rather a collection of patterns that have been 
-            tested and refined through collaboration with healthcare organizations, cloud architects, 
-            compliance teams, and AI practitioners.
+            The framework is intended to evolve through practical feedback, implementation experience, and collaboration across the healthcare ecosystem.
           </p>
           <p>
             Our approach is: identify common challenges, develop practical solutions, 
@@ -145,7 +133,7 @@ export default function About() {
             real-world implementation and community feedback.
           </p>
           <div className={styles['cta-container']}>
-            <a href="/collaborate" className={styles['community-cta']}>Join the Collaboration →</a>
+            <a href="/collaborate" className={styles['community-cta']}>Join and Collaborate →</a>
           </div>
         </div>
       </section>

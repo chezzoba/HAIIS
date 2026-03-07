@@ -10,13 +10,13 @@ export default function Documentation() {
       {/* Hero Section */}
       <section className={styles['doc-hero']}>
         <h1>Documentation</h1>
-        <p className={styles.subtitle}>Step-by-step guides, templates, and resources for implementing the Healthcare AI Implementation Standards</p>
+        <p className={styles.subtitle}>Draft guides, templates, and practical resources for organizations exploring implementation of the HAIIS framework</p>
       </section>
 
       {/* Step-by-Step Guide */}
       <section id="guide" className={styles['guide-section']}>
         <h2>Implementation Guide</h2>
-        <p className={styles['section-description']}>Follow these six steps to implement the framework in your organization</p>
+        <p className={styles['section-description']}>The six-step implementation model below illustrates how organizations may apply HAIIS framework components in practice</p>
         
         <div className={styles['step-cards']}>
           <div className={styles['step-card']}>
@@ -77,31 +77,31 @@ export default function Documentation() {
 
       {/* Download Section */}
       <section id="downloads" className={styles['downloads-section']}>
-        <h2>Downloadable Resources</h2>
-        <p className={styles['section-description']}>Templates, checklists, and worksheets to accelerate your implementation</p>
+        <h2>Planned and Draft Resources</h2>
+        <p className={styles['section-description']}>Templates, checklists, and worksheets under development</p>
         
         <div className={styles['download-cards']}>
           <div className={styles['download-card']}>
-            <h3>Quickstart PDF</h3>
-            <p>Complete guide to getting started in 15 minutes</p>
+            <h3>Quickstart Guide</h3>
+            <p>Quickstart guide for early framework exploration</p>
             {/* <a href="#" className={styles['download-button']}>Download PDF</a> */}
           </div>
 
           <div className={styles['download-card']}>
             <h3>Component Checklist</h3>
-            <p>Comprehensive checklist for all five framework components</p>
+            <p>Draft checklist covering the five core components</p>
             {/* <a href="#" className={styles['download-button']}>Download Checklist</a> */}
           </div>
 
           <div className={styles['download-card']}>
             <h3>Risk Worksheet</h3>
-            <p>Interactive Excel worksheet for AI risk assessment</p>
+            <p>Sample risk worksheet for healthcare AI review</p>
             {/* <a href="#" className={styles['download-button']}>Download Worksheet</a> */}
           </div>
 
           <div className={styles['download-card']}>
             <h3>Architecture Template</h3>
-            <p>Draw.io template for creating compliant architecture diagrams</p>
+            <p>Draft architecture template for regulated AI workflows</p>
             {/* <a href="#" className={styles['download-button']}>Download Template</a> */}
           </div>
         </div>
