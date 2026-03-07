@@ -1,6 +1,6 @@
 # Import existing CloudFront function or create new one
 resource "aws_cloudfront_function" "url_rewrite" {
-  name    = "url-rewrite"
+  name    = "url-rewrite-haiis"
   runtime = "cloudfront-js-2.0"
   comment = "Add .html to non-API routes"
   publish = true

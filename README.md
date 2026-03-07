@@ -9,7 +9,7 @@ The Healthcare AI Implementation Standards (HAIIS) enables healthcare organizati
 ## Framework Components
 
 ### Compliance-by-Design Architecture Patterns
-Reusable technical blueprints that embed regulatory requirements (HIPAA, GxP) directly into AI implementation patterns. Built on experience working with pharmaceutical companies on AI solutions that must meet strict regulatory standards.
+Reusable technical blueprints that embed regulatory requirements (HIPAA, GxP) directly into AI implementation patterns.
 
 ### Security Control Mapping System
 Comprehensive mapping between AI components and security requirements across different cloud providers, enabling organizations to implement consistent security controls regardless of cloud platform.
@@ -22,10 +22,10 @@ Structured approach to evaluate and mitigate risks specific to AI deployments in
 
 ### Implementation Playbooks
 Step-by-step guides tailored to specific industry use cases that provide concrete implementation paths for healthcare organizations.
+
 ## Project Structure
 
 This repository contains:
-- `framework.md` - Detailed framework documentation
 - `site/` - Web application showcasing the framework
 - `LICENSE` - Project license information
 
@@ -36,16 +36,6 @@ The framework is presented through a Next.js web application located in the `sit
 - Documentation
 - Collaboration information
 - Privacy policy
-
-## Getting Started with the Website
-
-Navigate to the `site/haiis/` directory and run:
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the framework website.
 
 ## License
 
