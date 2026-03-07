@@ -15,11 +15,6 @@ resource "aws_dynamodb_table" "collaboration_submissions" {
     type = "N"
   }
 
-  ttl {
-    attribute_name = "ttl"
-    enabled        = true
-  }
-
   tags = {
     Name        = "HAIIS Collaboration Submissions"
     Environment = "production"
@@ -159,9 +154,6 @@ resource "aws_api_gateway_integration" "dynamodb_integration" {
     },
     "message": {
       "S": "$input.path('$.message')"
-    },
-    "ttl": {
-      "N": "$context.requestTimeEpoch"
     }
   }
 }
