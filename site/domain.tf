@@ -14,20 +14,12 @@ data "cloudflare_zone" "website_zone" {
   name = local.domain_name
 }
 
-# Create DNS validation records in Cloudflare
+# Create DNS validation record in Cloudflare (only need one for wildcard + root)
 resource "cloudflare_record" "cert_validation" {
-  for_each = {
-    for dvo in aws_acm_certificate.website_certificate.domain_validation_options : dvo.domain_name => {
-      name   = dvo.resource_record_name
-      record = dvo.resource_record_value
-      type   = dvo.resource_record_type
-    }
-  }
-
   zone_id = data.cloudflare_zone.website_zone.id
-  name    = trimsuffix(each.value.name, ".")
-  content = trimsuffix(each.value.record, ".")
-  type    = each.value.type
+  name    = trimsuffix(tolist(aws_acm_certificate.website_certificate.domain_validation_options)[0].resource_record_name, ".")
+  content = trimsuffix(tolist(aws_acm_certificate.website_certificate.domain_validation_options)[0].resource_record_value, ".")
+  type    = tolist(aws_acm_certificate.website_certificate.domain_validation_options)[0].resource_record_type
   ttl     = 60
   proxied = false
 }
@@ -35,7 +27,7 @@ resource "cloudflare_record" "cert_validation" {
 # Wait for certificate validation to complete
 resource "aws_acm_certificate_validation" "website_certificate" {
   certificate_arn         = aws_acm_certificate.website_certificate.arn
-  validation_record_fqdns = [for record in cloudflare_record.cert_validation : record.hostname]
+  validation_record_fqdns = [cloudflare_record.cert_validation.hostname]
 }
 
 # Create an A record for the root domain
