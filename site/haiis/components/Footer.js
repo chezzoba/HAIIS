@@ -15,7 +15,7 @@ export default function Footer() {
         <a href="https://github.com/chezzoba/HAIIS" target='_blank' >Contribute</a>
       </div>
       <p style={{ marginTop: '1rem', fontSize: '0.9rem' }}>
-        HAIIS v0.1 Last updated {monthName} {year}
+        HAIIS v0.2 Last updated {monthName} {year}
       </p>
       <p>Copyright © {year}. Open source under MIT License.</p>
     </footer>

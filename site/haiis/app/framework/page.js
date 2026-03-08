@@ -10,23 +10,6 @@ export default function Framework() {
     <>
       <Navbar />
 
-      {/* Hero Diagram Section */}
-      <section className={styles['framework-hero']}>
-        <h1>HAIIS Core Pillars</h1>
-        <p style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 2rem' }}>
-          The HAIIS framework is organized around five draft components intended to address common implementation barriers in healthcare AI.
-        </p>
-        <div className={styles['diagram-container']}>
-          <Image 
-            src="/img/pillarsdiagram.png" 
-            alt="Framework Five Pillars Diagram" 
-            width={dwidth}
-            height={dwidth / 2}
-            priority
-          />
-        </div>
-      </section>
-
       {/* Principles Section */}
       <section id="principles">
         <h2>Framework Principles</h2>
@@ -63,15 +46,32 @@ export default function Framework() {
             <span className={styles.checkmark}>✓</span>
             <div>
               <h3>Education-first scaling</h3>
-              <p>Train-the-trainer approach for widespread adoption</p>
+              <p>Training-based approach for widespread adoption</p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Hero Diagram Section */}
+      <section className={styles['framework-hero']}>
+        <h1>HAIIS Core Pillars</h1>
+        <p style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 2rem' }}>
+          The HAIIS framework (HAIF) is organized around five draft components intended to address common implementation barriers in healthcare AI.
+        </p>
+        <div className={styles['diagram-container']}>
+          <Image 
+            src="/img/pillarsdiagram.png" 
+            alt="Framework Five Pillars Diagram" 
+            width={dwidth}
+            height={dwidth / 2}
+            priority
+          />
+        </div>
+      </section>
+
       {/* The 5 Components Section */}
       <section id="components">
-        <h2>The Five Core Components</h2>
+        <h2>The Core Components</h2>
         <div className={styles['components-accordion']}>
           
           <details className={styles['component-card']}>
@@ -223,7 +223,7 @@ export default function Framework() {
           </div>
 
           <div className={styles['timeline-item']}>
-            <div className={styles['timeline-year']}>{curYear + 2}-{curYear + 3}</div>
+            <div className={styles['timeline-year']}>{curYear + 3}-{curYear + 4}</div>
             <div className={styles['timeline-content']}>
               <h3>Documentation Expansion</h3>
               <p>Publish implementation guides, templates, and practical examples</p>
@@ -231,7 +231,7 @@ export default function Framework() {
           </div>
 
           <div className={styles['timeline-item']}>
-            <div className={styles['timeline-year']}>{curYear + 3}+</div>
+            <div className={styles['timeline-year']}>{curYear + 4}+</div>
             <div className={styles['timeline-content']}>
               <h3>Scaling</h3>
               <p>Support education, partnerships, and broader grams, and continuous refinement based on community input</p>

@@ -212,7 +212,7 @@ export default function Collaborate() {
 
             <div className={styles['form-group']}>
               <label htmlFor="cloudPlatforms">
-                Cloud Platforms
+                Relevant Cloud Providers
               </label>
               <div className={styles['checkbox-group']}>
                 <label className={styles['checkbox-label']}>
