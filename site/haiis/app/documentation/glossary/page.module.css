@@ -1,0 +1,231 @@
+.main {
+  min-height: 100vh;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #4a4a4a;
+}
+
+.contentSection {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: #4a5568;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.directory {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin: 3rem 0;
+  border: 1px solid var(--muted-border-color, #e5e7eb);
+}
+
+.directoryTitle {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.directoryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.directoryLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 1.25rem;
+  background: var(--primary, #0066cc);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.directoryLink:hover {
+  background: var(--primary-hover, #0052a3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+}
+
+.categorySection {
+  margin-bottom: 3rem;
+  scroll-margin-top: 2rem;
+}
+
+.categoryTitle {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #667eea;
+  font-weight: 600;
+}
+
+.termsList {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.termCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.termCard:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.termName {
+  font-size: 1.2rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.termDefinition {
+  color: #4a5568;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.notes {
+  padding: 4rem 2rem;
+  background: #f9fafb;
+}
+
+.notes h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+}
+
+.noteCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.noteCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.noteCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.noteCard h3 {
+  color: #1a1a1a;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.noteCard p {
+  color: #666;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.noteCard a {
+  color: #667eea;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.noteCard a:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem 1.5rem;
+  }
+
+  .contentSection,
+  .notes {
+    padding: 3rem 1rem;
+  }
+
+  .directory {
+    padding: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .directoryTitle {
+    font-size: 1.3rem;
+  }
+
+  .directoryGrid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .directoryLink {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .categoryTitle {
+    font-size: 1.5rem;
+  }
+
+  .termCard {
+    padding: 1.25rem;
+  }
+
+  .termName {
+    font-size: 1.1rem;
+  }
+
+  .noteCards {
+    grid-template-columns: 1fr;
+  }
+}

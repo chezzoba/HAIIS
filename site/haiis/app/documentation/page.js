@@ -100,6 +100,7 @@ export default function Documentation() {
               <li>Azure security controls</li>
               <li>GCP security controls</li>
             </ul>
+            <a href="/documentation/security" className={styles['step-link']}>Browse security controls →</a>
           </div>
 
           <div className={styles['category-card']}>
@@ -145,6 +146,7 @@ export default function Documentation() {
               <li>Cloud computing terms</li>
               <li>Security concepts</li>
             </ul>
+            <a href="/documentation/glossary" className={styles['step-link']}>Browse glossary →</a>
           </div>
         </div>
       </section>

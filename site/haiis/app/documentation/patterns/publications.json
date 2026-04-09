@@ -16,11 +16,5 @@
       "previewImage": "/img/blogs/serverless-retry-mechanism.webp",
       "title": "Resilient Serverless Messaging for Fault-Tolerant Workflows",
       "subtitle": "Designing fault-tolerant retry mechanisms for stateless data processing workflows"
-    },
-    {
-      "link": "https://community.aws/content/2dqtpRpH8mBLNb1SIi40iJVKfkP/ddb-streams-to-eb-pipes",
-      "previewImage": "/img/blogs/dynamodbstreamsebpipes.webp",
-      "title": "Managed Event-Driven Notifications",
-      "subtitle": "Triggering real-time audit events from data streams"
     }
 ]

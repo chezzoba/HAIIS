@@ -66,8 +66,8 @@ export default function Collaborate() {
 
       {/* Hero Section */}
       <section className={styles['collaborate-hero']}>
-        <h1>Interested in evaluating or shaping the framework?</h1>
-        <p className={styles.subtitle}>We are seeking early collaborators to help review, evaluate, and refine draft framework components for real-world healthcare AI use cases</p>
+        <h1>Interested in shaping the framework?</h1>
+        <p className={styles.subtitle}>We are seeking early collaborators to help review, evaluate, and refine the framework components for real-world healthcare AI use cases</p>
       </section>
 
       {/* Who We Want Section */}
@@ -106,7 +106,7 @@ export default function Collaborate() {
         <div className={styles['types-grid']}>
           <div className={styles['type-card']}>
             <h3>Evaluation / Early Adoption</h3>
-            <p>Review draft framework components in the context of real organizational needs, provide feedback on implementation challenges, and help identify gaps, priorities, and practical improvements.</p>
+            <p>Review framework components in the context of real organizational needs, provide feedback on implementation challenges, and help identify gaps, priorities, and practical improvements.</p>
           </div>
 
           <div className={styles['type-card']}>

@@ -56,7 +56,7 @@ export default function Framework() {
       <section className={styles['framework-hero']}>
         <h1>HAIIS Core Pillars</h1>
         <p style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 2rem' }}>
-          The HAIIS framework (HAIF) is organized around five draft components intended to address common implementation barriers in healthcare AI.
+          The HAIIS framework (HAIF) is organized around five components intended to address common implementation barriers in healthcare AI.
         </p>
         <div className={styles['diagram-container']}>
           <Image 
@@ -83,7 +83,7 @@ export default function Framework() {
               <p>Healthcare organizations struggle to implement AI while meeting regulatory requirements like HIPAA, GxP, and FDA standards.</p>
               
               <h4>Solution Overview</h4>
-              <p>Draft implementation patterns designed to help teams embed HIPAA-, GxP-, and FDA-relevant considerations into system architecture from the outset.</p>
+              <p>Implementation patterns designed to help teams embed HIPAA-, GxP-, and FDA-relevant considerations into system architecture from the outset.</p>
               
               <h4>Target Users</h4>
               <p>Cloud architects, IT leaders, compliance teams</p>
@@ -210,7 +210,7 @@ export default function Framework() {
             <div className={styles['timeline-year']}>{curYear}</div>
             <div className={styles['timeline-content']}>
               <h3>Foundation</h3>
-              <p>Define the initial framework structure, publish draft concepts, and open collaboration channels</p>
+              <p>Define the initial framework structure, publish concepts, and open collaboration channels</p>
             </div>
           </div>
 
@@ -218,7 +218,7 @@ export default function Framework() {
             <div className={styles['timeline-year']}>{curYear + 1}-{curYear + 2}</div>
             <div className={styles['timeline-content']}>
               <h3>Validation</h3>
-              <p>Review and refine draft framework components through feedback and early implementation discussions</p>
+              <p>Review and refine framework components through feedback and early implementation discussions</p>
             </div>
           </div>
 

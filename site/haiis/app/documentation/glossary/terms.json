@@ -1,0 +1,477 @@
+[
+  {
+    "term": "AI/ML (Artificial Intelligence/Machine Learning)",
+    "definition": "Technologies that enable computers to learn from data and make predictions or decisions without explicit programming.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "BAA (Business Associate Agreement)",
+    "definition": "A contract between a HIPAA-covered entity and a business associate that outlines how PHI will be handled and protected.",
+    "category": "Healthcare Regulations"
+  },
+  {
+    "term": "CMK (Customer-Managed Key)",
+    "definition": "Encryption keys that are created, owned, and managed by the customer rather than the cloud provider.",
+    "category": "Security"
+  },
+  {
+    "term": "Data Lineage",
+    "definition": "The tracking of data flow from its origin through various transformations to its final destination.",
+    "category": "Data Governance"
+  },
+  {
+    "term": "De-identification",
+    "definition": "The process of removing or obscuring personal identifiers from data to protect individual privacy.",
+    "category": "Data Governance"
+  },
+  {
+    "term": "Defense in Depth",
+    "definition": "A security strategy that employs multiple layers of security controls to protect systems and data.",
+    "category": "Security"
+  },
+  {
+    "term": "Drift Detection",
+    "definition": "Monitoring for changes in model performance or data distribution over time that may indicate degradation.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Encryption at Rest",
+    "definition": "Encryption of data when it is stored on disk or other storage media.",
+    "category": "Security"
+  },
+  {
+    "term": "Encryption in Transit",
+    "definition": "Encryption of data as it moves between systems or across networks.",
+    "category": "Security"
+  },
+  {
+    "term": "Explainable AI (XAI)",
+    "definition": "AI systems designed to provide understandable explanations for their decisions and predictions.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "FDA (Food and Drug Administration)",
+    "definition": "U.S. federal agency responsible for regulating medical devices, including AI/ML-based medical software.",
+    "category": "Healthcare Regulations"
+  },
+  {
+    "term": "HIPAA (Health Insurance Portability and Accountability Act)",
+    "definition": "U.S. federal law that establishes standards for protecting sensitive patient health information.",
+    "category": "Healthcare Regulations"
+  },
+  {
+    "term": "HITECH Act",
+    "definition": "Health Information Technology for Economic and Clinical Health Act, which strengthened HIPAA privacy and security protections.",
+    "category": "Healthcare Regulations"
+  },
+  {
+    "term": "IAM (Identity and Access Management)",
+    "definition": "Framework of policies and technologies for ensuring that the right individuals have appropriate access to resources.",
+    "category": "Security"
+  },
+  {
+    "term": "Inference",
+    "definition": "The process of using a trained AI model to make predictions on new, unseen data.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Least Privilege",
+    "definition": "Security principle that users and systems should have only the minimum access rights needed to perform their functions.",
+    "category": "Security"
+  },
+  {
+    "term": "MFA (Multi-Factor Authentication)",
+    "definition": "Security method requiring two or more verification factors to gain access to a resource.",
+    "category": "Security"
+  },
+  {
+    "term": "Model Versioning",
+    "definition": "The practice of tracking and managing different versions of AI models throughout their lifecycle.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "PHI (Protected Health Information)",
+    "definition": "Any individually identifiable health information held or transmitted by a covered entity or business associate.",
+    "category": "Healthcare Regulations"
+  },
+  {
+    "term": "PII (Personally Identifiable Information)",
+    "definition": "Information that can be used to identify, contact, or locate a specific individual.",
+    "category": "Data Governance"
+  },
+  {
+    "term": "RBAC (Role-Based Access Control)",
+    "definition": "Access control method that assigns permissions to users based on their role within an organization.",
+    "category": "Security"
+  },
+  {
+    "term": "Serverless Computing",
+    "definition": "Cloud computing model where the cloud provider manages infrastructure, allowing developers to focus on code.",
+    "category": "Cloud Computing"
+  },
+  {
+    "term": "VPC (Virtual Private Cloud)",
+    "definition": "Isolated virtual network within a public cloud that provides enhanced security and control.",
+    "category": "Cloud Computing"
+  },
+  {
+    "term": "Zero Trust Architecture",
+    "definition": "Security model based on the principle of 'never trust, always verify' regardless of network location.",
+    "category": "Security"
+  },
+  {
+    "term": "GDPR (General Data Protection Regulation)",
+    "definition": "European Union regulation governing data protection and privacy for individuals within the EU and EEA.",
+    "category": "Healthcare Regulations"
+  },
+  {
+    "term": "HL7 FHIR (Fast Healthcare Interoperability Resources)",
+    "definition": "Standard for exchanging healthcare information electronically, enabling interoperability between healthcare systems.",
+    "category": "Healthcare Standards"
+  },
+  {
+    "term": "DICOM (Digital Imaging and Communications in Medicine)",
+    "definition": "International standard for transmitting, storing, and sharing medical imaging information.",
+    "category": "Healthcare Standards"
+  },
+  {
+    "term": "Federated Learning",
+    "definition": "Machine learning approach where models are trained across multiple decentralized devices or servers without exchanging raw data.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Model Governance",
+    "definition": "Framework for managing AI/ML models throughout their lifecycle, ensuring compliance, performance, and accountability.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Data Residency",
+    "definition": "Legal requirement that data must be stored within specific geographic boundaries or jurisdictions.",
+    "category": "Cloud Computing"
+  },
+  {
+    "term": "Multi-Cloud Strategy",
+    "definition": "Approach using multiple cloud service providers to avoid vendor lock-in and optimize performance, cost, and compliance.",
+    "category": "Cloud Computing"
+  },
+  {
+    "term": "Cloud Access Security Broker (CASB)",
+    "definition": "Security policy enforcement point between cloud service consumers and providers to monitor and control data access.",
+    "category": "Security"
+  },
+  {
+    "term": "Audit Trail",
+    "definition": "Chronological record of system activities that enables reconstruction and examination of events.",
+    "category": "Data Governance"
+  },
+  {
+    "term": "Data Sovereignty",
+    "definition": "Concept that data is subject to the laws and governance structures of the nation where it is collected or stored.",
+    "category": "Data Governance"
+  },
+  {
+    "term": "Anonymization",
+    "definition": "Process of irreversibly removing identifying information from data so individuals cannot be re-identified.",
+    "category": "Data Governance"
+  },
+  {
+    "term": "Pseudonymization",
+    "definition": "Data processing technique that replaces identifying information with artificial identifiers or pseudonyms.",
+    "category": "Data Governance"
+  },
+  {
+    "term": "Differential Privacy",
+    "definition": "Mathematical framework for quantifying and limiting privacy loss when sharing aggregate information about datasets.",
+    "category": "Security"
+  },
+  {
+    "term": "Homomorphic Encryption",
+    "definition": "Encryption method that allows computations on encrypted data without decrypting it first.",
+    "category": "Security"
+  },
+  {
+    "term": "Secure Multi-Party Computation (SMPC)",
+    "definition": "Cryptographic protocol enabling parties to jointly compute functions over their inputs while keeping those inputs private.",
+    "category": "Security"
+  },
+  {
+    "term": "Model Bias",
+    "definition": "Systematic errors in AI model predictions that unfairly favor or disadvantage certain groups or outcomes.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Model Fairness",
+    "definition": "Principle ensuring AI models make equitable predictions across different demographic groups and populations.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Clinical Decision Support System (CDSS)",
+    "definition": "Health information technology that provides clinicians with patient-specific assessments or recommendations.",
+    "category": "Healthcare Standards"
+  },
+  {
+    "term": "SaMD (Software as a Medical Device)",
+    "definition": "Software intended for medical purposes that performs these purposes without being part of a hardware medical device.",
+    "category": "Healthcare Regulations"
+  },
+  {
+    "term": "21 CFR Part 11",
+    "definition": "FDA regulation establishing criteria for electronic records and signatures in healthcare and life sciences.",
+    "category": "Healthcare Regulations"
+  },
+  {
+    "term": "ISO 27001",
+    "definition": "International standard for information security management systems (ISMS).",
+    "category": "Healthcare Regulations"
+  },
+  {
+    "term": "SOC 2 (Service Organization Control 2)",
+    "definition": "Auditing standard for service organizations that store customer data in the cloud.",
+    "category": "Healthcare Regulations"
+  },
+  {
+    "term": "HITRUST CSF",
+    "definition": "Comprehensive security framework that harmonizes healthcare regulations and standards into a single overarching framework.",
+    "category": "Healthcare Regulations"
+  },
+  {
+    "term": "Data Lake",
+    "definition": "Centralized repository that stores structured and unstructured data at any scale in its native format.",
+    "category": "Cloud Computing"
+  },
+  {
+    "term": "Data Mesh",
+    "definition": "Decentralized data architecture that treats data as a product with domain-oriented ownership.",
+    "category": "Cloud Computing"
+  },
+  {
+    "term": "Container Orchestration",
+    "definition": "Automated management of containerized applications including deployment, scaling, and networking.",
+    "category": "Cloud Computing"
+  },
+  {
+    "term": "Infrastructure as Code (IaC)",
+    "definition": "Managing and provisioning infrastructure through machine-readable definition files rather than manual processes.",
+    "category": "Cloud Computing"
+  },
+  {
+    "term": "Immutable Infrastructure",
+    "definition": "Infrastructure paradigm where servers are never modified after deployment, only replaced with new versions.",
+    "category": "Cloud Computing"
+  },
+  {
+    "term": "API Gateway",
+    "definition": "Server that acts as an intermediary for requests from clients seeking resources from backend services.",
+    "category": "Cloud Computing"
+  },
+  {
+    "term": "Service Mesh",
+    "definition": "Infrastructure layer that handles service-to-service communication in microservices architectures.",
+    "category": "Cloud Computing"
+  },
+  {
+    "term": "Edge Computing",
+    "definition": "Distributed computing paradigm that brings computation and data storage closer to data sources.",
+    "category": "Cloud Computing"
+  },
+  {
+    "term": "MLOps (Machine Learning Operations)",
+    "definition": "Set of practices combining ML, DevOps, and data engineering to deploy and maintain ML systems in production.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Feature Store",
+    "definition": "Centralized repository for storing, managing, and serving machine learning features for training and inference.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Model Registry",
+    "definition": "Centralized repository for storing, versioning, and managing machine learning models throughout their lifecycle.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "A/B Testing",
+    "definition": "Experimental approach comparing two versions of a model or system to determine which performs better.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Shadow Mode Deployment",
+    "definition": "Deployment strategy where a new model runs alongside production without affecting user-facing results.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Canary Deployment",
+    "definition": "Deployment strategy that gradually rolls out changes to a small subset of users before full deployment.",
+    "category": "Cloud Computing"
+  },
+  {
+    "term": "Blue-Green Deployment",
+    "definition": "Deployment strategy maintaining two identical production environments to enable zero-downtime releases.",
+    "category": "Cloud Computing"
+  },
+  {
+    "term": "Disaster Recovery (DR)",
+    "definition": "Set of policies and procedures to recover and protect IT infrastructure in the event of a disaster.",
+    "category": "Cloud Computing"
+  },
+  {
+    "term": "RTO (Recovery Time Objective)",
+    "definition": "Maximum acceptable time that a system can be down after a failure or disaster.",
+    "category": "Cloud Computing"
+  },
+  {
+    "term": "RPO (Recovery Point Objective)",
+    "definition": "Maximum acceptable amount of data loss measured in time before a disaster occurs.",
+    "category": "Cloud Computing"
+  },
+  {
+    "term": "Data Catalog",
+    "definition": "Organized inventory of data assets using metadata to help organizations find and manage their data.",
+    "category": "Data Governance"
+  },
+  {
+    "term": "Data Stewardship",
+    "definition": "Management and oversight of an organization's data assets to ensure quality, security, and compliance.",
+    "category": "Data Governance"
+  },
+  {
+    "term": "Consent Management",
+    "definition": "Process of obtaining, recording, and managing patient consent for data collection and usage.",
+    "category": "Data Governance"
+  },
+  {
+    "term": "Right to Erasure",
+    "definition": "Individual's right to have their personal data deleted under certain conditions (GDPR Article 17).",
+    "category": "Healthcare Regulations"
+  },
+  {
+    "term": "Data Portability",
+    "definition": "Right of individuals to receive their personal data and transmit it to another controller.",
+    "category": "Healthcare Regulations"
+  },
+  {
+    "term": "Privacy by Design",
+    "definition": "Approach embedding privacy into the design and architecture of IT systems and business practices.",
+    "category": "Security"
+  },
+  {
+    "term": "Tokenization",
+    "definition": "Process of replacing sensitive data with non-sensitive placeholder tokens that can be mapped back to original data.",
+    "category": "Security"
+  },
+  {
+    "term": "Key Management Service (KMS)",
+    "definition": "Cloud service for creating and controlling encryption keys used to encrypt data.",
+    "category": "Security"
+  },
+  {
+    "term": "Hardware Security Module (HSM)",
+    "definition": "Physical device that safeguards and manages cryptographic keys and performs encryption operations.",
+    "category": "Security"
+  },
+  {
+    "term": "Penetration Testing",
+    "definition": "Authorized simulated cyberattack to evaluate the security of a system.",
+    "category": "Security"
+  },
+  {
+    "term": "Vulnerability Assessment",
+    "definition": "Process of identifying, quantifying, and prioritizing security vulnerabilities in a system.",
+    "category": "Security"
+  },
+  {
+    "term": "Security Information and Event Management (SIEM)",
+    "definition": "Solution providing real-time analysis of security alerts generated by applications and network hardware.",
+    "category": "Security"
+  },
+  {
+    "term": "Intrusion Detection System (IDS)",
+    "definition": "Device or software that monitors network traffic for suspicious activity and policy violations.",
+    "category": "Security"
+  },
+  {
+    "term": "Web Application Firewall (WAF)",
+    "definition": "Security solution that filters and monitors HTTP traffic between a web application and the internet.",
+    "category": "Security"
+  },
+  {
+    "term": "DDoS Protection",
+    "definition": "Security measures to prevent distributed denial-of-service attacks that overwhelm systems with traffic.",
+    "category": "Security"
+  },
+  {
+    "term": "Certificate Authority (CA)",
+    "definition": "Trusted entity that issues digital certificates for verifying identities on the internet.",
+    "category": "Security"
+  },
+  {
+    "term": "TLS/SSL (Transport Layer Security/Secure Sockets Layer)",
+    "definition": "Cryptographic protocols providing secure communication over computer networks.",
+    "category": "Security"
+  },
+  {
+    "term": "mTLS (Mutual TLS)",
+    "definition": "Authentication method where both client and server verify each other's identity using certificates.",
+    "category": "Security"
+  },
+  {
+    "term": "Synthetic Data",
+    "definition": "Artificially generated data that mimics real data characteristics without containing actual patient information.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Transfer Learning",
+    "definition": "Machine learning technique where a model trained on one task is adapted for a related task.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Active Learning",
+    "definition": "Machine learning approach where the algorithm selectively queries the most informative data points for labeling.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Ensemble Learning",
+    "definition": "Technique combining multiple models to produce better predictive performance than individual models.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Hyperparameter Tuning",
+    "definition": "Process of optimizing the configuration settings that control the learning process of ML algorithms.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Cross-Validation",
+    "definition": "Technique for assessing model performance by partitioning data into subsets for training and testing.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Overfitting",
+    "definition": "Modeling error where a model learns training data too well, including noise, reducing generalization ability.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Underfitting",
+    "definition": "Modeling error where a model is too simple to capture the underlying patterns in the data.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Confusion Matrix",
+    "definition": "Table used to evaluate classification model performance by comparing predicted and actual values.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "AUC-ROC (Area Under the Receiver Operating Characteristic Curve)",
+    "definition": "Performance metric measuring a classification model's ability to distinguish between classes.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Precision and Recall",
+    "definition": "Metrics measuring the accuracy of positive predictions and the model's ability to find all positive instances.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "F1 Score",
+    "definition": "Harmonic mean of precision and recall, providing a single metric for model performance evaluation.",
+    "category": "AI/ML"
+  }
+]
