@@ -1,0 +1,116 @@
+.wrapper {
+  margin: 0;
+  max-width: 100%;
+  text-align: left;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0;
+}
+
+.label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #888;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.tab {
+  background: none;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  padding: 0.3rem 0.85rem;
+  font-size: 0.8rem;
+  color: #888;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.tab:hover {
+  background: #f0f0f0;
+  color: #444;
+}
+
+.activeTab {
+  background: #fff;
+  color: #0066cc;
+  border-color: #ccc;
+  font-weight: 600;
+}
+
+.citationBox {
+  position: relative;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.9rem 3.5rem 0.9rem 1rem;
+  min-height: 3.5rem;
+}
+
+.citationText {
+  font-size: 0.82rem;
+  color: #444;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.citationText a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.citationText a:hover {
+  text-decoration: underline;
+}
+
+.bibtex {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.78rem;
+  color: #333;
+  background: transparent;
+  margin: 0;
+  white-space: pre;
+  overflow-x: auto;
+  line-height: 1.6;
+}
+
+.copyBtn {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  background: #f0f4ff;
+  border: 1px solid #c0d0ee;
+  border-radius: 4px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.75rem;
+  color: #0066cc;
+  cursor: pointer;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+
+.copyBtn:hover {
+  background: #dce8ff;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 100%;
+  }
+
+  .bibtex {
+    font-size: 0.72rem;
+  }
+}
