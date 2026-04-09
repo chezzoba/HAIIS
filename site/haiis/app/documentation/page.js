@@ -124,6 +124,7 @@ export default function Documentation() {
               <li>Healthcare risk catalogs</li>
               <li>Compliance validation checklists</li>
             </ul>
+            <span className={styles['coming-soon']}>Coming soon</span>
           </div>
 
           <div className={styles['category-card']}>

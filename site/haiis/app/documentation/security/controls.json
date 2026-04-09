@@ -1,5 +1,172 @@
 [
   {
+    "control": "AI Content Safety & Guardrails",
+    "useCase": "Prevent harmful, biased, or non-compliant AI outputs in clinical and patient-facing applications",
+    "aws": {
+      "services": "Amazon Bedrock Guardrails",
+      "links": [
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html"
+      ]
+    },
+    "azure": {
+      "services": "Azure AI Content Safety",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/"
+      ]
+    },
+    "gcp": {
+      "services": "Vertex AI Safety Filters, Model Armor",
+      "links": [
+        "https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/configure-safety-attributes",
+        "https://cloud.google.com/security/products/model-armor"
+      ]
+    }
+  },
+  {
+    "control": "AI Bias Detection & Fairness",
+    "useCase": "Detect and mitigate bias in AI/ML models used for clinical decision support",
+    "aws": {
+      "services": "Amazon SageMaker Clarify",
+      "links": [
+        "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html"
+      ]
+    },
+    "azure": {
+      "services": "Azure Responsible AI Dashboard, Fairlearn",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai-dashboard",
+        "https://learn.microsoft.com/en-us/azure/machine-learning/concept-fairness-ml"
+      ]
+    },
+    "gcp": {
+      "services": "Vertex AI Model Evaluation, What-If Tool",
+      "links": [
+        "https://cloud.google.com/vertex-ai/docs/evaluation/introduction",
+        "https://cloud.google.com/vertex-ai/docs/model-monitoring/overview"
+      ]
+    }
+  },
+  {
+    "control": "AI Model Explainability",
+    "useCase": "Provide interpretable explanations for AI predictions to support clinical accountability",
+    "aws": {
+      "services": "Amazon SageMaker Clarify, SageMaker Model Monitor",
+      "links": [
+        "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-model-explainability.html",
+        "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html"
+      ]
+    },
+    "azure": {
+      "services": "Azure Responsible AI Dashboard (Explainability), InterpretML",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-machine-learning-interpretability",
+        "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai-dashboard"
+      ]
+    },
+    "gcp": {
+      "services": "Vertex Explainable AI",
+      "links": [
+        "https://cloud.google.com/vertex-ai/docs/explainable-ai/overview"
+      ]
+    }
+  },
+  {
+    "control": "AI Model Monitoring & Drift Detection",
+    "useCase": "Continuously monitor AI model performance and detect data/concept drift in production",
+    "aws": {
+      "services": "Amazon SageMaker Model Monitor, CloudWatch",
+      "links": [
+        "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html",
+        "https://docs.aws.amazon.com/cloudwatch/"
+      ]
+    },
+    "azure": {
+      "services": "Azure ML Model Monitoring",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-monitoring"
+      ]
+    },
+    "gcp": {
+      "services": "Vertex AI Model Monitoring",
+      "links": [
+        "https://cloud.google.com/vertex-ai/docs/model-monitoring/overview"
+      ]
+    }
+  },
+  {
+    "control": "Prompt Injection & Jailbreak Prevention",
+    "useCase": "Protect LLM-based applications from adversarial prompt attacks",
+    "aws": {
+      "services": "Amazon Bedrock Guardrails (Prompt Attack filter)",
+      "links": [
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-components.html"
+      ]
+    },
+    "azure": {
+      "services": "Azure AI Content Safety (Prompt Shields)",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection"
+      ]
+    },
+    "gcp": {
+      "services": "Vertex AI Model Armor, Gemini Safety Settings",
+      "links": [
+        "https://cloud.google.com/security/products/model-armor",
+        "https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/configure-safety-attributes"
+      ]
+    }
+  },
+  {
+    "control": "PII/PHI Redaction in AI Pipelines",
+    "useCase": "Automatically detect and redact sensitive health data before it reaches AI models",
+    "aws": {
+      "services": "Amazon Comprehend Medical, Amazon Bedrock Guardrails (PII filter)",
+      "links": [
+        "https://docs.aws.amazon.com/comprehend-medical/",
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-sensitive-info.html"
+      ]
+    },
+    "azure": {
+      "services": "Azure AI Language (PII Detection), Microsoft Purview",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/overview",
+        "https://learn.microsoft.com/en-us/purview/"
+      ]
+    },
+    "gcp": {
+      "services": "Cloud DLP, Healthcare Natural Language API",
+      "links": [
+        "https://cloud.google.com/dlp/docs",
+        "https://cloud.google.com/healthcare-api/docs/how-tos/nlp"
+      ]
+    }
+  },
+  {
+    "control": "AI Governance & Model Lineage",
+    "useCase": "Track model provenance, versioning, and approval workflows for regulated AI use",
+    "aws": {
+      "services": "Amazon SageMaker Model Registry, ML Lineage Tracking",
+      "links": [
+        "https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html",
+        "https://docs.aws.amazon.com/sagemaker/latest/dg/lineage-tracking.html"
+      ]
+    },
+    "azure": {
+      "services": "Azure ML Model Registry, Responsible AI Scorecard",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-management-and-deployment",
+        "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-responsible-ai-scorecard"
+      ]
+    },
+    "gcp": {
+      "services": "Vertex AI Model Registry, Vertex ML Metadata",
+      "links": [
+        "https://cloud.google.com/vertex-ai/docs/model-registry/introduction",
+        "https://cloud.google.com/vertex-ai/docs/ml-metadata/introduction"
+      ]
+    }
+  },
+  {
     "control": "Identity & Access Management",
     "useCase": "User authentication and authorization",
     "aws": {
@@ -55,18 +222,21 @@
     "aws": {
       "services": "TLS/SSL, AWS Certificate Manager",
       "links": [
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/encryption-and-key-management/tls.html",
         "https://docs.aws.amazon.com/acm/"
       ]
     },
     "azure": {
       "services": "TLS/SSL, Azure Front Door",
       "links": [
+        "https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview#encryption-of-data-in-transit",
         "https://learn.microsoft.com/en-us/azure/frontdoor/"
       ]
     },
     "gcp": {
       "services": "TLS/SSL, Cloud Load Balancing",
       "links": [
+        "https://cloud.google.com/docs/security/encryption-in-transit",
         "https://cloud.google.com/load-balancing/docs"
       ]
     }
@@ -77,13 +247,16 @@
     "aws": {
       "services": "VPC, Security Groups, NACLs",
       "links": [
-        "https://docs.aws.amazon.com/vpc/"
+        "https://docs.aws.amazon.com/vpc/",
+        "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html",
+        "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html"
       ]
     },
     "azure": {
       "services": "VNet, NSG, Azure Firewall",
       "links": [
         "https://learn.microsoft.com/en-us/azure/virtual-network/",
+        "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
         "https://learn.microsoft.com/en-us/azure/firewall/"
       ]
     },
@@ -91,6 +264,7 @@
       "services": "VPC, Firewall Rules, Private Service Connect",
       "links": [
         "https://cloud.google.com/vpc/docs",
+        "https://cloud.google.com/firewall/docs/firewalls",
         "https://cloud.google.com/vpc/docs/private-service-connect"
       ]
     }

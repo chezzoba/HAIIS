@@ -94,27 +94,51 @@ export default function SecurityControlsPage() {
           </div>
 
           <div className={styles.practiceSection}>
-            <h3>3. Model Security & Integrity</h3>
+            <h3>3. Responsible AI & Guardrails</h3>
+            <ul>
+              <li><strong>Content Safety Guardrails:</strong> Deploy platform-native guardrails (e.g., Amazon Bedrock Guardrails, Azure AI Content Safety) to block harmful, toxic, or clinically inappropriate AI outputs before they reach end users.</li>
+              <li><strong>Prompt Injection Defense:</strong> Protect LLM-based applications from adversarial prompt attacks using prompt shields and input sanitization. Treat all user-supplied input as untrusted.</li>
+              <li><strong>PII/PHI Redaction in Pipelines:</strong> Automatically detect and redact sensitive health information before data enters AI models using services like Amazon Comprehend Medical or Azure AI Language PII detection.</li>
+              <li><strong>Output Filtering:</strong> Apply post-generation filters to catch hallucinations, unsupported clinical claims, or responses that reference patient-identifiable information.</li>
+              <li><strong>Grounding & RAG Controls:</strong> When using retrieval-augmented generation, restrict the retrieval corpus to validated, access-controlled knowledge bases to prevent data leakage across patient populations.</li>
+            </ul>
+          </div>
+
+          <div className={styles.practiceSection}>
+            <h3>4. Bias, Fairness & Explainability</h3>
+            <ul>
+              <li><strong>Pre-deployment Bias Audits:</strong> Use tools like Amazon SageMaker Clarify or Azure Responsible AI Dashboard to evaluate models for demographic bias across protected attributes (age, race, sex) before clinical deployment.</li>
+              <li><strong>Ongoing Fairness Monitoring:</strong> Continuously track model performance disaggregated by patient subgroups in production to detect emergent disparities over time.</li>
+              <li><strong>Explainable Predictions:</strong> Implement explainability techniques (SHAP, LIME, Vertex Explainable AI) for clinical decision support models so clinicians can understand and challenge AI recommendations.</li>
+              <li><strong>Human-in-the-Loop:</strong> Require qualified clinician review for high-stakes AI outputs. Automate escalation workflows when model confidence is low or predictions fall outside expected ranges.</li>
+              <li><strong>Disparate Impact Reporting:</strong> Document and report fairness metrics as part of model cards and governance reviews, especially for models used in diagnosis, triage, or resource allocation.</li>
+            </ul>
+          </div>
+
+          <div className={styles.practiceSection}>
+            <h3>5. Model Security & Integrity</h3>
             <ul>
               <li><strong>Model Versioning:</strong> Maintain version control for all models with cryptographic signatures to ensure integrity and enable rollback capabilities.</li>
               <li><strong>Adversarial Robustness:</strong> Test models against adversarial attacks and implement input validation to prevent manipulation of AI outputs.</li>
-              <li><strong>Model Monitoring:</strong> Continuously monitor model performance, drift, and anomalous predictions that could indicate security issues or data poisoning.</li>
-              <li><strong>Secure Training Pipelines:</strong> Isolate training environments, validate training data sources, and implement controls to prevent unauthorized model modifications.</li>
+              <li><strong>Model Monitoring & Drift Detection:</strong> Continuously monitor model performance, data drift, and anomalous predictions that could indicate security issues, data poisoning, or population shift.</li>
+              <li><strong>Secure Training Pipelines:</strong> Isolate training environments, validate training data sources, and implement controls to prevent unauthorized model modifications or supply chain attacks.</li>
+              <li><strong>Model Lineage Tracking:</strong> Record full provenance of training datasets, hyperparameters, and evaluation results using tools like SageMaker ML Lineage Tracking or Vertex ML Metadata to support auditability.</li>
             </ul>
           </div>
 
           <div className={styles.practiceSection}>
-            <h3>4. Compliance & Governance</h3>
+            <h3>6. Compliance & Governance</h3>
             <ul>
-              <li><strong>Regulatory Alignment:</strong> Map AI implementations to HIPAA, HITECH, FDA regulations, and state privacy laws. Document compliance controls.</li>
-              <li><strong>Business Associate Agreements:</strong> Ensure BAAs are in place with all cloud providers and third-party AI service vendors handling PHI.</li>
-              <li><strong>Audit Readiness:</strong> Implement comprehensive logging and monitoring to support compliance audits. Retain logs per regulatory requirements.</li>
-              <li><strong>Risk Assessments:</strong> Conduct regular security risk assessments specific to AI systems, including bias, fairness, and safety considerations.</li>
+              <li><strong>Regulatory Alignment:</strong> Map AI implementations to HIPAA, HITECH, FDA Software as a Medical Device (SaMD) guidance, and emerging AI-specific regulations. Document compliance controls per model.</li>
+              <li><strong>Business Associate Agreements:</strong> Ensure BAAs are in place with all cloud providers and third-party AI service vendors handling PHI, including foundation model providers.</li>
+              <li><strong>AI Model Registry & Approval Workflows:</strong> Gate production deployments through a formal model registry with documented approval, validation, and sign-off steps before clinical use.</li>
+              <li><strong>Audit Readiness:</strong> Implement comprehensive logging and monitoring to support compliance audits. Retain logs per regulatory requirements and capture AI-specific events (prompt/response logs, model version changes).</li>
+              <li><strong>Risk Assessments:</strong> Conduct regular security and algorithmic risk assessments specific to AI systems, including bias, fairness, safety, and unintended use considerations.</li>
             </ul>
           </div>
 
           <div className={styles.practiceSection}>
-            <h3>5. Infrastructure Security</h3>
+            <h3>7. Infrastructure Security</h3>
             <ul>
               <li><strong>Network Segmentation:</strong> Isolate AI workloads in dedicated VPCs/VNets with strict firewall rules and network access controls.</li>
               <li><strong>Secure APIs:</strong> Implement API gateways with rate limiting, authentication, and input validation for all AI service endpoints.</li>
@@ -124,7 +148,7 @@ export default function SecurityControlsPage() {
           </div>
 
           <div className={styles.practiceSection}>
-            <h3>6. Incident Response & Recovery</h3>
+            <h3>8. Incident Response & Recovery</h3>
             <ul>
               <li><strong>Incident Response Plan:</strong> Develop AI-specific incident response procedures covering data breaches, model compromises, and output errors.</li>
               <li><strong>Backup & Recovery:</strong> Implement automated backups of models, training data, and configurations with tested recovery procedures.</li>
@@ -134,7 +158,7 @@ export default function SecurityControlsPage() {
           </div>
 
           <div className={styles.practiceSection}>
-            <h3>7. Transparency & Explainability</h3>
+            <h3>9. Transparency & Explainability</h3>
             <ul>
               <li><strong>Model Documentation:</strong> Maintain comprehensive documentation of model architecture, training data, performance metrics, and limitations.</li>
               <li><strong>Explainable AI:</strong> Implement techniques to explain model decisions, especially for clinical decision support applications.</li>

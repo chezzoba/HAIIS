@@ -79,7 +79,7 @@ export default function Framework() {
               <h3>Compliance-by-Design Architecture Patterns</h3>
             </summary>
             <div className={styles['component-content']}>
-              <h4>Problem Statement</h4>
+              <h4>Problem</h4>
               <p>Healthcare organizations struggle to implement AI while meeting regulatory requirements like HIPAA, GxP, and FDA standards.</p>
               
               <h4>Solution Overview</h4>
@@ -95,7 +95,7 @@ export default function Framework() {
                 <li>Reference implementations across cloud platforms</li>
               </ul>
               
-              <a href="/documentation#categories" className={styles['cta-link']}>View Documentation →</a>
+              <a href="/documentation/patterns" className={styles['cta-link']}>View Documentation →</a>
             </div>
           </details>
 
@@ -104,7 +104,7 @@ export default function Framework() {
               <h3>Security Control Mapping System</h3>
             </summary>
             <div className={styles['component-content']}>
-              <h4>Problem Statement</h4>
+              <h4>Problem</h4>
               <p>Inconsistent security controls across different cloud providers create gaps and compliance risks.</p>
               
               <h4>Solution Overview</h4>
@@ -120,7 +120,7 @@ export default function Framework() {
                 <li>Security validation checklists</li>
               </ul>
               
-              <a href="/documentation#categories" className={styles['cta-link']}>View Documentation →</a>
+              <a href="/documentation/security" className={styles['cta-link']}>View Documentation →</a>
             </div>
           </details>
 
@@ -129,7 +129,7 @@ export default function Framework() {
               <h3>Data Governance Protocols</h3>
             </summary>
             <div className={styles['component-content']}>
-              <h4>Problem Statement</h4>
+              <h4>Problem</h4>
               <p>Managing sensitive healthcare data across AI training, inference, and monitoring lacks standardized approaches.</p>
               
               <h4>Solution Overview</h4>
@@ -145,7 +145,7 @@ export default function Framework() {
                 <li>Audit and monitoring protocols</li>
               </ul>
               
-              <a href="/documentation#categories" className={styles['cta-link']}>View Documentation →</a>
+              <a href="/documentation/governance" className={styles['cta-link']}>View Documentation →</a>
             </div>
           </details>
 
@@ -154,7 +154,7 @@ export default function Framework() {
               <h3>AI Risk Assessment Methodology</h3>
             </summary>
             <div className={styles['component-content']}>
-              <h4>Problem Statement</h4>
+              <h4>Problem</h4>
               <p>AI introduces unique risks in healthcare that traditional risk frameworks don't adequately address.</p>
               
               <h4>Solution Overview</h4>
@@ -179,7 +179,7 @@ export default function Framework() {
               <h3>Implementation Playbooks</h3>
             </summary>
             <div className={styles['component-content']}>
-              <h4>Problem Statement</h4>
+              <h4>Problem</h4>
               <p>Healthcare organizations need concrete, step-by-step guidance for implementing AI solutions.</p>
               
               <h4>Solution Overview</h4>
@@ -195,7 +195,7 @@ export default function Framework() {
                 <li>Troubleshooting and optimization tips</li>
               </ul>
               
-              <a href="/documentation#categories" className={styles['cta-link']}>View Documentation →</a>
+              <a href="/documentation/playbooks" className={styles['cta-link']}>View Documentation →</a>
             </div>
           </details>
 

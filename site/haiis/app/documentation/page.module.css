@@ -230,3 +230,13 @@
     align-self: flex-start;
   }
 }
+
+.coming-soon {
+  display: inline-block;
+  margin-top: auto;
+  padding-top: 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #999;
+  font-style: italic;
+}
