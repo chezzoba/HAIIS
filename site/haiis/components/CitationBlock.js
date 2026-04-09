@@ -52,7 +52,7 @@ export default function CitationBlock({ version, month, year }) {
     return (
         <div className={styles.wrapper}>
             <div className={styles.header}>
-                <span className={styles.label}>Citation</span>
+                <span className={styles.label}>Cite HAIIS</span>
                 <div className={styles.tabs}>
                     {FORMATS.map((fmt) => (
                         <button

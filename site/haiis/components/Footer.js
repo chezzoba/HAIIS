@@ -13,7 +13,7 @@ export default function Footer() {
       <div className={styles.inner}>
         <div className={styles.left}>
           <div className={styles.links}>
-            <Link href="/framework#roadmap">Framework Roadmap</Link>
+            <Link href="/framework#roadmap">Roadmap</Link>
             <Link href="/privacy">Privacy</Link>
             <Link href="/collaborate#intake-form">Contact</Link>
             <a href="https://github.com/chezzoba/HAIIS" target='_blank'>Contribute</a>
