@@ -1,0 +1,249 @@
+.main {
+  min-height: 100vh;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #4a4a4a;
+}
+
+.tableSection {
+  padding: 4rem 2rem;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.controlsTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.controlsTable thead {
+  background: #f5f7fa;
+  color: #1a1a1a;
+}
+
+.controlsTable th {
+  padding: 18px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.controlsTable tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+  transition: background-color 0.2s ease;
+}
+
+.controlsTable tbody tr:hover {
+  background-color: #f7fafc;
+}
+
+.controlsTable tbody tr:last-child {
+  border-bottom: none;
+}
+
+.controlsTable td {
+  padding: 16px;
+  vertical-align: top;
+}
+
+.controlName {
+  font-weight: 600;
+  color: #2d3748;
+  min-width: 180px;
+}
+
+.useCase {
+  color: #4a5568;
+  min-width: 200px;
+}
+
+.cloudService {
+  color: #2d3748;
+  min-width: 180px;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.cloudService a {
+  color: #667eea;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cloudService a:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+.bestPractices {
+  padding: 4rem 2rem;
+  background: #f9fafb;
+}
+
+.bestPractices h2 {
+  text-align: center;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.sectionIntro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #4a5568;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.practiceSection {
+  background: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.practiceSection h3 {
+  color: #1a1a1a;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.practiceSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.practiceSection li {
+  padding: 0.75rem 0;
+  color: #4a5568;
+  line-height: 1.7;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.practiceSection li:last-child {
+  border-bottom: none;
+}
+
+.practiceSection strong {
+  color: #2d3748;
+  font-weight: 600;
+}
+
+.notes {
+  padding: 4rem 2rem;
+}
+
+.notes h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+}
+
+.noteCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.noteCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.noteCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.noteCard h3 {
+  color: #1a1a1a;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.noteCard p {
+  color: #666;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem 1.5rem;
+  }
+
+  .tableSection,
+  .notes {
+    padding: 3rem 1rem;
+  }
+
+  .controlsTable {
+    font-size: 0.85rem;
+  }
+
+  .controlsTable th,
+  .controlsTable td {
+    padding: 12px 10px;
+  }
+
+  .noteCards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tableWrapper {
+    border-radius: 8px;
+  }
+
+  .controlsTable th:first-child,
+  .controlsTable td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+  }
+
+  .controlsTable thead th:first-child {
+    background: #f5f7fa;
+  }
+
+  .controlsTable tbody td:first-child {
+    background: white;
+  }
+
+  .controlsTable tbody tr:hover td:first-child {
+    background-color: #f7fafc;
+  }
+}

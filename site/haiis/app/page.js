@@ -93,8 +93,8 @@ export default function Home() {
         <div className="grid-3">
           <div className="card">
             <h3>📖 Get started</h3>
-            <p>Read the quickstart guide</p>
-            <a href="/documentation" role="button">Start Reading</a>
+            <p>Read the implementation guide</p>
+            <a href="/documentation#guide" role="button">Start Reading</a>
           </div>
           <div className="card">
             <h3>💡 See Use Cases</h3>

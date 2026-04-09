@@ -1,0 +1,440 @@
+[
+  {
+    "control": "Identity & Access Management",
+    "useCase": "User authentication and authorization",
+    "aws": {
+      "services": "AWS IAM, AWS SSO",
+      "links": [
+        "https://docs.aws.amazon.com/IAM/",
+        "https://docs.aws.amazon.com/singlesignon/"
+      ]
+    },
+    "azure": {
+      "services": "Azure AD, Azure RBAC",
+      "links": [
+        "https://learn.microsoft.com/en-us/entra/identity/",
+        "https://learn.microsoft.com/en-us/azure/role-based-access-control/"
+      ]
+    },
+    "gcp": {
+      "services": "Cloud IAM, Cloud Identity",
+      "links": [
+        "https://cloud.google.com/iam/docs",
+        "https://cloud.google.com/identity/docs"
+      ]
+    }
+  },
+  {
+    "control": "Data Encryption at Rest",
+    "useCase": "Protect stored PHI/PII data",
+    "aws": {
+      "services": "AWS KMS, S3 Encryption",
+      "links": [
+        "https://docs.aws.amazon.com/kms/",
+        "https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingEncryption.html"
+      ]
+    },
+    "azure": {
+      "services": "Azure Key Vault, Storage Service Encryption",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/key-vault/",
+        "https://learn.microsoft.com/en-us/azure/storage/common/storage-service-encryption"
+      ]
+    },
+    "gcp": {
+      "services": "Cloud KMS, Default Encryption",
+      "links": [
+        "https://cloud.google.com/kms/docs",
+        "https://cloud.google.com/docs/security/encryption/default-encryption"
+      ]
+    }
+  },
+  {
+    "control": "Data Encryption in Transit",
+    "useCase": "Secure data transmission",
+    "aws": {
+      "services": "TLS/SSL, AWS Certificate Manager",
+      "links": [
+        "https://docs.aws.amazon.com/acm/"
+      ]
+    },
+    "azure": {
+      "services": "TLS/SSL, Azure Front Door",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/frontdoor/"
+      ]
+    },
+    "gcp": {
+      "services": "TLS/SSL, Cloud Load Balancing",
+      "links": [
+        "https://cloud.google.com/load-balancing/docs"
+      ]
+    }
+  },
+  {
+    "control": "Network Isolation",
+    "useCase": "Isolate healthcare workloads",
+    "aws": {
+      "services": "VPC, Security Groups, NACLs",
+      "links": [
+        "https://docs.aws.amazon.com/vpc/"
+      ]
+    },
+    "azure": {
+      "services": "VNet, NSG, Azure Firewall",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/virtual-network/",
+        "https://learn.microsoft.com/en-us/azure/firewall/"
+      ]
+    },
+    "gcp": {
+      "services": "VPC, Firewall Rules, Private Service Connect",
+      "links": [
+        "https://cloud.google.com/vpc/docs",
+        "https://cloud.google.com/vpc/docs/private-service-connect"
+      ]
+    }
+  },
+  {
+    "control": "Audit Logging",
+    "useCase": "Track access to sensitive data",
+    "aws": {
+      "services": "CloudTrail, CloudWatch Logs",
+      "links": [
+        "https://docs.aws.amazon.com/cloudtrail/",
+        "https://docs.aws.amazon.com/cloudwatch/"
+      ]
+    },
+    "azure": {
+      "services": "Azure Monitor, Activity Logs",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/azure-monitor/",
+        "https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/activity-log"
+      ]
+    },
+    "gcp": {
+      "services": "Cloud Audit Logs, Cloud Logging",
+      "links": [
+        "https://cloud.google.com/logging/docs/audit",
+        "https://cloud.google.com/logging/docs"
+      ]
+    }
+  },
+  {
+    "control": "Data Loss Prevention",
+    "useCase": "Prevent unauthorized data exfiltration",
+    "aws": {
+      "services": "Amazon Macie, AWS Config",
+      "links": [
+        "https://docs.aws.amazon.com/macie/",
+        "https://docs.aws.amazon.com/config/"
+      ]
+    },
+    "azure": {
+      "services": "Microsoft Purview, Azure Information Protection",
+      "links": [
+        "https://learn.microsoft.com/en-us/purview/",
+        "https://learn.microsoft.com/en-us/azure/information-protection/"
+      ]
+    },
+    "gcp": {
+      "services": "Cloud DLP, VPC Service Controls",
+      "links": [
+        "https://cloud.google.com/dlp/docs",
+        "https://cloud.google.com/vpc-service-controls/docs"
+      ]
+    }
+  },
+  {
+    "control": "Secrets Management",
+    "useCase": "Secure API keys and credentials",
+    "aws": {
+      "services": "AWS Secrets Manager, Parameter Store",
+      "links": [
+        "https://docs.aws.amazon.com/secretsmanager/",
+        "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html"
+      ]
+    },
+    "azure": {
+      "services": "Azure Key Vault",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/key-vault/"
+      ]
+    },
+    "gcp": {
+      "services": "Secret Manager",
+      "links": [
+        "https://cloud.google.com/secret-manager/docs"
+      ]
+    }
+  },
+  {
+    "control": "Threat Detection",
+    "useCase": "Identify security threats",
+    "aws": {
+      "services": "Amazon GuardDuty, Security Hub",
+      "links": [
+        "https://docs.aws.amazon.com/guardduty/",
+        "https://docs.aws.amazon.com/securityhub/"
+      ]
+    },
+    "azure": {
+      "services": "Microsoft Defender for Cloud",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/defender-for-cloud/"
+      ]
+    },
+    "gcp": {
+      "services": "Security Command Center, Event Threat Detection",
+      "links": [
+        "https://cloud.google.com/security-command-center/docs",
+        "https://cloud.google.com/security-command-center/docs/concepts-event-threat-detection-overview"
+      ]
+    }
+  },
+  {
+    "control": "Vulnerability Scanning",
+    "useCase": "Identify security vulnerabilities",
+    "aws": {
+      "services": "Amazon Inspector, ECR Scanning",
+      "links": [
+        "https://docs.aws.amazon.com/inspector/",
+        "https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scanning.html"
+      ]
+    },
+    "azure": {
+      "services": "Microsoft Defender for Containers",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-introduction"
+      ]
+    },
+    "gcp": {
+      "services": "Container Analysis, Web Security Scanner",
+      "links": [
+        "https://cloud.google.com/container-analysis/docs",
+        "https://cloud.google.com/security-command-center/docs/concepts-web-security-scanner-overview"
+      ]
+    }
+  },
+  {
+    "control": "Backup & Recovery",
+    "useCase": "Data resilience and disaster recovery",
+    "aws": {
+      "services": "AWS Backup, S3 Versioning",
+      "links": [
+        "https://docs.aws.amazon.com/aws-backup/",
+        "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html"
+      ]
+    },
+    "azure": {
+      "services": "Azure Backup, Geo-Redundant Storage",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/backup/",
+        "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy"
+      ]
+    },
+    "gcp": {
+      "services": "Cloud Backup, Persistent Disk Snapshots",
+      "links": [
+        "https://cloud.google.com/backup-disaster-recovery/docs",
+        "https://cloud.google.com/compute/docs/disks/snapshots"
+      ]
+    }
+  },
+  {
+    "control": "Compliance Monitoring",
+    "useCase": "Continuous compliance validation",
+    "aws": {
+      "services": "AWS Config, AWS Audit Manager",
+      "links": [
+        "https://docs.aws.amazon.com/config/",
+        "https://docs.aws.amazon.com/audit-manager/"
+      ]
+    },
+    "azure": {
+      "services": "Azure Policy, Compliance Manager",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/governance/policy/",
+        "https://learn.microsoft.com/en-us/purview/compliance-manager"
+      ]
+    },
+    "gcp": {
+      "services": "Security Health Analytics, Compliance Reports",
+      "links": [
+        "https://cloud.google.com/security-command-center/docs/concepts-security-health-analytics-overview",
+        "https://cloud.google.com/security-command-center/docs/compliance-reports"
+      ]
+    }
+  },
+  {
+    "control": "Web Application Firewall",
+    "useCase": "Protect web applications",
+    "aws": {
+      "services": "AWS WAF",
+      "links": [
+        "https://docs.aws.amazon.com/waf/"
+      ]
+    },
+    "azure": {
+      "services": "Azure WAF",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/web-application-firewall/"
+      ]
+    },
+    "gcp": {
+      "services": "Cloud Armor",
+      "links": [
+        "https://cloud.google.com/armor/docs"
+      ]
+    }
+  },
+  {
+    "control": "API Security",
+    "useCase": "Secure API endpoints",
+    "aws": {
+      "services": "API Gateway, AWS WAF",
+      "links": [
+        "https://docs.aws.amazon.com/apigateway/",
+        "https://docs.aws.amazon.com/waf/"
+      ]
+    },
+    "azure": {
+      "services": "API Management, Azure Front Door",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/api-management/",
+        "https://learn.microsoft.com/en-us/azure/frontdoor/"
+      ]
+    },
+    "gcp": {
+      "services": "API Gateway, Cloud Endpoints",
+      "links": [
+        "https://cloud.google.com/api-gateway/docs",
+        "https://cloud.google.com/endpoints/docs"
+      ]
+    }
+  },
+  {
+    "control": "Container Security",
+    "useCase": "Secure containerized workloads",
+    "aws": {
+      "services": "ECS Security, EKS Security",
+      "links": [
+        "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security.html",
+        "https://docs.aws.amazon.com/eks/latest/userguide/security.html"
+      ]
+    },
+    "azure": {
+      "services": "AKS Security, Azure Container Registry",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/aks/concepts-security",
+        "https://learn.microsoft.com/en-us/azure/container-registry/"
+      ]
+    },
+    "gcp": {
+      "services": "GKE Security, Artifact Registry",
+      "links": [
+        "https://cloud.google.com/kubernetes-engine/docs/concepts/security-overview",
+        "https://cloud.google.com/artifact-registry/docs"
+      ]
+    }
+  },
+  {
+    "control": "Database Security",
+    "useCase": "Protect healthcare databases",
+    "aws": {
+      "services": "RDS Encryption, DynamoDB Encryption",
+      "links": [
+        "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Encryption.html",
+        "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EncryptionAtRest.html"
+      ]
+    },
+    "azure": {
+      "services": "SQL Database TDE, Cosmos DB Encryption",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-tde-overview",
+        "https://learn.microsoft.com/en-us/azure/cosmos-db/database-encryption-at-rest"
+      ]
+    },
+    "gcp": {
+      "services": "Cloud SQL Encryption, Firestore Security",
+      "links": [
+        "https://cloud.google.com/sql/docs/mysql/encryption",
+        "https://cloud.google.com/firestore/docs/security/overview"
+      ]
+    }
+  },
+  {
+    "control": "Privileged Access Management",
+    "useCase": "Control administrative access",
+    "aws": {
+      "services": "IAM Access Analyzer, AWS Organizations",
+      "links": [
+        "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html",
+        "https://docs.aws.amazon.com/organizations/"
+      ]
+    },
+    "azure": {
+      "services": "Privileged Identity Management",
+      "links": [
+        "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/"
+      ]
+    },
+    "gcp": {
+      "services": "IAM Recommender, Access Approval",
+      "links": [
+        "https://cloud.google.com/iam/docs/recommender-overview",
+        "https://cloud.google.com/access-approval/docs"
+      ]
+    }
+  },
+  {
+    "control": "Data Residency",
+    "useCase": "Control data location for compliance",
+    "aws": {
+      "services": "AWS Regions, S3 Bucket Policies",
+      "links": [
+        "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/",
+        "https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html"
+      ]
+    },
+    "azure": {
+      "services": "Azure Regions, Data Residency",
+      "links": [
+        "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+        "https://learn.microsoft.com/en-us/azure/compliance/"
+      ]
+    },
+    "gcp": {
+      "services": "GCP Regions, Resource Locations",
+      "links": [
+        "https://cloud.google.com/about/locations",
+        "https://cloud.google.com/docs/geography-and-regions"
+      ]
+    }
+  },
+  {
+    "control": "Incident Response",
+    "useCase": "Respond to security incidents",
+    "aws": {
+      "services": "AWS Systems Manager, CloudWatch Events",
+      "links": [
+        "https://docs.aws.amazon.com/systems-manager/",
+        "https://docs.aws.amazon.com/eventbridge/"
+      ]
+    },
+    "azure": {
+      "services": "Azure Sentinel, Logic Apps",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/sentinel/",
+        "https://learn.microsoft.com/en-us/azure/logic-apps/"
+      ]
+    },
+    "gcp": {
+      "services": "Cloud Functions, Pub/Sub",
+      "links": [
+        "https://cloud.google.com/functions/docs",
+        "https://cloud.google.com/pubsub/docs"
+      ]
+    }
+  }
+]
