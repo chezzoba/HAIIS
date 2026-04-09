@@ -1,14 +1,13 @@
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
+import Main from '../../components/Main';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './page.module.css';
 
 export default function Framework() {
   const dwidth = 1200;
   const curYear = (new Date()).getFullYear();
   return (
-    <>
-      <Navbar />
+    <Main>
 
       {/* Principles Section */}
       <section id="principles">
@@ -88,14 +87,14 @@ export default function Framework() {
               <h4>Target Users</h4>
               <p>Cloud architects, IT leaders, compliance teams</p>
               
-              <h4>Key Deliverables</h4>
+              <h4>Key Features</h4>
               <ul>
                 <li>Architecture templates for common AI use cases</li>
                 <li>Compliance checklists integrated into design patterns</li>
                 <li>Reference implementations across cloud platforms</li>
               </ul>
               
-              <a href="/documentation/patterns" className={styles['cta-link']}>View Documentation →</a>
+              <Link href="/documentation/patterns" className={styles['cta-link']}>View Documentation →</Link>
             </div>
           </details>
 
@@ -113,14 +112,14 @@ export default function Framework() {
               <h4>Target Users</h4>
               <p>Security architects, cloud engineers, compliance officers</p>
               
-              <h4>Key Deliverables</h4>
+              <h4>Key Features</h4>
               <ul>
                 <li>Cross-cloud security control matrices</li>
                 <li>Implementation guides for each cloud platform</li>
                 <li>Security validation checklists</li>
               </ul>
               
-              <a href="/documentation/security" className={styles['cta-link']}>View Documentation →</a>
+              <Link href="/documentation/security" className={styles['cta-link']}>View Documentation →</Link>
             </div>
           </details>
 
@@ -138,14 +137,14 @@ export default function Framework() {
               <h4>Target Users</h4>
               <p>Data governance teams, AI engineers, privacy officers</p>
               
-              <h4>Key Deliverables</h4>
+              <h4>Key Features</h4>
               <ul>
                 <li>Data classification frameworks</li>
                 <li>Access control templates</li>
-                <li>Audit and monitoring protocols</li>
+                <li>Audit and monitoring guides</li>
               </ul>
               
-              <a href="/documentation/governance" className={styles['cta-link']}>View Documentation →</a>
+              <Link href="/documentation/governance" className={styles['cta-link']}>View Documentation →</Link>
             </div>
           </details>
 
@@ -163,14 +162,14 @@ export default function Framework() {
               <h4>Target Users</h4>
               <p>Risk managers, compliance teams, AI project leads</p>
               
-              <h4>Key Deliverables</h4>
+              <h4>Key Features</h4>
               <ul>
                 <li>Risk assessment worksheets</li>
                 <li>Mitigation strategy templates</li>
                 <li>Healthcare-specific risk catalogs</li>
               </ul>
               
-              <a href="/documentation#categories" className={styles['cta-link']}>View Documentation →</a>
+              <Link href="/documentation#categories" className={styles['cta-link']}>View Documentation →</Link>
             </div>
           </details>
 
@@ -188,14 +187,14 @@ export default function Framework() {
               <h4>Target Users</h4>
               <p>Project managers, implementation teams, technical leads</p>
               
-              <h4>Key Deliverables</h4>
+              <h4>Key Features</h4>
               <ul>
                 <li>Use case-specific implementation guides</li>
                 <li>Step-by-step deployment checklists</li>
                 <li>Troubleshooting and optimization tips</li>
               </ul>
               
-              <a href="/documentation/playbooks" className={styles['cta-link']}>View Documentation →</a>
+              <Link href="/documentation/playbooks" className={styles['cta-link']}>View Documentation →</Link>
             </div>
           </details>
 
@@ -240,7 +239,6 @@ export default function Framework() {
         </div>
       </section>
 
-      <Footer />
-    </>
+    </Main>
   );
 }

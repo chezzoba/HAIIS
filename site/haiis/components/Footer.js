@@ -1,4 +1,5 @@
 import styles from './Footer.module.css';
+import Link from 'next/link';
 
 export default function Footer() {
   const date = new Date();
@@ -7,9 +8,9 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.links}>
-        <a href="/framework#roadmap">Framework Roadmap</a>
-        <a href="/privacy">Privacy</a>
-        <a href="/collaborate#intake-form">Contact</a>
+        <Link href="/framework#roadmap">Framework Roadmap</Link>
+        <Link href="/privacy">Privacy</Link>
+        <Link href="/collaborate#intake-form">Contact</Link>
         <a href="https://github.com/chezzoba/HAIIS" target='_blank' >Contribute</a>
       </div>
       <p style={{ marginTop: '1rem', fontSize: '0.9rem' }}>

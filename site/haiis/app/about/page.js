@@ -1,11 +1,10 @@
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
+import Main from '../../components/Main';
 import styles from './page.module.css';
+import Link from 'next/link';
 
 export default function About() {
   return (
-    <>
-      <Navbar />
+    <Main>
 
       {/* Hero Section */}
       <section className={styles['about-hero']}>
@@ -133,12 +132,11 @@ export default function About() {
             real-world implementation and community feedback.
           </p>
           <div className={styles['cta-container']}>
-            <a href="/collaborate" className={styles['community-cta']}>Join and Collaborate →</a>
+            <Link href="/collaborate" className={styles['community-cta']}>Join and Collaborate →</Link>
           </div>
         </div>
       </section>
 
-      <Footer />
-    </>
+    </Main>
   );
 }

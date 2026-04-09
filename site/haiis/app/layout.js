@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "Healthcare AI Implementation Standards",
-  description: "Secure, compliant, scalable AI implementation standards for healthcare across AWS, Azure, and Google Cloud. Free and open-access.",
+  description: "Secure, compliant, scalable AI implementation standards for healthcare across vendors",
 };
 
 export default function RootLayout({ children }) {

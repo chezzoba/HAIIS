@@ -1,5 +1,4 @@
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import Main from '@/components/Main';
 import styles from './page.module.css';
 import securityControls from './controls.json';
 
@@ -10,12 +9,10 @@ export const metadata = {
 
 export default function SecurityControlsPage() {
   return (
-    <>
-      <Navbar />
-      <main className={styles.main}>
-        <section className={styles.hero}>
+    <Main>
+              <section className={styles.hero}>
           <h1>Security Controls</h1>
-          <p>A curated directory of cross-cloud security control mappings for healthcare AI implementation</p>
+          <p>A directory of cross-cloud security control mappings for healthcare AI implementation</p>
         </section>
 
         <section className={styles.tableSection}>
@@ -194,8 +191,6 @@ export default function SecurityControlsPage() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </Main>
   );
 }

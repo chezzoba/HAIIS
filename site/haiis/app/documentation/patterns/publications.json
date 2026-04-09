@@ -3,18 +3,21 @@
       "link": "https://builder.aws.com/content/2boovYC5RwbKgyoGqikH0w1TP99/revolutionizing-remote-patient-monitoring-with-cloud-and-ai",
       "previewImage": "/img/blogs/irpm.webp",
       "title": "Remote Patient Monitoring",
-      "subtitle": "Monitor patients in nonclinical settings with data streams and realtime AI"
+      "subtitle": "Monitor patients in nonclinical settings with data streams and realtime AI",
+      "clouds": ["AWS"]
     },
     {
       "link": "https://builder.aws.com/content/32H2xLIwuR6eJIoFoJCSipubyxd/building-production-ready-ai-agents-with-web-capabilities",
       "previewImage": "/img/blogs/agentsweb.webp",
       "title": "Building production-grade research agents",
-      "subtitle": "Using MCP and vendor-neutral agent SDKs to build agents capable of research"
+      "subtitle": "Using MCP and vendor-neutral agent SDKs to build agents capable of research",
+      "clouds": ["AWS", "Azure", "GCP"]
     },
     {
       "link": "https://aws.amazon.com/blogs/architecture/create-a-serverless-custom-retry-mechanism-for-stateless-queue-consumers/",
       "previewImage": "/img/blogs/serverless-retry-mechanism.webp",
       "title": "Resilient Serverless Messaging for Fault-Tolerant Workflows",
-      "subtitle": "Designing fault-tolerant retry mechanisms for stateless data processing workflows"
+      "subtitle": "Designing fault-tolerant retry mechanisms for stateless data processing workflows",
+      "clouds": ["AWS"]
     }
 ]

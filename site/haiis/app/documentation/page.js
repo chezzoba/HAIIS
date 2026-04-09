@@ -1,11 +1,10 @@
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
+import Main from '../../components/Main';
 import styles from './page.module.css';
+import Link from 'next/link';
 
 export default function Documentation() {
   return (
-    <>
-      <Navbar />
+    <Main>
 
       {/* Hero Section */}
       <section className={styles['doc-hero']}>
@@ -89,7 +88,7 @@ export default function Documentation() {
               <li>Serverless Resilience</li>
               <li>Predictive analytics</li>
             </ul>
-            <a href="/documentation/patterns" className={styles['step-link']}>Browse patterns →</a>
+            <Link href="/documentation/patterns" className={styles['step-link']}>Browse patterns →</Link>
           </div>
 
           <div className={styles['category-card']}>
@@ -100,7 +99,7 @@ export default function Documentation() {
               <li>Azure security controls</li>
               <li>GCP security controls</li>
             </ul>
-            <a href="/documentation/security" className={styles['step-link']}>Browse security controls →</a>
+            <Link href="/documentation/security" className={styles['step-link']}>Browse security controls →</Link>
           </div>
 
           <div className={styles['category-card']}>
@@ -112,7 +111,7 @@ export default function Documentation() {
               <li>Audit and monitoring protocols</li>
               <li>Data lifecycle management</li>
             </ul>
-            <a href="/documentation/governance" className={styles['step-link']}>Browse governance →</a>
+            <Link href="/documentation/governance" className={styles['step-link']}>Browse governance →</Link>
           </div>
 
           <div className={styles['category-card']}>
@@ -135,7 +134,7 @@ export default function Documentation() {
               <li>Security assessment</li>
               <li>Performance testing</li>
             </ul>
-            <a href="/documentation/playbooks" className={styles['step-link']}>Browse playbooks →</a>
+            <Link href="/documentation/playbooks" className={styles['step-link']}>Browse playbooks →</Link>
           </div>
 
           <div className={styles['category-card']}>
@@ -147,12 +146,11 @@ export default function Documentation() {
               <li>Cloud computing terms</li>
               <li>Security concepts</li>
             </ul>
-            <a href="/documentation/glossary" className={styles['step-link']}>Browse glossary →</a>
+            <Link href="/documentation/glossary" className={styles['step-link']}>Browse glossary →</Link>
           </div>
         </div>
       </section>
 
-      <Footer />
-    </>
+    </Main>
   );
 }

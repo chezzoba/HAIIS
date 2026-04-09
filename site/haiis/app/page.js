@@ -1,10 +1,9 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Main from '../components/Main';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <>
-      <Navbar />
+    <Main>
 
       {/* Hero Section */}
       <section className="hero">
@@ -14,11 +13,11 @@ export default function Home() {
           A vendor-neutral framework to help healthcare organizations implement AI with stronger compliance, governance, security, and risk management.
         </p>
         <div className="hero-cta">
-          <a href="/collaborate" role="button">Work with us →</a>
-          <a href="/framework" role="button" className="secondary">Explore Framework →</a>
+          <Link href="/collaborate" role="button">Work with us →</Link>
+          <Link href="/framework" role="button" className="secondary">Explore Framework →</Link>
         </div>
         <p className="hero-tagline">
-          Open-access • Compliance-by-design • Informed by work in regulated healthcare environments
+          Open-access • Compliance-by-design • Informed by work in regulated life science environments
         </p>
       </section>
 
@@ -48,22 +47,22 @@ export default function Home() {
           <div className="card">
             <h3>Architecture Patterns</h3>
             <p>Reusable AI blueprints from real life sciences deployments</p>
-            <a href="/framework#components">Learn More →</a>
+            <Link href="/documentation/patterns">Learn More →</Link>
           </div>
           <div className="card">
             <h3>Security Controls & Data Governance</h3>
             <p>Consistent security controls across all cloud providers with secure data governance for AI lifecycle</p>
-            <a href="/framework#components">Learn More →</a>
+            <Link href="/documentation#categories">Learn More →</Link>
           </div>
           <div className="card">
             <h3>AI Risk Assessment Methodology</h3>
             <p>Healthcare-specific risk evaluation</p>
-            <a href="/framework#components">Learn More →</a>
+            <span className="coming-soon">Coming soon</span>
           </div>
           <div className="card">
             <h3>Implementation Playbooks</h3>
             <p>Step-by-step deployment guides</p>
-            <a href="/framework#components">Learn More →</a>
+            <Link href="/documentation/playbooks">Learn More →</Link>
           </div>
         </div>
       </section>
@@ -92,9 +91,9 @@ export default function Home() {
         <h2>Your Next Step</h2>
         <div className="grid-3">
           <div className="card">
-            <h3>📖 Get started</h3>
+            <h3>📖 Get Started</h3>
             <p>Read the implementation guide</p>
-            <a href="/documentation#guide" role="button">Start Reading</a>
+            <Link href="/documentation#guide" role="button">See Guide</Link>
           </div>
           <div className="card">
             <h3>💡 See Use Cases</h3>
@@ -104,12 +103,11 @@ export default function Home() {
           <div className="card">
             <h3>🤝 Collaborate</h3>
             <p>Become an early adopter and shape the framework</p>
-            <a href="/collaborate" role="button">Collaborate</a>
+            <Link href="/collaborate" role="button">Collaborate</Link>
           </div>
         </div>
       </section>
 
-      <Footer />
-    </>
+    </Main>
   );
 }

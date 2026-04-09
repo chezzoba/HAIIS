@@ -1,7 +1,7 @@
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import Main from '@/components/Main';
 import styles from './page.module.css';
 import glossaryTerms from './terms.json';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Glossary | HAIIS',
@@ -29,10 +29,8 @@ export default function GlossaryPage() {
   };
 
   return (
-    <>
-      <Navbar />
-      <main className={styles.main}>
-        <section className={styles.hero}>
+    <Main>
+              <section className={styles.hero}>
           <h1>Glossary</h1>
           <p>Comprehensive definitions of key terms and concepts in healthcare AI implementation</p>
         </section>
@@ -50,13 +48,13 @@ export default function GlossaryPage() {
             <h2 className={styles.directoryTitle}>Categories</h2>
             <div className={styles.directoryGrid}>
               {Object.keys(categories).sort().map((category) => (
-                <a 
+                <Link 
                   key={category} 
                   href={`#${createCategoryId(category)}`}
                   className={styles.directoryLink}
                 >
                   {category} ({categories[category].length})
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -108,8 +106,6 @@ export default function GlossaryPage() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </Main>
   );
 }
