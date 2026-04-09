@@ -46,7 +46,7 @@ export default function Home() {
         <h2>The Core Components</h2>
         <div className="grid-4">
           <div className="card">
-            <h3>Compliance-by-Design Architecture Patterns</h3>
+            <h3>Architecture Patterns</h3>
             <p>Reusable AI blueprints from real life sciences deployments</p>
             <a href="/framework#components">Learn More →</a>
           </div>
@@ -77,7 +77,7 @@ export default function Home() {
             <p>Guidance for teams evaluating or implementing AI in regulated clinical and operational environments</p>
           </div>
           <div className="card">
-            <h3>Pharma and Life Sciences Teams</h3>
+            <h3>Pharmaceutical and Life Sciences Teams</h3>
             <p>Implementation patterns for compliant AI workflows in research, documentation, and regulated data environments</p>
           </div>
           <div className="card">

@@ -27,6 +27,36 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
+      url: 'https://haiis.org/documentation/glossary',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://haiis.org/documentation/governance',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://haiis.org/documentation/patterns',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://haiis.org/documentation/playbooks',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://haiis.org/documentation/security',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: 'https://haiis.org/collaborate',
       lastModified: new Date(),
       changeFrequency: 'monthly',
