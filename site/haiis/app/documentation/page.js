@@ -10,7 +10,7 @@ export default function Documentation() {
       {/* Hero Section */}
       <section className={styles['doc-hero']}>
         <h1>Documentation</h1>
-        <p className={styles.subtitle}>Draft guides, templates, and practical resources for organizations exploring implementation of the HAIIS framework</p>
+        <p className={styles.subtitle}>Guides, templates, and practical resources for organizations exploring AI implementation</p>
       </section>
 
       {/* Step-by-Step Guide */}
@@ -75,74 +75,43 @@ export default function Documentation() {
         </div>
       </section>
 
-      {/* Download Section */}
-      <section id="downloads" className={styles['downloads-section']}>
-        <h2>Planned and Draft Resources</h2>
-        <p className={styles['section-description']}>Templates, checklists, and worksheets under development</p>
-        
-        <div className={styles['download-cards']}>
-          <div className={styles['download-card']}>
-            <h3>Quickstart Guide</h3>
-            <p>Quickstart guide for early framework exploration</p>
-            {/* <a href="#" className={styles['download-button']}>Download PDF</a> */}
-          </div>
-
-          <div className={styles['download-card']}>
-            <h3>Component Checklist</h3>
-            <p>Draft checklist covering the five core components</p>
-            {/* <a href="#" className={styles['download-button']}>Download Checklist</a> */}
-          </div>
-
-          <div className={styles['download-card']}>
-            <h3>Risk Worksheet</h3>
-            <p>Sample risk worksheet for healthcare AI review</p>
-            {/* <a href="#" className={styles['download-button']}>Download Worksheet</a> */}
-          </div>
-
-          <div className={styles['download-card']}>
-            <h3>Architecture Template</h3>
-            <p>Draft architecture template for regulated AI workflows</p>
-            {/* <a href="#" className={styles['download-button']}>Download Template</a> */}
-          </div>
-        </div>
-      </section>
-
       {/* Documentation Categories */}
       <section id="categories" className={styles['categories-section']}>
-        <h2>Documentation Categories</h2>
+        <h2>Documentation</h2>
         
         <div className={styles['category-grid']}>
           <div className={styles['category-card']}>
             <h3>Architecture Patterns</h3>
             <p>Compliance-by-design blueprints for common AI use cases</p>
             <ul>
-              <li>Report automation</li>
-              <li>Medical imaging analysis</li>
-              <li>Natural language processing</li>
+              <li>Compliance Automation</li>
+              <li>Remote Patient Monitoring</li>
+              <li>Serverless Resilience</li>
               <li>Predictive analytics</li>
             </ul>
+            <a href="/documentation/patterns" className={styles['step-link']}>Browse patterns →</a>
           </div>
 
           <div className={styles['category-card']}>
             <h3>Security Controls</h3>
-            <p>Cross-cloud security mappings and implementation guides</p>
+            <p>Cross-cloud security mappings</p>
             <ul>
               <li>AWS security controls</li>
               <li>Azure security controls</li>
               <li>GCP security controls</li>
-              <li>Hybrid cloud security</li>
             </ul>
           </div>
 
           <div className={styles['category-card']}>
             <h3>Governance Templates</h3>
-            <p>Data governance protocols and access control templates</p>
+            <p>Data governance protocols</p>
             <ul>
               <li>Data classification frameworks</li>
               <li>Access control templates</li>
               <li>Audit and monitoring protocols</li>
               <li>Data lifecycle management</li>
             </ul>
+            <a href="/documentation/governance" className={styles['step-link']}>Browse governance →</a>
           </div>
 
           <div className={styles['category-card']}>
@@ -157,14 +126,14 @@ export default function Documentation() {
           </div>
 
           <div className={styles['category-card']}>
-            <h3>Checklists</h3>
-            <p>Implementation and validation checklists</p>
+            <h3>Implementation Playbooks</h3>
+            <p>Implementation and validation guides</p>
             <ul>
-              <li>Deployment checklists</li>
-              <li>Compliance validation</li>
+              <li>Deployment guides</li>
               <li>Security assessment</li>
               <li>Performance testing</li>
             </ul>
+            <a href="/documentation/playbooks" className={styles['step-link']}>Browse playbooks →</a>
           </div>
 
           <div className={styles['category-card']}>

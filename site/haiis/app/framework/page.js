@@ -60,7 +60,7 @@ export default function Framework() {
         </p>
         <div className={styles['diagram-container']}>
           <Image 
-            src="/img/pillarsdiagram.png" 
+            src="/img/pillarsdiagram.webp" 
             alt="Framework Five Pillars Diagram" 
             width={dwidth}
             height={dwidth / 2}
@@ -95,7 +95,7 @@ export default function Framework() {
                 <li>Reference implementations across cloud platforms</li>
               </ul>
               
-              <a href="/documentation" className={styles['cta-link']}>View Documentation →</a>
+              <a href="/documentation#categories" className={styles['cta-link']}>View Documentation →</a>
             </div>
           </details>
 
@@ -120,7 +120,7 @@ export default function Framework() {
                 <li>Security validation checklists</li>
               </ul>
               
-              <a href="/documentation" className={styles['cta-link']}>View Documentation →</a>
+              <a href="/documentation#categories" className={styles['cta-link']}>View Documentation →</a>
             </div>
           </details>
 
@@ -145,7 +145,7 @@ export default function Framework() {
                 <li>Audit and monitoring protocols</li>
               </ul>
               
-              <a href="/documentation" className={styles['cta-link']}>View Documentation →</a>
+              <a href="/documentation#categories" className={styles['cta-link']}>View Documentation →</a>
             </div>
           </details>
 
@@ -170,7 +170,7 @@ export default function Framework() {
                 <li>Healthcare-specific risk catalogs</li>
               </ul>
               
-              <a href="/documentation" className={styles['cta-link']}>View Documentation →</a>
+              <a href="/documentation#categories" className={styles['cta-link']}>View Documentation →</a>
             </div>
           </details>
 
@@ -195,7 +195,7 @@ export default function Framework() {
                 <li>Troubleshooting and optimization tips</li>
               </ul>
               
-              <a href="/documentation" className={styles['cta-link']}>View Documentation →</a>
+              <a href="/documentation#categories" className={styles['cta-link']}>View Documentation →</a>
             </div>
           </details>
 

@@ -1,0 +1,90 @@
+.main {
+  min-height: 100vh;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #4a4a4a;
+}
+
+.publications {
+  padding: 4rem 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.previewImage {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.cardBody {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+.cardBody h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.cardBody p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 3rem 1rem 1.5rem;
+  }
+
+  .publications {
+    padding: 3rem 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

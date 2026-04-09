@@ -1,0 +1,14 @@
+[
+    {
+      "link": "https://towardsdatascience.com/a-practical-framework-for-search-engine-evaluation-f8eb4f403a37",
+      "previewImage": "/img/blogs/searchpreview.webp",
+      "title": "Evaluating Clinical AI Search Systems",
+      "subtitle": "A data-driven framework for measuring accuracy, relevance, and compliance in information retrieval"
+    },
+    {
+      "link": "https://ai.gopubby.com/unlocking-the-power-of-multi-cloud-data-using-delta-sharing-9088d46f0a68",
+      "previewImage": "/img/blogs/multiclouddatamesh.webp",
+      "title": "Multi-Cloud Data Governance with Databricks",
+      "subtitle": "Federated data access patterns for compliant sharing of patient and clinical data across cloud environments"
+    }
+]

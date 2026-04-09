@@ -47,7 +47,7 @@ export default function Home() {
         <div className="grid-4">
           <div className="card">
             <h3>Compliance-by-Design Architecture Patterns</h3>
-            <p>Embed HIPAA/GxP directly into AI blueprints</p>
+            <p>Reusable AI blueprints from real life sciences deployments</p>
             <a href="/framework#components">Learn More →</a>
           </div>
           <div className="card">
