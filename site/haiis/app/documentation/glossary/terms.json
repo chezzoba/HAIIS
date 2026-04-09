@@ -473,5 +473,125 @@
     "term": "F1 Score",
     "definition": "Harmonic mean of precision and recall, providing a single metric for model performance evaluation.",
     "category": "AI/ML"
+  },
+  {
+    "term": "GxP (Good Practice Regulations)",
+    "definition": "Collection of quality guidelines and regulations including GMP, GLP, and GCP that govern pharmaceutical, medical device, and clinical trial activities.",
+    "category": "Healthcare Regulations"
+  },
+  {
+    "term": "LLM (Large Language Model)",
+    "definition": "AI model trained on vast amounts of text data capable of generating, summarizing, and reasoning over natural language.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "RAG (Retrieval-Augmented Generation)",
+    "definition": "Technique that enhances LLM outputs by retrieving relevant information from external knowledge bases before generating a response.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Prompt Injection",
+    "definition": "Adversarial attack where malicious input is crafted to manipulate an LLM into ignoring its instructions or producing unintended outputs.",
+    "category": "Security"
+  },
+  {
+    "term": "SBOM (Software Bill of Materials)",
+    "definition": "Comprehensive inventory of all software components, libraries, and dependencies used in an application or system.",
+    "category": "Security"
+  },
+  {
+    "term": "Model Card",
+    "definition": "Standardized document describing a machine learning model's intended use, performance metrics, limitations, and ethical considerations.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Data Poisoning",
+    "definition": "Attack that compromises AI model integrity by injecting malicious or misleading data into the training dataset.",
+    "category": "Security"
+  },
+  {
+    "term": "Hallucination",
+    "definition": "AI model output that appears plausible but is factually incorrect, fabricated, or unsupported by the input data or training corpus.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Human-in-the-Loop (HITL)",
+    "definition": "AI system design requiring human review and approval at critical decision points before actions are taken or outputs are delivered.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Concept Drift",
+    "definition": "Change in the statistical relationship between input features and target outcomes over time, degrading model accuracy.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "NIST (National Institute of Standards and Technology)",
+    "definition": "U.S. federal agency that develops cybersecurity frameworks, standards, and guidelines widely adopted in healthcare IT.",
+    "category": "Healthcare Regulations"
+  },
+  {
+    "term": "Responsible AI",
+    "definition": "Practice of designing, developing, and deploying AI systems that are fair, transparent, accountable, and aligned with ethical principles.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "CI/CD (Continuous Integration/Continuous Deployment)",
+    "definition": "Software development practice that automates building, testing, and deploying code changes to production environments.",
+    "category": "Cloud Computing"
+  },
+  {
+    "term": "Algorithmic Impact Assessment",
+    "definition": "Structured evaluation of the potential risks, biases, and societal effects of deploying an AI system before it enters production.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Interoperability",
+    "definition": "Ability of different healthcare IT systems, devices, and applications to exchange, interpret, and use data seamlessly.",
+    "category": "Healthcare Standards"
+  },
+  {
+    "term": "EHR (Electronic Health Record)",
+    "definition": "Digital version of a patient's medical history maintained by healthcare providers, including diagnoses, treatments, and test results.",
+    "category": "Healthcare Standards"
+  },
+  {
+    "term": "NLP (Natural Language Processing)",
+    "definition": "Branch of AI focused on enabling computers to understand, interpret, and generate human language from clinical notes and medical text.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Computer Vision",
+    "definition": "AI discipline enabling systems to interpret and analyze visual data such as medical images, pathology slides, and radiology scans.",
+    "category": "AI/ML"
+  },
+  {
+    "term": "Data Classification",
+    "definition": "Process of categorizing data by sensitivity level and regulatory requirements to apply appropriate security and handling controls.",
+    "category": "Data Governance"
+  },
+  {
+    "term": "Data Loss Prevention (DLP)",
+    "definition": "Security strategy and tooling that detects and prevents unauthorized transmission or exfiltration of sensitive data.",
+    "category": "Security"
+  },
+  {
+    "term": "Secrets Management",
+    "definition": "Practice of securely storing, accessing, and rotating sensitive credentials such as API keys, passwords, and encryption keys.",
+    "category": "Security"
+  },
+  {
+    "term": "Incident Response",
+    "definition": "Organized approach to detecting, containing, and recovering from security breaches or system compromises.",
+    "category": "Security"
+  },
+  {
+    "term": "Compliance Monitoring",
+    "definition": "Continuous automated assessment of systems and configurations against regulatory requirements and organizational policies.",
+    "category": "Healthcare Regulations"
+  },
+  {
+    "term": "Guardrails",
+    "definition": "Configurable safety filters applied to AI model inputs and outputs to block harmful, biased, or non-compliant content.",
+    "category": "AI/ML"
   }
 ]

@@ -3,14 +3,14 @@
       "link": "https://builder.aws.com/content/2boovYC5RwbKgyoGqikH0w1TP99/revolutionizing-remote-patient-monitoring-with-cloud-and-ai",
       "previewImage": "/img/blogs/irpm.webp",
       "title": "Remote Patient Monitoring",
-      "subtitle": "Monitor patients in nonclinical settings with data streams and realtime AI",
+      "subtitle": "Realtime monitoring of patients in nonclinical settings with data streams and realtime AI",
       "clouds": ["AWS"]
     },
     {
       "link": "https://builder.aws.com/content/32H2xLIwuR6eJIoFoJCSipubyxd/building-production-ready-ai-agents-with-web-capabilities",
       "previewImage": "/img/blogs/agentsweb.webp",
-      "title": "Building production-grade research agents",
-      "subtitle": "Using MCP and vendor-neutral agent SDKs to build agents capable of research",
+      "title": "Production-ready multi-agent system for research",
+      "subtitle": "Using MCP servers and opensource agentic AI SDK to build agents for research",
       "clouds": ["AWS", "Azure", "GCP"]
     },
     {

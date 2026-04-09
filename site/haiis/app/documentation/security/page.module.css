@@ -156,6 +156,21 @@
   font-weight: 600;
 }
 
+.customCodeBadge {
+  display: inline-block;
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  border-radius: 4px;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #92400e;
+  letter-spacing: 0.3px;
+  margin-right: 0.35rem;
+  vertical-align: middle;
+  line-height: 1.4;
+}
+
 .notes {
   padding: 4rem 2rem;
 }

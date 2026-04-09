@@ -1,7 +1,7 @@
 import Main from '@/components/Main';
 import styles from './page.module.css';
 import glossaryTerms from './terms.json';
-import Link from 'next/link';
+import GlossarySearch from './GlossarySearch';
 
 export const metadata = {
   title: 'Glossary | HAIIS',
@@ -9,25 +9,6 @@ export const metadata = {
 };
 
 export default function GlossaryPage() {
-  // Group terms by category
-  const categories = glossaryTerms.reduce((acc, term) => {
-    if (!acc[term.category]) {
-      acc[term.category] = [];
-    }
-    acc[term.category].push(term);
-    return acc;
-  }, {});
-
-  // Sort terms alphabetically within each category
-  Object.keys(categories).forEach(category => {
-    categories[category].sort((a, b) => a.term.localeCompare(b.term));
-  });
-
-  // Create URL-friendly IDs for categories
-  const createCategoryId = (category) => {
-    return category.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-  };
-
   return (
     <Main>
               <section className={styles.hero}>
@@ -36,42 +17,8 @@ export default function GlossaryPage() {
         </section>
 
         <section className={styles.contentSection}>
-          <div className={styles.intro}>
-            <p>
-              This glossary provides clear definitions of essential terminology used throughout the HAIIS framework. 
-              Terms are organized by category to help you quickly find relevant concepts for your healthcare AI implementation.
-            </p>
-          </div>
 
-          {/* Table of Contents / Directory */}
-          <div className={styles.directory}>
-            <h2 className={styles.directoryTitle}>Categories</h2>
-            <div className={styles.directoryGrid}>
-              {Object.keys(categories).sort().map((category) => (
-                <Link 
-                  key={category} 
-                  href={`#${createCategoryId(category)}`}
-                  className={styles.directoryLink}
-                >
-                  {category} ({categories[category].length})
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {Object.entries(categories).map(([category, terms]) => (
-            <div key={category} id={createCategoryId(category)} className={styles.categorySection}>
-              <h2 className={styles.categoryTitle}>{category}</h2>
-              <div className={styles.termsList}>
-                {terms.map((item, index) => (
-                  <div key={index} className={styles.termCard}>
-                    <h3 className={styles.termName}>{item.term}</h3>
-                    <p className={styles.termDefinition}>{item.definition}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
+          <GlossarySearch terms={glossaryTerms} />
         </section>
 
         <section className={styles.notes}>

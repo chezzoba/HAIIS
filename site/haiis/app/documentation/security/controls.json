@@ -610,5 +610,100 @@
         "https://cloud.google.com/pubsub/docs"
       ]
     }
+  },
+  {
+    "control": "DDoS Protection",
+    "useCase": "Protect healthcare AI endpoints from volumetric and application-layer denial-of-service attacks",
+    "aws": {
+      "services": "AWS Shield, AWS Shield Advanced",
+      "links": [
+        "https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html",
+        "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-advanced.html"
+      ]
+    },
+    "azure": {
+      "services": "Azure DDoS Protection",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/ddos-protection/"
+      ]
+    },
+    "gcp": {
+      "services": "Cloud Armor",
+      "links": [
+        "https://cloud.google.com/armor/docs"
+      ]
+    }
+  },
+  {
+    "control": "Secure Software Supply Chain",
+    "useCase": "Verify integrity of dependencies, model artifacts, and container images in AI pipelines",
+    "aws": {
+      "services": "AWS CodeArtifact, AWS Signer",
+      "links": [
+        "https://docs.aws.amazon.com/codeartifact/",
+        "https://docs.aws.amazon.com/signer/"
+      ]
+    },
+    "azure": {
+      "services": "Azure Artifacts, Azure Trusted Signing",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/devops/artifacts/",
+        "https://learn.microsoft.com/en-us/azure/trusted-signing/"
+      ]
+    },
+    "gcp": {
+      "services": "Artifact Registry, Binary Authorization",
+      "links": [
+        "https://cloud.google.com/artifact-registry/docs",
+        "https://cloud.google.com/binary-authorization/docs"
+      ]
+    }
+  },
+  {
+    "control": "Endpoint Protection",
+    "useCase": "Secure workstations and devices accessing AI systems and PHI",
+    "aws": {
+      "services": "AWS Systems Manager Fleet Manager, Amazon WorkSpaces Secure Browser",
+      "links": [
+        "https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet.html",
+        "https://docs.aws.amazon.com/workspaces-web/"
+      ]
+    },
+    "azure": {
+      "services": "Microsoft Defender for Endpoint, Intune",
+      "links": [
+        "https://learn.microsoft.com/en-us/defender-endpoint/",
+        "https://learn.microsoft.com/en-us/mem/intune/"
+      ]
+    },
+    "gcp": {
+      "services": "BeyondCorp Enterprise, Chrome Enterprise",
+      "links": [
+        "https://cloud.google.com/beyondcorp-enterprise/docs",
+        "https://cloud.google.com/chrome-enterprise-premium/docs/overview"
+      ]
+    }
+  },
+  {
+    "control": "AI Model Documentation & Cards",
+    "useCase": "Create structured model documentation covering intended use, performance, risks, and governance metadata",
+    "aws": {
+      "services": "Amazon SageMaker Model Cards",
+      "links": [
+        "https://docs.aws.amazon.com/sagemaker/latest/dg/model-cards"
+      ]
+    },
+    "azure": {
+      "services": "Azure Responsible AI Scorecard",
+      "links": [
+        "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-responsible-ai-scorecard"
+      ]
+    },
+    "gcp": {
+      "services": "Model Card Toolkit (open source)",
+      "links": [
+        "https://github.com/tensorflow/model-card-toolkit"
+      ]
+    }
   }
 ]

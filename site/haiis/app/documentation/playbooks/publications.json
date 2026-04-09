@@ -3,7 +3,7 @@
       "link": "https://community.aws/content/2dquEzIKfm2wVH77AYmApToZdWj/gitlab-with-terraform",
       "previewImage": "/img/blogs/streamlinedeployments.webp",
       "title": "Compliant AI Deployments with CI/CD and Infrastructure as Code",
-      "subtitle": "A step-by-step playbook for repeatable, auditable infrastructure deployments in regulated healthcare environments",
+      "subtitle": "A step-by-step playbook for repeatable, auditable infrastructure deployments in regulated environments",
       "clouds": ["AWS"]
     },
     {

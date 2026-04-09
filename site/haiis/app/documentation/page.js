@@ -139,7 +139,7 @@ export default function Documentation() {
 
           <div className={styles['category-card']}>
             <h3>Glossary</h3>
-            <p>Definitions of key terms and concepts</p>
+            <p>Overview of key concepts and terms</p>
             <ul>
               <li>Healthcare regulations</li>
               <li>AI/ML terminology</li>
