@@ -1,13 +1,13 @@
 /* Framework Hero */
 .framework-hero {
-  padding: 4rem 2rem 2rem;
+  padding: 1.5rem 2rem 1rem;
   text-align: center;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 .framework-hero h1 {
   font-size: clamp(2rem, 4vw, 3rem);
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   color: #1a1a1a;
 }
 
@@ -163,7 +163,7 @@
 /* Timeline */
 /* Evolution Section */
 .evolution-section {
-  padding: 4rem 2rem;
+  padding: 1.5rem 2rem;
   background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
 }
 
@@ -193,7 +193,7 @@
 
 .timeline-item {
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   padding-left: 6rem;
 }
 
@@ -256,7 +256,7 @@
   }
 
   .evolution-section {
-    padding: 2rem 1rem;
+    padding: 1.25rem 1rem;
   }
 
   .timeline {

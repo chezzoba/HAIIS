@@ -1,6 +1,6 @@
 .hero {
   text-align: center;
-  padding: 4rem 2rem 2rem;
+  padding: 1.5rem 2rem 1rem;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
@@ -16,15 +16,15 @@
 }
 
 .publications {
-  padding: 4rem 2rem;
+  padding: 1.5rem 2rem;
 }
 
 @media (max-width: 600px) {
   .hero {
-    padding: 3rem 1rem 1.5rem;
+    padding: 2rem 1rem 1rem;
   }
 
   .publications {
-    padding: 3rem 1rem;
+    padding: 1.25rem 1rem;
   }
 }

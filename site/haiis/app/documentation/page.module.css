@@ -1,6 +1,6 @@
 /* Documentation Hero */
 .doc-hero {
-  padding: 4rem 2rem 2rem;
+  padding: 1.5rem 2rem 1rem;
   text-align: center;
   background: linear-gradient(135deg, #f0f7ff 0%, #d6e4ff 100%);
 }
@@ -21,7 +21,7 @@
 
 /* Guide Section */
 .guide-section {
-  padding: 4rem 2rem;
+  padding: 1.5rem 2rem;
   background: white;
 }
 
@@ -36,7 +36,7 @@
   text-align: center;
   color: #666;
   max-width: 600px;
-  margin: 0 auto 3rem;
+  margin: 0 auto 1.5rem;
   font-size: 1.1rem;
 }
 
@@ -102,7 +102,7 @@
 
 /* Downloads Section */
 .downloads-section {
-  padding: 4rem 2rem;
+  padding: 1.5rem 2rem;
   background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
 }
 
@@ -156,7 +156,7 @@
 
 /* Categories Section */
 .categories-section {
-  padding: 4rem 2rem;
+  padding: 1.5rem 2rem;
   background: white;
 }
 
@@ -209,7 +209,7 @@
   .guide-section,
   .downloads-section,
   .categories-section {
-    padding: 3rem 1rem;
+    padding: 1.25rem 1rem;
   }
 
   .step-cards,

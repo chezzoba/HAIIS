@@ -4,7 +4,7 @@
 
 .hero {
   text-align: center;
-  padding: 4rem 2rem 2rem;
+  padding: 1.5rem 2rem 1rem;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
@@ -20,7 +20,7 @@
 }
 
 .tableSection {
-  padding: 4rem 2rem;
+  padding: 1.5rem 2rem;
 }
 
 .tableWrapper {
@@ -98,7 +98,7 @@
 }
 
 .bestPractices {
-  padding: 4rem 2rem;
+  padding: 1.5rem 2rem;
   background: #f9fafb;
 }
 
@@ -114,7 +114,7 @@
   font-size: 1.1rem;
   color: #4a5568;
   max-width: 800px;
-  margin: 0 auto 3rem;
+  margin: 0 auto 1.5rem;
   line-height: 1.6;
 }
 
@@ -172,7 +172,7 @@
 }
 
 .notes {
-  padding: 4rem 2rem;
+  padding: 1.5rem 2rem;
 }
 
 .notes h2 {
@@ -216,12 +216,12 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero {
-    padding: 3rem 1rem 1.5rem;
+    padding: 2rem 1rem 1rem;
   }
 
   .tableSection,
   .notes {
-    padding: 3rem 1rem;
+    padding: 1.25rem 1rem;
   }
 
   .controlsTable {

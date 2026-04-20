@@ -4,7 +4,7 @@
 
 .hero {
   text-align: center;
-  padding: 4rem 2rem 2rem;
+  padding: 1.5rem 2rem 1rem;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
@@ -20,14 +20,14 @@
 }
 
 .contentSection {
-  padding: 4rem 2rem;
+  padding: 1.5rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .intro {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .intro p {
@@ -158,11 +158,11 @@
   text-align: center;
   color: #6b7280;
   font-size: 1.1rem;
-  padding: 3rem 1rem;
+  padding: 1.25rem 1rem;
 }
 
 .categorySection {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   scroll-margin-top: 2rem;
 }
 
@@ -208,7 +208,7 @@
 }
 
 .notes {
-  padding: 4rem 2rem;
+  padding: 1.5rem 2rem;
   background: #f9fafb;
 }
 
@@ -266,12 +266,12 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero {
-    padding: 3rem 1rem 1.5rem;
+    padding: 2rem 1rem 1rem;
   }
 
   .contentSection,
   .notes {
-    padding: 3rem 1rem;
+    padding: 1.25rem 1rem;
   }
 
   .directory {

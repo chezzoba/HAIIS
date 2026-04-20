@@ -94,7 +94,7 @@ export default function Framework() {
                 <li>Reference implementations across cloud platforms</li>
               </ul>
               
-              <Link href="/documentation/patterns" className={styles['cta-link']}>View Documentation →</Link>
+              <Link href="/documentation/patterns" className={styles['cta-link']}>Review architecture patterns →</Link>
             </div>
           </details>
 
@@ -119,7 +119,7 @@ export default function Framework() {
                 <li>Security validation checklists</li>
               </ul>
               
-              <Link href="/documentation/security" className={styles['cta-link']}>View Documentation →</Link>
+              <Link href="/documentation/security" className={styles['cta-link']}>See multicloud controls →</Link>
             </div>
           </details>
 
@@ -144,7 +144,7 @@ export default function Framework() {
                 <li>Audit and monitoring guides</li>
               </ul>
               
-              <Link href="/documentation/governance" className={styles['cta-link']}>View Documentation →</Link>
+              <Link href="/documentation/governance" className={styles['cta-link']}>Review governance protocols →</Link>
             </div>
           </details>
 
@@ -169,7 +169,7 @@ export default function Framework() {
                 <li>Healthcare-specific risk catalogs</li>
               </ul>
               
-              <Link href="/documentation#categories" className={styles['cta-link']}>View Documentation →</Link>
+              <Link href="/documentation#categories" className={styles['cta-link']}>Explore risk methodology →</Link>
             </div>
           </details>
 
@@ -194,7 +194,7 @@ export default function Framework() {
                 <li>Troubleshooting and optimization tips</li>
               </ul>
               
-              <Link href="/documentation/playbooks" className={styles['cta-link']}>View Documentation →</Link>
+              <Link href="/documentation/playbooks" className={styles['cta-link']}>Preview implementation playbooks →</Link>
             </div>
           </details>
 

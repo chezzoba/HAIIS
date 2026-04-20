@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import styles from './Navbar.module.css';
 import Link from 'next/link';
+import Logo from './Logo';
 
 export default function Navbar() {
   const [isHidden, setIsHidden] = useState(false);
@@ -31,7 +32,10 @@ export default function Navbar() {
     <>
       <header className={`${styles.header} ${isHidden ? styles.hidden : ''}`}>
         <nav className={styles.nav}>
-          <Link href="/" className={styles.logo}>Healthcare AI Implementation Standards</Link>
+          <Link href="/" className={styles.logo}>
+            <Logo size={36} />
+            HAIIS
+          </Link>
           
           <button 
             className={styles.menuBtn}

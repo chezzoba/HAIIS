@@ -2,8 +2,8 @@ import "@picocss/pico/css/pico.min.css";
 import "./globals.css";
 
 export const metadata = {
-  title: "Healthcare AI Implementation Standards",
-  description: "Secure, compliant, scalable AI implementation standards for healthcare across vendors",
+  title: "HAIIS: Healthcare AI Implementation Standards",
+  description: "A practical standard for implementing healthcare AI in regulated environments. Helps teams align architecture, controls, governance, and documentation across cloud-based AI deployments.",
 };
 
 export default function RootLayout({ children }) {
