@@ -5,7 +5,7 @@ import publications from './publications.json';
 
 export const metadata = {
   title: 'Data Governance Protocols | HAIIS',
-  description: 'Publications and resources on data governance protocols for healthcare AI implementation.',
+  description: 'Data classification, access control, lineage tracking, and retention policies for healthcare AI systems handling PHI.',
 };
 
 export default function GovernancePage() {
@@ -13,7 +13,7 @@ export default function GovernancePage() {
     <Main>
       <section className={styles.hero}>
         <h1>Data Governance Protocols</h1>
-        <p>Data governance for healthcare AI systems</p>
+        <p>Classification, access control, lineage, and retention policies for PHI and training data</p>
       </section>
       <section className={styles.publications}>
         <PublicationGrid publications={publications} />

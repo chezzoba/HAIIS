@@ -5,7 +5,7 @@ import publications from './publications.json';
 
 export const metadata = {
   title: 'Implementation Playbooks | HAIIS',
-  description: 'Step-by-step implementation playbooks for healthcare AI deployment.',
+  description: 'Deployment and validation playbooks for standing up healthcare AI infrastructure in regulated environments.',
 };
 
 export default function PlaybooksPage() {
@@ -13,7 +13,7 @@ export default function PlaybooksPage() {
     <Main>
       <section className={styles.hero}>
         <h1>Implementation Playbooks</h1>
-        <p>Step-by-step guides for deploying compliant healthcare AI systems</p>
+        <p>Deployment, validation, and CI/CD guides for regulated healthcare AI infrastructure</p>
       </section>
       <section className={styles.publications}>
         <PublicationGrid publications={publications} />

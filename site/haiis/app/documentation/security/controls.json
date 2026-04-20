@@ -168,7 +168,7 @@
   },
   {
     "control": "Identity & Access Management",
-    "useCase": "User authentication and authorization",
+    "useCase": "Control who can access AI endpoints, model registries, and PHI data stores",
     "aws": {
       "services": "AWS IAM, AWS SSO",
       "links": [
@@ -193,7 +193,7 @@
   },
   {
     "control": "Data Encryption at Rest",
-    "useCase": "Protect stored PHI/PII data",
+    "useCase": "Encrypt PHI/PII at rest using customer-managed keys so your org retains key control",
     "aws": {
       "services": "AWS KMS, S3 Encryption",
       "links": [
@@ -218,7 +218,7 @@
   },
   {
     "control": "Data Encryption in Transit",
-    "useCase": "Secure data transmission",
+    "useCase": "Enforce TLS 1.2+ between services, clients, and data stores handling PHI",
     "aws": {
       "services": "TLS/SSL, AWS Certificate Manager",
       "links": [
@@ -243,7 +243,7 @@
   },
   {
     "control": "Network Isolation",
-    "useCase": "Isolate healthcare workloads",
+    "useCase": "Segment AI training, inference, and data storage into isolated network zones",
     "aws": {
       "services": "VPC, Security Groups, NACLs",
       "links": [
@@ -271,7 +271,7 @@
   },
   {
     "control": "Audit Logging",
-    "useCase": "Track access to sensitive data",
+    "useCase": "Record who accessed PHI, when, and what they did, retained for HIPAA's six-year minimum",
     "aws": {
       "services": "CloudTrail, CloudWatch Logs",
       "links": [
@@ -296,7 +296,7 @@
   },
   {
     "control": "Data Loss Prevention",
-    "useCase": "Prevent unauthorized data exfiltration",
+    "useCase": "Detect and block unauthorized PHI exfiltration via storage, email, or API channels",
     "aws": {
       "services": "Amazon Macie, AWS Config",
       "links": [
@@ -321,7 +321,7 @@
   },
   {
     "control": "Secrets Management",
-    "useCase": "Secure API keys and credentials",
+    "useCase": "Store and auto-rotate API keys, database credentials, and model signing keys",
     "aws": {
       "services": "AWS Secrets Manager, Parameter Store",
       "links": [
@@ -344,7 +344,7 @@
   },
   {
     "control": "Threat Detection",
-    "useCase": "Identify security threats",
+    "useCase": "Surface anomalous access patterns, compromised credentials, and lateral movement attempts",
     "aws": {
       "services": "Amazon GuardDuty, Security Hub",
       "links": [
@@ -368,7 +368,7 @@
   },
   {
     "control": "Vulnerability Scanning",
-    "useCase": "Identify security vulnerabilities",
+    "useCase": "Scan container images, host OS, and dependencies for known CVEs before deployment",
     "aws": {
       "services": "Amazon Inspector, ECR Scanning",
       "links": [
@@ -392,7 +392,7 @@
   },
   {
     "control": "Backup & Recovery",
-    "useCase": "Data resilience and disaster recovery",
+    "useCase": "Automate backups of model artifacts, training data, and inference logs with tested restore procedures",
     "aws": {
       "services": "AWS Backup, S3 Versioning",
       "links": [
@@ -417,7 +417,7 @@
   },
   {
     "control": "Compliance Monitoring",
-    "useCase": "Continuous compliance validation",
+    "useCase": "Continuously assess control coverage against HIPAA, HITECH, and FDA SaMD requirements",
     "aws": {
       "services": "AWS Config, AWS Audit Manager",
       "links": [
@@ -442,7 +442,7 @@
   },
   {
     "control": "Web Application Firewall",
-    "useCase": "Protect web applications",
+    "useCase": "Block OWASP Top 10 attack patterns at the edge before they reach AI service endpoints",
     "aws": {
       "services": "AWS WAF",
       "links": [
@@ -464,7 +464,7 @@
   },
   {
     "control": "API Security",
-    "useCase": "Secure API endpoints",
+    "useCase": "Enforce rate limiting, auth, and request validation on AI inference and data APIs",
     "aws": {
       "services": "API Gateway, AWS WAF",
       "links": [
@@ -489,7 +489,7 @@
   },
   {
     "control": "Container Security",
-    "useCase": "Secure containerized workloads",
+    "useCase": "Harden container images, enforce non-root execution, and apply runtime security policies",
     "aws": {
       "services": "ECS Security, EKS Security",
       "links": [
@@ -514,7 +514,7 @@
   },
   {
     "control": "Database Security",
-    "useCase": "Protect healthcare databases",
+    "useCase": "Encrypt clinical databases at rest and enforce access controls at the query layer",
     "aws": {
       "services": "RDS Encryption, DynamoDB Encryption",
       "links": [
@@ -539,7 +539,7 @@
   },
   {
     "control": "Privileged Access Management",
-    "useCase": "Control administrative access",
+    "useCase": "Detect over-permissioned roles and enforce just-in-time elevation for admin access",
     "aws": {
       "services": "IAM Access Analyzer, AWS Organizations",
       "links": [
@@ -563,7 +563,7 @@
   },
   {
     "control": "Data Residency",
-    "useCase": "Control data location for compliance",
+    "useCase": "Pin PHI storage to specific regions to satisfy data sovereignty and state-level requirements",
     "aws": {
       "services": "AWS Regions, S3 Bucket Policies",
       "links": [
@@ -588,7 +588,7 @@
   },
   {
     "control": "Incident Response",
-    "useCase": "Respond to security incidents",
+    "useCase": "Automate detection-to-response workflows for PHI breaches and model compromise events",
     "aws": {
       "services": "AWS Systems Manager, CloudWatch Events",
       "links": [

@@ -89,6 +89,15 @@
   display: none;
 }
 
+/* Override Pico CSS which injects a chevron SVG via details summary::after */
+.component-card summary::after {
+  display: none !important;
+}
+
+.component-card summary::marker {
+  display: none;
+}
+
 .component-card summary:hover {
   background-color: rgba(0, 102, 204, 0.05);
 }
@@ -113,14 +122,6 @@
 }
 
 /* Hide the default details marker */
-.component-card summary::-webkit-details-marker {
-  display: none;
-}
-
-.component-card summary::marker,
-.component-card summary::-webkit-details-marker {
-  display: none;
-}
 
 .component-content {
   padding: 0 1.5rem 1.5rem;

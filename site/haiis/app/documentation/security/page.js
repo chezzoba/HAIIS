@@ -4,7 +4,7 @@ import securityControls from './controls.json';
 
 export const metadata = {
   title: 'Security Controls | HAIIS',
-  description: 'Cross-cloud security control mappings for healthcare AI implementation across AWS, Azure, and GCP.',
+  description: 'Cross-cloud security control mappings for healthcare AI, covering AWS, Azure, and GCP services for PHI protection, model security, and compliance.',
 };
 
 export default function SecurityControlsPage() {
@@ -12,7 +12,7 @@ export default function SecurityControlsPage() {
     <Main>
           <section className={styles.hero}>
           <h1>Security Controls</h1>
-          <p>A directory of cross-cloud security control mappings for healthcare AI implementation</p>
+          <p>Cross-cloud control mappings for securing AI workloads that handle PHI</p>
         </section>
 
         <section className={styles.tableSection}>
@@ -66,8 +66,9 @@ export default function SecurityControlsPage() {
         <section className={styles.bestPractices}>
           <h2>Best Practices for Healthcare AI Security</h2>
           <p className={styles.sectionIntro}>
-            Implementing AI in regulated healthcare environments requires a comprehensive approach to security 
-            that addresses both traditional infrastructure concerns and AI-specific risks.
+            Healthcare AI systems face the usual infrastructure security concerns plus a set of AI-specific 
+            risks: training data poisoning, prompt injection, model theft, hallucinated clinical advice, and 
+            bias that shifts with patient populations. The practices below address both.
           </p>
 
           <div className={styles.practiceSection}>

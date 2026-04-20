@@ -31,10 +31,10 @@ export default function Framework() {
           <div style={{ display: 'flex', borderTop: '1px solid #e2e8f0', borderLeft: '1px solid #e2e8f0', flexWrap: 'wrap' }}>
             {[
               { title: 'Vendor-Neutral', desc: 'Built across AWS, Azure, GCP, and other platforms' },
-              { title: 'Compliance-by-Design', desc: 'HIPAA, GxP, and FDA requirements embedded from the start' },
+              { title: 'Compliance-by-Design', desc: 'HIPAA and GxP embedded from the start' },
               { title: 'Open-Access', desc: 'Publicly available without restrictive licensing barriers' },
               { title: 'Actionable', desc: 'Patterns and playbooks, not just principles' },
-              { title: 'Education-First', desc: 'Training-based approach for widespread adoption' },
+              { title: 'Education-First', desc: 'Training-based approach for workforce development' },
             ].map((item, i) => (
               <div key={i} style={{ flex: '1 1 180px', padding: '1.5rem', borderRight: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
                 <div style={{ width: '1.5rem', height: '3px', background: '#0066cc', marginBottom: '0.75rem' }} />

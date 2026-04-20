@@ -5,7 +5,7 @@ import GlossarySearch from './GlossarySearch';
 
 export const metadata = {
   title: 'Glossary | HAIIS',
-  description: 'Comprehensive glossary of healthcare AI, cloud computing, security, and regulatory terms.',
+  description: 'Definitions of regulatory, AI/ML, cloud infrastructure, and security terms used across the HAIIS framework.',
 };
 
 export default function GlossaryPage() {
@@ -13,7 +13,7 @@ export default function GlossaryPage() {
     <Main>
               <section className={styles.hero}>
           <h1>Glossary</h1>
-          <p>Comprehensive definitions of key terms and concepts in healthcare AI implementation</p>
+          <p>Regulatory, AI/ML, cloud, and security terms used across this site</p>
         </section>
 
         <section className={styles.contentSection}>
