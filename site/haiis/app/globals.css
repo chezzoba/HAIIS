@@ -270,6 +270,29 @@ section h2 {
   font-style: italic;
 }
 
+/* Responsive grid helpers — used across pages via inline style overrides */
+.grid-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Quickstart split (home page dark/light halves) */
+.split-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 260px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .hero {
@@ -288,5 +311,31 @@ section h2 {
   .problem-editorial .problem-lead {
     grid-column: 1;
     grid-row: auto;
+  }
+
+  .grid-2col,
+  .grid-3col,
+  .grid-4col {
+    grid-template-columns: 1fr;
+  }
+
+  .split-2col {
+    grid-template-columns: 1fr;
+    min-height: unset;
+  }
+}
+
+/* On mobile, suppress per-cell right/bottom borders inside grid containers
+   so stacked single-column layouts don't show orphaned right borders */
+@media (max-width: 768px) {
+  .grid-2col > *,
+  .grid-3col > *,
+  .grid-4col > * {
+    border-right: none !important;
+  }
+
+  .split-2col > * + * {
+    border-left: none !important;
+    border-top: 1px solid #e2e8f0;
   }
 }

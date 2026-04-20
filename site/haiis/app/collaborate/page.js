@@ -14,7 +14,7 @@ export default function Collaborate() {
       <section style={{ background: '#fff', padding: '1.5rem 2rem' }}>
         <div style={container}>
           <h1 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', color: '#1a1a1a', marginBottom: '1rem' }}>Interested in shaping the framework?</h1>
-          <p style={{ fontSize: '1.15rem', color: '#555', lineHeight: 1.7, maxWidth: '700px' }}>
+          <p style={{ fontSize: '1.15rem', color: '#555', lineHeight: 1.7, maxWidth: '1200px' }}>
             We are seeking early collaborators to help review, evaluate, and refine the framework components for real-world healthcare AI use cases
           </p>
         </div>
@@ -25,7 +25,7 @@ export default function Collaborate() {
         <div style={container}>
           <p style={eyebrow}>Partners</p>
           <h2 style={h2Style}>Who We're Looking For</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', borderTop: '1px solid #e2e8f0', borderLeft: '1px solid #e2e8f0' }}>
+          <div className="grid-2col" style={{ borderTop: '1px solid #e2e8f0', borderLeft: '1px solid #e2e8f0' }}>
             {[
               { title: 'U.S. Hospitals', desc: 'Healthcare systems of any size looking to implement AI solutions' },
               { title: 'Pharmaceutical Companies', desc: 'Pharma organizations developing AI for drug discovery and clinical trials' },

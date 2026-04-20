@@ -14,7 +14,7 @@ export default function About() {
       <section style={{ background: '#fff', padding: '1.5rem 2rem' }}>
         <div style={container}>
           <h1 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', color: '#1a1a1a', marginBottom: '1rem' }}>About the Framework</h1>
-          <p style={{ fontSize: '1.15rem', color: '#555', lineHeight: 1.7, maxWidth: '700px' }}>
+          <p style={{ fontSize: '1.15rem', color: '#555', lineHeight: 1.7, maxWidth: '1200px' }}>
             How we're bridging the gap between policy and practice in healthcare AI
           </p>
         </div>
@@ -93,7 +93,7 @@ export default function About() {
         <div style={container}>
           <p style={eyebrow}>Principles</p>
           <h2 style={h2Style}>Our Guiding Principles</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', borderTop: '1px solid #e2e8f0', borderLeft: '1px solid #e2e8f0' }}>
+          <div className="grid-2col" style={{ borderTop: '1px solid #e2e8f0', borderLeft: '1px solid #e2e8f0' }}>
             {[
               { title: 'Problem-First Approach', desc: 'Every component starts with a concrete healthcare AI implementation challenge' },
               { title: 'Regulatory by Design', desc: 'Compliance requirements are embedded into technical patterns from the start' },

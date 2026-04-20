@@ -17,7 +17,7 @@ export default function Framework() {
       <section style={{ background: '#fff', padding: '1.5rem 2rem' }}>
         <div style={container}>
           <h1 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', color: '#1a1a1a', marginBottom: '1rem' }}>The HAIIS Framework</h1>
-          <p style={{ fontSize: '1.15rem', color: '#555', lineHeight: 1.7, maxWidth: '700px' }}>
+          <p style={{ fontSize: '1.15rem', color: '#555', lineHeight: 1.7, maxWidth: '1200px' }}>
             A vendor-neutral, compliance-by-design approach to healthcare AI implementation.
           </p>
         </div>
@@ -174,7 +174,7 @@ export default function Framework() {
         <div style={container}>
           <p style={eyebrow}>Roadmap</p>
           <h2 style={h2Style}>Framework Roadmap</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', borderTop: '1px solid #e2e8f0', borderLeft: '1px solid #e2e8f0' }}>
+          <div className="grid-4col" style={{ borderTop: '1px solid #e2e8f0', borderLeft: '1px solid #e2e8f0' }}>
             {[
               { year: String(curYear), title: 'Foundation', desc: 'Define the initial framework structure, publish concepts, and open collaboration channels' },
               { year: `${curYear + 1}–${curYear + 2}`, title: 'Validation', desc: 'Review and refine framework components through feedback and early implementation discussions' },

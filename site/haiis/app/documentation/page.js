@@ -14,7 +14,7 @@ export default function Documentation() {
       <section style={{ background: '#fff', padding: '1.5rem 2rem' }}>
         <div style={container}>
           <h1 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', color: '#1a1a1a', marginBottom: '1rem' }}>Documentation</h1>
-          <p style={{ fontSize: '1.15rem', color: '#555', lineHeight: 1.7, maxWidth: '700px' }}>
+          <p style={{ fontSize: '1.15rem', color: '#555', lineHeight: 1.7, maxWidth: '1200px' }}>
             Guides, templates, and practical resources for organizations exploring AI implementation
           </p>
         </div>
@@ -54,7 +54,7 @@ export default function Documentation() {
         <div style={container}>
           <p style={eyebrow}>Resources</p>
           <h2 style={h2Style}>Documentation</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', borderTop: '1px solid #e2e8f0', borderLeft: '1px solid #e2e8f0' }}>
+          <div className="grid-3col" style={{ borderTop: '1px solid #e2e8f0', borderLeft: '1px solid #e2e8f0' }}>
 
             <div style={{ padding: '2rem', borderRight: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column' }}>
               <h3 style={{ fontSize: '1rem', color: '#1a1a1a', marginBottom: '0.4rem', fontWeight: 600 }}>Architecture Patterns</h3>

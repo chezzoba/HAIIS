@@ -70,17 +70,18 @@ export default function Home() {
         <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 2rem' }}>
           <p style={{ color: '#0066cc', fontSize: '0.8rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>Framework</p>
           <h2 style={{ textAlign: 'left', marginBottom: '2rem', fontSize: 'clamp(1.5rem, 3vw, 2rem)' }}>The Core Components</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0' }}>
+          <div className="grid-3col" style={{ gap: '0' }}>
             {[
               { title: 'Architecture Patterns', desc: 'Reusable AI blueprints drawn from real life sciences deployments, with compliance considerations embedded from the start.', href: '/documentation/patterns', cta: 'Review patterns →', available: true },
-              { title: 'Security Controls & Data Governance', desc: 'Cross-cloud security control mapping and data governance protocols for the full AI lifecycle.', href: '/documentation#categories', cta: 'See multicloud controls →', available: true },
-              { title: 'AI Risk Assessment Methodology', desc: 'Healthcare-specific risk evaluation designed for the unique failure modes of AI in regulated environments.', href: null, cta: 'Coming soon', available: false },
+              { title: 'Security Control Mapping', desc: 'Cross-cloud security control guidance for aligning AI workloads across AWS, Azure, and GCP.', href: '/documentation/security', cta: 'See multicloud controls →', available: true },
+              { title: 'Data Governance Protocols', desc: 'Reusable approaches for data handling, access, lineage, and oversight across the full AI lifecycle.', href: '/documentation/governance', cta: 'Review governance protocols →', available: true },
+              { title: 'AI Risk Assessment', desc: 'Healthcare-specific risk evaluation designed for the unique failure modes of AI in regulated environments.', href: null, cta: 'Coming soon', available: false },
               { title: 'Implementation Playbooks', desc: 'Step-by-step deployment guides that take teams from architecture decision to controlled rollout.', href: '/documentation/playbooks', cta: 'Preview playbooks →', available: true },
             ].map((item, i) => (
               <div key={i} style={{
                 padding: '2rem',
                 borderTop: '1px solid #e2e8f0',
-                borderRight: i % 2 === 0 ? '1px solid #e2e8f0' : 'none',
+                borderRight: (i % 3 !== 2) ? '1px solid #e2e8f0' : 'none',
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '0.5rem',
@@ -99,12 +100,11 @@ export default function Home() {
       </section>
 
       {/* Section 4: Get Involved */}
-      <section id="quickstart" style={{ padding: 0 }}>
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          minHeight: '260px',
-        }}>
+      <section id="quickstart" style={{ padding: '1rem 0' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 2rem' }}>
+          <p style={{ color: '#0066cc', fontSize: '0.8rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>Get Involved</p>
+          <h2 style={{ textAlign: 'left', marginBottom: '2rem', fontSize: 'clamp(1.5rem, 3vw, 2rem)' }}>Where to go next</h2>
+        <div className="split-2col">
           <div style={{
             background: '#0d1b2a',
             padding: '3rem',
@@ -114,7 +114,7 @@ export default function Home() {
           }}>
             <div>
               <p style={{ color: '#a8c8f0', fontSize: '0.8rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '1rem' }}>Documentation</p>
-              <h3 style={{ color: '#fff', fontSize: '1.5rem', marginBottom: '1rem', lineHeight: 1.3 }}>Everything you need to start implementing</h3>
+              <h3 style={{ color: '#fff', fontSize: '1.5rem', marginBottom: '1rem', lineHeight: 1.3 }}>Everything you need to start building</h3>
               <p style={{ color: '#c8d8ee', lineHeight: 1.7, fontSize: '0.95rem' }}>
                 Architecture patterns, security controls, governance protocols, and implementation playbooks, all in one place.
               </p>
@@ -127,7 +127,6 @@ export default function Home() {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-between',
-            borderLeft: '1px solid #d6e4ff',
           }}>
             <div>
               <p style={{ color: '#0066cc', fontSize: '0.8rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '1rem' }}>Collaborate</p>
@@ -139,6 +138,7 @@ export default function Home() {
             <Link href="/collaborate" role="button" style={{ marginTop: '2rem', alignSelf: 'flex-start' }}>Start collaborating →</Link>
           </div>
         </div>
+        </div>
       </section>
 
       {/* Section 3: Who It's For */}
@@ -146,7 +146,7 @@ export default function Home() {
         <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 2rem' }}>
           <p style={{ color: '#0066cc', fontSize: '0.8rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>Practitioners</p>
           <h2 style={{ textAlign: 'left', marginBottom: '2rem', fontSize: 'clamp(1.5rem, 3vw, 2rem)' }}>Who this framework is for</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0', borderTop: '1px solid #e2e8f0' }}>
+          <div className="grid-3col" style={{ gap: '0', borderTop: '1px solid #e2e8f0' }}>
             {[
               { label: 'Hospitals & Health Systems', desc: 'Teams evaluating or deploying AI in regulated clinical and operational environments who need architecture guidance, not just policy checklists.' },
               { label: 'Pharma & Life Sciences', desc: 'Implementation patterns for compliant AI workflows in research, documentation, and regulated data environments where audit trails matter.' },
