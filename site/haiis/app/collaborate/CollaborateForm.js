@@ -69,101 +69,60 @@ export default function CollaborateForm() {
 
   return (
     <form onSubmit={handleSubmit} className={styles['collaborate-form']}>
-      <div className={styles['form-group']}>
-        <label htmlFor="organization">Organization *</label>
-        <input
-          type="text"
-          id="organization"
-          name="organization"
-          value={formData.organization}
-          onChange={handleChange}
-          required
-          placeholder="Your organization name"
-        />
-      </div>
+      <div className={styles['form-grid']}>
+        <div className={styles['form-group']}>
+          <label htmlFor="organization">Organization *</label>
+          <input type="text" id="organization" name="organization" value={formData.organization} onChange={handleChange} required placeholder="Your organization name" />
+        </div>
 
-      <div className={styles['form-group']}>
-        <label htmlFor="email">Email *</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-          placeholder="your.email@example.com"
-        />
-      </div>
+        <div className={styles['form-group']}>
+          <label htmlFor="email">Email *</label>
+          <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required placeholder="your.email@example.com" />
+        </div>
 
-      <div className={styles['form-group']}>
-        <label htmlFor="role">Role *</label>
-        <input
-          type="text"
-          id="role"
-          name="role"
-          value={formData.role}
-          onChange={handleChange}
-          required
-          placeholder="Your role/title"
-        />
-      </div>
+        <div className={styles['form-group']}>
+          <label htmlFor="role">Role *</label>
+          <input type="text" id="role" name="role" value={formData.role} onChange={handleChange} required placeholder="Your role/title" />
+        </div>
 
-      <div className={styles['form-group']}>
-        <label htmlFor="useCase">Primary Use Case *</label>
-        <select
-          id="useCase"
-          name="useCase"
-          value={formData.useCase}
-          onChange={handleChange}
-          required
-        >
-          <option value="">Select a use case</option>
-          <option value="report-writing">Report Writing</option>
-          <option value="document-processing">Intelligent Document Processing</option>
-          <option value="nlp-querying">Natural Language Database Querying</option>
-          <option value="medical-imaging">Medical Imaging Analysis</option>
-          <option value="predictive-analytics">Predictive Analytics</option>
-          <option value="other">Other (specify in message)</option>
-        </select>
-      </div>
+        <div className={styles['form-group']}>
+          <label htmlFor="useCase">Primary Use Case *</label>
+          <select id="useCase" name="useCase" value={formData.useCase} onChange={handleChange} required>
+            <option value="">Select a use case</option>
+            <option value="report-writing">Report Writing</option>
+            <option value="document-processing">Intelligent Document Processing</option>
+            <option value="nlp-querying">Natural Language Database Querying</option>
+            <option value="medical-imaging">Medical Imaging Analysis</option>
+            <option value="predictive-analytics">Predictive Analytics</option>
+            <option value="other">Other (specify in message)</option>
+          </select>
+        </div>
 
-      <div className={styles['form-group']}>
-        <label htmlFor="cloudPlatforms">Relevant Cloud Providers</label>
-        <div className={styles['checkbox-group']}>
-          {[
-            { value: 'aws', label: 'AWS' },
-            { value: 'azure', label: 'Azure' },
-            { value: 'gcp', label: 'Google Cloud' },
-            { value: 'other', label: 'Other' },
-          ].map(({ value, label }) => (
-            <label key={value} className={styles['checkbox-label']}>
-              <input
-                type="checkbox"
-                name="cloudPlatforms"
-                value={value}
-                checked={formData.cloudPlatforms.includes(value)}
-                onChange={handleCheckbox}
-              />
-              {label}
-            </label>
-          ))}
+        <div className={`${styles['form-group']} ${styles['full-width']}`}>
+          <label>Relevant Cloud Providers</label>
+          <div className={styles['checkbox-group']}>
+            {[
+              { value: 'aws', label: 'AWS' },
+              { value: 'azure', label: 'Azure' },
+              { value: 'gcp', label: 'Google Cloud' },
+              { value: 'other', label: 'Other' },
+            ].map(({ value, label }) => (
+              <label key={value} className={styles['checkbox-label']}>
+                <input type="checkbox" name="cloudPlatforms" value={value} checked={formData.cloudPlatforms.includes(value)} onChange={handleCheckbox} />
+                {label}
+              </label>
+            ))}
+          </div>
+        </div>
+
+        <div className={`${styles['form-group']} ${styles['full-width']}`}>
+          <label htmlFor="message">Message</label>
+          <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows="4" placeholder="Tell us about your interest, timeline, or any specific questions..." />
         </div>
       </div>
 
-      <div className={styles['form-group']}>
-        <label htmlFor="message">Message</label>
-        <textarea
-          id="message"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          rows="4"
-          placeholder="Tell us about your interest, timeline, or any specific questions..."
-        />
-      </div>
-
       <button type="submit" className={styles['submit-button']} disabled={isSubmitting}>
-        {isSubmitting ? 'Submitting...' : 'Submit Collaboration Request'}
+        {isSubmitting ? 'Submitting...' : 'Collaborate with us'}
       </button>
     </form>
   );

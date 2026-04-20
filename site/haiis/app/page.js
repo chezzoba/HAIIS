@@ -98,31 +98,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 3: Who It's For */}
-      <section id="audience" style={{ padding: '1.5rem 0' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 2rem' }}>
-          <p style={{ color: '#0066cc', fontSize: '0.8rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>Practitioners</p>
-          <h2 style={{ textAlign: 'left', marginBottom: '2rem', fontSize: 'clamp(1.5rem, 3vw, 2rem)' }}>Who this framework is for</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0', borderTop: '1px solid #e2e8f0' }}>
-            {[
-              { label: 'Hospitals & Health Systems', desc: 'Teams evaluating or deploying AI in regulated clinical and operational environments who need architecture guidance, not just policy checklists.' },
-              { label: 'Pharma & Life Sciences', desc: 'Implementation patterns for compliant AI workflows in research, documentation, and regulated data environments where audit trails matter.' },
-              { label: 'Healthtech & Medical Device Builders', desc: 'Practical guidance for secure, governed AI deployment in healthcare products where regulatory scrutiny is part of the product lifecycle.' },
-            ].map((item, i) => (
-              <div key={i} style={{
-                padding: '2rem',
-                borderRight: i < 2 ? '1px solid #e2e8f0' : 'none',
-                borderBottom: '1px solid #e2e8f0',
-              }}>
-                <div style={{ width: '2rem', height: '3px', background: '#0066cc', marginBottom: '1rem' }} />
-                <h3 style={{ fontSize: '1rem', color: '#1a1a1a', marginBottom: '0.75rem' }}>{item.label}</h3>
-                <p style={{ color: '#555', lineHeight: 1.6, fontSize: '0.9rem', margin: 0 }}>{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Section 4: Get Involved */}
       <section id="quickstart" style={{ padding: 0 }}>
         <div style={{
@@ -162,6 +137,31 @@ export default function Home() {
               </p>
             </div>
             <Link href="/collaborate" role="button" style={{ marginTop: '2rem', alignSelf: 'flex-start' }}>Start collaborating →</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3: Who It's For */}
+      <section id="audience" style={{ padding: '1.5rem 0' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 2rem' }}>
+          <p style={{ color: '#0066cc', fontSize: '0.8rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>Practitioners</p>
+          <h2 style={{ textAlign: 'left', marginBottom: '2rem', fontSize: 'clamp(1.5rem, 3vw, 2rem)' }}>Who this framework is for</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0', borderTop: '1px solid #e2e8f0' }}>
+            {[
+              { label: 'Hospitals & Health Systems', desc: 'Teams evaluating or deploying AI in regulated clinical and operational environments who need architecture guidance, not just policy checklists.' },
+              { label: 'Pharma & Life Sciences', desc: 'Implementation patterns for compliant AI workflows in research, documentation, and regulated data environments where audit trails matter.' },
+              { label: 'Healthtech & Medical Device Builders', desc: 'Practical guidance for secure, governed AI deployment in healthcare products where regulatory scrutiny is part of the product lifecycle.' },
+            ].map((item, i) => (
+              <div key={i} style={{
+                padding: '2rem',
+                borderRight: i < 2 ? '1px solid #e2e8f0' : 'none',
+                borderBottom: '1px solid #e2e8f0',
+              }}>
+                <div style={{ width: '2rem', height: '3px', background: '#0066cc', marginBottom: '1rem' }} />
+                <h3 style={{ fontSize: '1rem', color: '#1a1a1a', marginBottom: '0.75rem' }}>{item.label}</h3>
+                <p style={{ color: '#555', lineHeight: 1.6, fontSize: '0.9rem', margin: 0 }}>{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
