@@ -111,7 +111,7 @@ export default function About() {
       </section>
 
       {/* Community CTA */}
-      <section id="community" style={{ background: '#f7f9fc', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0', padding: '3rem 2rem', textAlign: 'center' }}>
+      <section id="community" style={{ background: '#fff', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0', padding: '3rem 2rem', textAlign: 'center' }}>
         <div style={{ maxWidth: '640px', margin: '0 auto' }}>
           <p style={eyebrow}>Community</p>
           <h2 style={{ ...h2Style, textAlign: 'center' }}>Built for the Healthcare Community</h2>

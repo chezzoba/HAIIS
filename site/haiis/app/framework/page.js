@@ -170,7 +170,7 @@ export default function Framework() {
       </section>
 
       {/* Roadmap */}
-      <section id="roadmap" style={{ padding: '1.5rem 2rem', background: '#f7f9fc', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
+      <section id="roadmap" style={{ padding: '1.5rem 2rem', background: '#f7f9fc', borderTop: '1px solid #e2e8f0' }}>
         <div style={container}>
           <p style={eyebrow}>Roadmap</p>
           <h2 style={h2Style}>Framework Roadmap</h2>
