@@ -73,7 +73,7 @@ export default function Home() {
           <div className="grid-3col" style={{ gap: '0' }}>
             {[
               { title: 'Architecture Patterns', desc: 'Reusable AI blueprints drawn from real life sciences deployments, with compliance considerations embedded from the start.', href: '/documentation/patterns', cta: 'Review patterns →', available: true },
-              { title: 'Security Control Mapping', desc: 'Cross-cloud security control guidance for aligning AI workloads across AWS, Azure, and GCP.', href: '/documentation/security', cta: 'See multicloud controls →', available: true },
+              { title: 'Security Control Mapping', desc: 'Cross-cloud security control guidance for aligning AI workloads across AWS, Azure, and GCP.', href: '/documentation/security', cta: 'See security controls →', available: true },
               { title: 'Data Governance Protocols', desc: 'Reusable approaches for data handling, access, lineage, and oversight across the full AI lifecycle.', href: '/documentation/governance', cta: 'Review governance protocols →', available: true },
               { title: 'AI Risk Assessment', desc: 'Healthcare-specific risk evaluation designed for the unique failure modes of AI in regulated environments.', href: null, cta: 'Coming soon', available: false },
               { title: 'Implementation Playbooks', desc: 'Step-by-step deployment guides that take teams from architecture decision to controlled rollout.', href: '/documentation/playbooks', cta: 'Preview playbooks →', available: true },
