@@ -16,7 +16,7 @@ export default function CompliancePage() {
         <p>Reference architectures for compliant AI workloads on AWS, Azure, and GCP</p>
       </section>
       <section className={styles.publications}>
-        <PublicationGrid publications={publications} />
+        <PublicationGrid publications={publications} basePath="/documentation/patterns" />
       </section>
     </Main>
   );

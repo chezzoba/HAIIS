@@ -1,5 +1,6 @@
 [
     {
+      "slug": "remote-patient-monitoring",
       "link": "https://builder.aws.com/content/2boovYC5RwbKgyoGqikH0w1TP99/revolutionizing-remote-patient-monitoring-with-cloud-and-ai",
       "previewImage": "/img/blogs/irpm.webp",
       "title": "Remote Patient Monitoring",
@@ -7,17 +8,19 @@
       "clouds": ["AWS"]
     },
     {
+      "slug": "production-ready-ai-agents",
       "link": "https://builder.aws.com/content/32H2xLIwuR6eJIoFoJCSipubyxd/building-production-ready-ai-agents-with-web-capabilities",
       "previewImage": "/img/blogs/agentsweb.webp",
-      "title": "Production-ready multi-agent system for research",
-      "subtitle": "Using MCP servers and opensource agentic AI SDK to build agents for research",
+      "title": "Production-ready multi-agent system for clinical research",
+      "subtitle": "Building a multi-agent AI system for evidence synthesis and clinical literature review",
       "clouds": ["AWS", "Azure", "GCP"]
     },
     {
+      "slug": "resilient-serverless-messaging",
       "link": "https://aws.amazon.com/blogs/architecture/create-a-serverless-custom-retry-mechanism-for-stateless-queue-consumers/",
       "previewImage": "/img/blogs/serverless-retry-mechanism.webp",
       "title": "Resilient Serverless Messaging for Fault-Tolerant Workflows",
-      "subtitle": "Designing fault-tolerant retry mechanisms for stateless data processing workflows",
+      "subtitle": "Designing fault-tolerant retry mechanisms for stateless healthcare data processing workflows",
       "clouds": ["AWS"]
     }
 ]

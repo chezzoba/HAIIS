@@ -16,7 +16,7 @@ export default function GovernancePage() {
         <p>Classification, access control, lineage, and retention policies for PHI and training data</p>
       </section>
       <section className={styles.publications}>
-        <PublicationGrid publications={publications} />
+        <PublicationGrid publications={publications} basePath="/documentation/governance" />
       </section>
     </Main>
   );

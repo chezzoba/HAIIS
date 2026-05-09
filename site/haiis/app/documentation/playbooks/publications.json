@@ -1,5 +1,6 @@
 [
     {
+      "slug": "compliant-cicd-deployments",
       "link": "https://community.aws/content/2dquEzIKfm2wVH77AYmApToZdWj/gitlab-with-terraform",
       "previewImage": "/img/blogs/streamlinedeployments.webp",
       "title": "Compliant AI Deployments with CI/CD and Infrastructure as Code",
@@ -7,10 +8,11 @@
       "clouds": ["AWS"]
     },
     {
+      "slug": "automating-cloud-development-workflows",
       "link": "https://builder.aws.com/content/37fMBdONQHj9f2OPQylaNDiWaTB/from-vibes-to-production-how-kiro-bridges-coding-and-cloud-deployment",
       "previewImage": "/img/blogs/vibecoding.webp",
       "title": "Automating Cloud Development Workflows with AI",
-      "subtitle": "Deploying and debugging on the cloud using AI tools such as MCP and Hooks",
+      "subtitle": "Deploying and debugging cloud systems using AI tools including MCP and Hooks",
       "clouds": ["AWS", "Azure", "GCP"]
     }
 ]

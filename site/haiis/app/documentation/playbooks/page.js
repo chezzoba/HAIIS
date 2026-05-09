@@ -16,7 +16,7 @@ export default function PlaybooksPage() {
         <p>Deployment, validation, and CI/CD guides for regulated healthcare AI infrastructure</p>
       </section>
       <section className={styles.publications}>
-        <PublicationGrid publications={publications} />
+        <PublicationGrid publications={publications} basePath="/documentation/playbooks" />
       </section>
     </Main>
   );

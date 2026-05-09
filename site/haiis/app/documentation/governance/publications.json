@@ -1,5 +1,6 @@
 [
     {
+      "slug": "evaluating-search-systems",
       "link": "https://towardsdatascience.com/a-practical-framework-for-search-engine-evaluation-f8eb4f403a37",
       "previewImage": "/img/blogs/searchpreview.webp",
       "title": "Evaluating Search Systems",
@@ -7,6 +8,7 @@
       "clouds": ["AWS", "Azure", "GCP"]
     },
     {
+      "slug": "multi-cloud-data-governance",
       "link": "https://ai.gopubby.com/unlocking-the-power-of-multi-cloud-data-using-delta-sharing-9088d46f0a68",
       "previewImage": "/img/blogs/multiclouddatamesh.webp",
       "title": "Multi-Cloud Data Governance with Databricks",
