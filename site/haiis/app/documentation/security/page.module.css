@@ -8,6 +8,23 @@
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
+.backLink {
+  display: block;
+  font-size: 0.85rem;
+  color: #0066cc;
+  text-decoration: none;
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+  transition: color 0.15s;
+  text-align: left;
+  width: fit-content;
+}
+
+.backLink:hover {
+  color: #0052a3;
+  text-decoration: underline;
+}
+
 .hero h1 {
   font-size: clamp(2rem, 5vw, 3rem);
   margin-bottom: 1rem;

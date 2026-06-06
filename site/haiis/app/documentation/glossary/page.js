@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Main from '@/components/Main';
 import styles from './page.module.css';
 import glossaryTerms from './terms.json';
@@ -12,6 +13,9 @@ export default function GlossaryPage() {
   return (
     <Main>
               <section className={styles.hero}>
+          <Link href="/documentation" className={styles.backLink}>
+            ← Documentation
+          </Link>
           <h1>Glossary</h1>
           <p>Regulatory, AI/ML, cloud, and security terms used across this site</p>
         </section>

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Main from '@/components/Main';
 import PublicationGrid from '@/components/PublicationGrid';
 import styles from './page.module.css';
@@ -12,6 +13,9 @@ export default function PlaybooksPage() {
   return (
     <Main>
       <section className={styles.hero}>
+        <Link href="/documentation" className={styles.backLink}>
+          ← Documentation
+        </Link>
         <h1>Implementation Playbooks</h1>
         <p>Deployment, validation, and CI/CD guides for regulated healthcare AI infrastructure</p>
       </section>

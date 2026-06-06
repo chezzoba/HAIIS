@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Main from '@/components/Main';
 import styles from './page.module.css';
 import securityControls from './controls.json';
@@ -11,6 +12,9 @@ export default function SecurityControlsPage() {
   return (
     <Main>
           <section className={styles.hero}>
+          <Link href="/documentation" className={styles.backLink}>
+            ← Documentation
+          </Link>
           <h1>Security Controls</h1>
           <p>Cross-cloud control mappings for securing AI workloads that handle PHI</p>
         </section>
