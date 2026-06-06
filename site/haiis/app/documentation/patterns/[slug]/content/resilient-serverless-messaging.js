@@ -4,7 +4,7 @@ export const meta = {
   author: 'Kaizad Wadia',
   published: 'February 11, 2025',
   source: 'AWS Architectures',
-  sourceUrl: 'https://aws.amazon.com/blogs/architecture/create-a-serverless-custom-retry-mechanism-for-stateless-queue-consumers/',
+  sourceUrl: 'https://github.com/chezzoba/haiis',
   clouds: ['AWS'],
   previewImage: '/img/blogs/serverless-retry-mechanism.webp',
 };

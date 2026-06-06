@@ -4,7 +4,7 @@ export const meta = {
   author: 'Kaizad Wadia',
   published: 'January 28, 2026',
   source: 'Builder Hub',
-  sourceUrl: 'https://builder.aws.com/content/37fMBdONQHj9f2OPQylaNDiWaTB/from-vibes-to-production-how-kiro-bridges-coding-and-cloud-deployment',
+  sourceUrl: 'https://github.com/chezzoba/haiis',
   clouds: ['AWS', 'Azure', 'GCP'],
   previewImage: '/img/blogs/vibecoding.webp',
 };

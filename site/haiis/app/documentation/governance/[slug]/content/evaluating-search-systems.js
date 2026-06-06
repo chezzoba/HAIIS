@@ -4,7 +4,7 @@ export const meta = {
   author: 'Kaizad Wadia',
   published: 'July 12, 2024',
   source: 'Towards Data Science',
-  sourceUrl: 'https://towardsdatascience.com/a-practical-framework-for-search-engine-evaluation-f8eb4f403a37',
+  sourceUrl: 'https://github.com/chezzoba/haiis',
   clouds: ['AWS', 'Azure', 'GCP'],
   previewImage: '/img/blogs/searchpreview.webp',
 };

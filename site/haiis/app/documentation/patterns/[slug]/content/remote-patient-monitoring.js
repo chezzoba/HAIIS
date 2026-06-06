@@ -4,7 +4,7 @@ export const meta = {
   author: 'Kaizad Wadia',
   published: 'August 5, 2025',
   source: 'Builder Hub',
-  sourceUrl: 'https://builder.aws.com/content/2boovYC5RwbKgyoGqikH0w1TP99/revolutionizing-remote-patient-monitoring-with-cloud-and-ai',
+  sourceUrl: 'https://github.com/chezzoba/haiis',
   clouds: ['AWS'],
   previewImage: '/img/blogs/irpm.webp',
 };

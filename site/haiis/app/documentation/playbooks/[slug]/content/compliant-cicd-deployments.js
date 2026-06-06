@@ -4,7 +4,7 @@ export const meta = {
   author: 'Kaizad Wadia',
   published: 'December 18, 2023',
   source: 'Builder Hub',
-  sourceUrl: 'https://community.aws/content/2dquEzIKfm2wVH77AYmApToZdWj/gitlab-with-terraform',
+  sourceUrl: 'https://github.com/chezzoba/haiis',
   clouds: ['AWS'],
   previewImage: '/img/blogs/streamlinedeployments.webp',
 };

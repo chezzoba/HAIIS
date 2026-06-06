@@ -4,7 +4,7 @@ export const meta = {
   author: 'Kaizad Wadia',
   published: 'January 2, 2025',
   source: 'AI Advances',
-  sourceUrl: 'https://ai.gopubby.com/unlocking-the-power-of-multi-cloud-data-using-delta-sharing-9088d46f0a68',
+  sourceUrl: 'https://github.com/chezzoba/haiis',
   clouds: ['AWS', 'Azure', 'Databricks'],
   previewImage: '/img/blogs/multiclouddatamesh.webp',
 };

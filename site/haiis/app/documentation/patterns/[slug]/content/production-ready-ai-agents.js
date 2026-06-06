@@ -4,7 +4,7 @@ export const meta = {
   author: 'Kaizad Wadia',
   published: 'September 5, 2025',
   source: 'Builder Hub',
-  sourceUrl: 'https://builder.aws.com/content/32H2xLIwuR6eJIoFoJCSipubyxd/building-production-ready-ai-agents-with-web-capabilities',
+  sourceUrl: 'https://github.com/chezzoba/haiis',
   clouds: ['AWS', 'Azure', 'GCP'],
   previewImage: '/img/blogs/agentsweb.webp',
 };

@@ -66,7 +66,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Founder */}
+      {/* Founder        
       <section id="founder" style={{ padding: '1.5rem 2rem', background: '#f7f9fc', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
         <div style={container}>
           <p style={eyebrow}>Founder</p>
@@ -76,6 +76,7 @@ export default function About() {
           </p>
         </div>
       </section>
+      */}
 
       {/* Scope */}
       <section id="scope" style={{ padding: '1.5rem 2rem', background: '#fff' }}>
