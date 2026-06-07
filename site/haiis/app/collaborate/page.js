@@ -2,6 +2,18 @@ import Main from '../../components/Main';
 import CollaborateForm from './CollaborateForm';
 import styles from './page.module.css';
 
+export const metadata = {
+  title: "Collaborate",
+  description: "Shape the HAIIS framework. We're seeking early collaborators — hospitals, pharma companies, healthtech startups, and education partners — to review and refine healthcare AI implementation guidance.",
+  alternates: { canonical: "https://haiis.org/collaborate" },
+  openGraph: {
+    title: "Collaborate on the HAIIS Framework",
+    description: "Shape the HAIIS framework. We're seeking collaborators — hospitals, pharma, healthtech startups, and academics — to review and refine healthcare AI implementation guidance.",
+    url: "https://haiis.org/collaborate",
+    type: "website",
+  },
+};
+
 const eyebrow = { color: '#0066cc', fontSize: '0.8rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.5rem' };
 const h2Style = { textAlign: 'left', marginBottom: '1.5rem', fontSize: 'clamp(1.5rem, 3vw, 2rem)', color: '#1a1a1a' };
 const container = { maxWidth: '1100px', margin: '0 auto' };

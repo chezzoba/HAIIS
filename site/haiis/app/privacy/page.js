@@ -1,6 +1,13 @@
 import Main from '../../components/Main';
 import styles from './page.module.css';
 
+export const metadata = {
+  title: "Privacy Policy",
+  description: "How HAIIS handles your information on the Healthcare AI Implementation Standards website.",
+  alternates: { canonical: "https://haiis.org/privacy" },
+  robots: { index: false, follow: false },
+};
+
 export default function Privacy() {
   return (
     <Main>

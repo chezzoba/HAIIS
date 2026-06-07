@@ -5,8 +5,15 @@ import glossaryTerms from './terms.json';
 import GlossarySearch from './GlossarySearch';
 
 export const metadata = {
-  title: 'Glossary | HAIIS',
+  title: 'Glossary',
   description: 'Definitions of regulatory, AI/ML, cloud infrastructure, and security terms used across the HAIIS framework.',
+  alternates: { canonical: 'https://haiis.org/documentation/glossary' },
+  openGraph: {
+    title: 'Glossary | HAIIS',
+    description: 'Definitions of regulatory, AI/ML, cloud infrastructure, and security terms used across the HAIIS framework.',
+    url: 'https://haiis.org/documentation/glossary',
+    type: 'website',
+  },
 };
 
 export default function GlossaryPage() {

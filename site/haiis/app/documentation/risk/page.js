@@ -3,8 +3,15 @@ import Main from '@/components/Main';
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'Risk Assessment Worksheets | HAIIS',
+  title: 'Risk Assessment Worksheets',
   description: 'Seven healthcare AI risk assessment workbooks covering clinical safety, privacy, governance, resilience, security, fairness, and transparency. Each question is traced to NIST AI RMF 1.0.',
+  alternates: { canonical: 'https://haiis.org/documentation/risk' },
+  openGraph: {
+    title: 'Risk Assessment Worksheets | HAIIS',
+    description: 'Seven healthcare AI risk assessment workbooks covering clinical safety, privacy, governance, resilience, security, fairness, and transparency. Mapped to NIST AI RMF 1.0.',
+    url: 'https://haiis.org/documentation/risk',
+    type: 'website',
+  },
 };
 
 const eyebrow = { color: '#0066cc', fontSize: '0.8rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.5rem' };

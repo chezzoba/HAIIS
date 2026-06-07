@@ -3,6 +3,18 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './page.module.css';
 
+export const metadata = {
+  title: "The HAIIS Framework",
+  description: "A vendor-neutral, compliance-by-design approach to healthcare AI implementation — covering architecture, security, governance, risk assessment, and deployment playbooks.",
+  alternates: { canonical: "https://haiis.org/framework" },
+  openGraph: {
+    title: "The HAIIS Framework",
+    description: "A vendor-neutral, compliance-by-design framework covering the five core pillars of healthcare AI implementation: architecture, security, governance, risk, and playbooks.",
+    url: "https://haiis.org/framework",
+    type: "website",
+  },
+};
+
 const eyebrow = { color: '#0066cc', fontSize: '0.8rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.5rem' };
 const h2Style = { textAlign: 'left', marginBottom: '1.5rem', fontSize: 'clamp(1.5rem, 3vw, 2rem)', color: '#1a1a1a' };
 const container = { maxWidth: '1100px', margin: '0 auto' };

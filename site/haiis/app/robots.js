@@ -1,0 +1,14 @@
+export const dynamic = 'force-static';
+
+export default function robots() {
+  return {
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+      },
+    ],
+    sitemap: 'https://haiis.org/sitemap.xml',
+    host: 'https://haiis.org',
+  };
+}

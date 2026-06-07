@@ -2,6 +2,18 @@ import Main from '../../components/Main';
 import styles from './page.module.css';
 import Link from 'next/link';
 
+export const metadata = {
+  title: "About the Framework",
+  description: "How HAIIS bridges the gap between healthcare AI policy and practice — the origin, scope, guiding principles, and community behind the framework.",
+  alternates: { canonical: "https://haiis.org/about" },
+  openGraph: {
+    title: "About the HAIIS Framework",
+    description: "How HAIIS bridges the gap between healthcare AI policy and practice — the origin, scope, guiding principles, and community behind the framework.",
+    url: "https://haiis.org/about",
+    type: "website",
+  },
+};
+
 const eyebrow = { color: '#0066cc', fontSize: '0.8rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.5rem' };
 const h2Style = { textAlign: 'left', marginBottom: '1.5rem', fontSize: 'clamp(1.5rem, 3vw, 2rem)', color: '#1a1a1a' };
 const container = { maxWidth: '1100px', margin: '0 auto' };

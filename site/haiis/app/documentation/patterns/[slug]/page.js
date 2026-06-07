@@ -10,9 +10,17 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const article = articles[slug];
   if (!article) return {};
+  const url = `https://haiis.org/documentation/patterns/${slug}`;
   return {
-    title: `${article.meta.title} | HAIIS`,
+    title: article.meta.title,
     description: article.meta.subtitle,
+    alternates: { canonical: url },
+    openGraph: {
+      title: `${article.meta.title} | HAIIS`,
+      description: article.meta.subtitle,
+      url,
+      type: 'article',
+    },
   };
 }
 

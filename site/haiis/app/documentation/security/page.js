@@ -4,8 +4,15 @@ import styles from './page.module.css';
 import securityControls from './controls.json';
 
 export const metadata = {
-  title: 'Security Controls | HAIIS',
+  title: 'Security Controls',
   description: 'Cross-cloud security control mappings for healthcare AI, covering AWS, Azure, and GCP services for PHI protection, model security, and compliance.',
+  alternates: { canonical: 'https://haiis.org/documentation/security' },
+  openGraph: {
+    title: 'Security Controls | HAIIS',
+    description: 'Cross-cloud security control mappings for healthcare AI, covering AWS, Azure, and GCP services for PHI protection, model security, and compliance.',
+    url: 'https://haiis.org/documentation/security',
+    type: 'website',
+  },
 };
 
 export default function SecurityControlsPage() {

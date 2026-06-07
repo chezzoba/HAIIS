@@ -5,8 +5,15 @@ import styles from './page.module.css';
 import publications from './publications.json';
 
 export const metadata = {
-  title: 'Architecture Patterns | HAIIS',
+  title: 'Architecture Patterns',
   description: 'Reference architectures for deploying compliant healthcare AI on AWS, Azure, and GCP, covering HIPAA, GxP, and FDA-regulated workloads.',
+  alternates: { canonical: 'https://haiis.org/documentation/patterns' },
+  openGraph: {
+    title: 'Architecture Patterns | HAIIS',
+    description: 'Reference architectures for deploying compliant healthcare AI on AWS, Azure, and GCP, covering HIPAA, GxP, and FDA-regulated workloads.',
+    url: 'https://haiis.org/documentation/patterns',
+    type: 'website',
+  },
 };
 
 export default function CompliancePage() {

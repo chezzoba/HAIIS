@@ -5,8 +5,15 @@ import styles from './page.module.css';
 import publications from './publications.json';
 
 export const metadata = {
-  title: 'Data Governance Protocols | HAIIS',
+  title: 'Data Governance Protocols',
   description: 'Data classification, access control, lineage tracking, and retention policies for healthcare AI systems handling PHI.',
+  alternates: { canonical: 'https://haiis.org/documentation/governance' },
+  openGraph: {
+    title: 'Data Governance Protocols | HAIIS',
+    description: 'Data classification, access control, lineage tracking, and retention policies for healthcare AI systems handling PHI.',
+    url: 'https://haiis.org/documentation/governance',
+    type: 'website',
+  },
 };
 
 export default function GovernancePage() {

@@ -5,8 +5,15 @@ import styles from './page.module.css';
 import publications from './publications.json';
 
 export const metadata = {
-  title: 'Implementation Playbooks | HAIIS',
+  title: 'Implementation Playbooks',
   description: 'Deployment and validation playbooks for standing up healthcare AI infrastructure in regulated environments.',
+  alternates: { canonical: 'https://haiis.org/documentation/playbooks' },
+  openGraph: {
+    title: 'Implementation Playbooks | HAIIS',
+    description: 'Deployment and validation playbooks for standing up healthcare AI infrastructure in regulated environments.',
+    url: 'https://haiis.org/documentation/playbooks',
+    type: 'website',
+  },
 };
 
 export default function PlaybooksPage() {

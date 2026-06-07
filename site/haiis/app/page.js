@@ -1,6 +1,18 @@
 import Main from '../components/Main';
 import Link from 'next/link';
 
+export const metadata = {
+  title: "HAIIS: Healthcare AI Implementation Standards",
+  description: "A vendor-neutral, open-access framework for healthcare organizations implementing AI with stronger compliance, governance, security, and risk management across cloud environments.",
+  alternates: { canonical: "https://haiis.org" },
+  openGraph: {
+    title: "HAIIS: Healthcare AI Implementation Standards",
+    description: "Practical, open-access guidance for secure and compliant healthcare AI implementation — architecture patterns, security controls, data governance, risk assessment, and deployment playbooks.",
+    url: "https://haiis.org",
+    type: "website",
+  },
+};
+
 export default function Home() {
   return (
     <Main>
