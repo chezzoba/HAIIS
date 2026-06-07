@@ -1,0 +1,200 @@
+.hero {
+  text-align: center;
+  padding: 1.5rem 2rem 1rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.backLink {
+  display: block;
+  font-size: 0.85rem;
+  color: #0066cc;
+  text-decoration: none;
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+  transition: color 0.15s;
+  text-align: left;
+  width: fit-content;
+}
+
+.backLink:hover {
+  color: #0052a3;
+  text-decoration: underline;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #4a4a4a;
+  max-width: 780px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Anatomy cards (workbook structure) */
+.anatomy {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid #e2e8f0;
+  border-left: 1px solid #e2e8f0;
+  margin-top: 1.75rem;
+}
+
+.anatomyCell {
+  padding: 1.5rem;
+  border-right: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.sheetNum {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d0d8e4;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.anatomyCell h3 {
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.anatomyCell p {
+  color: #555;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 860px) {
+  .anatomy {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .anatomy {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Worksheet entries */
+.worksheet {
+  padding: 2rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.worksheet:first-of-type {
+  border-top: 1px solid #e2e8f0;
+}
+
+.wsTop {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.25rem;
+}
+
+.wsId {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #8aa0bd;
+  font-variant-numeric: tabular-nums;
+}
+
+.worksheet h3 {
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  font-weight: 600;
+  margin: 0 0 0.75rem 0;
+}
+
+.functions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.fn {
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: #4a6785;
+  border: 1px solid #d6e0ec;
+  border-radius: 3px;
+  padding: 0.15rem 0.45rem;
+}
+
+.wsDesc {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin: 0 0 1rem 0;
+  max-width: 820px;
+}
+
+.checkpoints {
+  margin: 0 0 1.25rem 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.4rem 1.5rem;
+  max-width: 820px;
+}
+
+.checkpoints li {
+  position: relative;
+  padding-left: 1.1rem;
+  color: #4a5568;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  list-style: none;
+}
+
+.checkpoints li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #0066cc;
+}
+
+.download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #0066cc;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.download:hover {
+  text-decoration: underline;
+  color: #0052a3;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding: 2rem 1rem 1rem;
+  }
+
+  .checkpoints {
+    grid-template-columns: 1fr;
+  }
+}

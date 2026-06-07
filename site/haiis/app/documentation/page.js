@@ -93,14 +93,14 @@ export default function Documentation() {
 
             <div style={{ padding: '2rem', borderRight: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column' }}>
               <h3 style={{ fontSize: '1rem', color: '#1a1a1a', marginBottom: '0.4rem', fontWeight: 600 }}>Risk Worksheets</h3>
-              <p style={{ color: '#555', fontSize: '0.875rem', marginBottom: '1rem' }}>Bias scoring, clinical risk catalogs, and mitigation planning worksheets</p>
+              <p style={{ color: '#555', fontSize: '0.875rem', marginBottom: '1rem' }}>Structured risk assessments across seven pillars, mapped to NIST AI RMF 1.0</p>
               <ul style={{ paddingLeft: '1.25rem', color: '#555', fontSize: '0.875rem', lineHeight: 1.8, flex: 1 }}>
-                <li>Bias and fairness scoring</li>
-                <li>Clinical risk catalogs</li>
-                <li>Mitigation planning templates</li>
-                <li>Pre-deployment checklists</li>
+                <li>Clinical safety and efficacy</li>
+                <li>Data privacy and compliance</li>
+                <li>Fairness, equity, and bias</li>
+                <li>Security and threat protection</li>
               </ul>
-              <span className={styles['coming-soon']} style={{ marginTop: '1.25rem' }}>Coming soon</span>
+              <Link href="/documentation/risk" className={styles['step-link']} style={{ marginTop: '1.25rem', display: 'inline-block' }}>Browse risk worksheets →</Link>
             </div>
 
             <div style={{ padding: '2rem', borderRight: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column' }}>
