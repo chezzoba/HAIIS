@@ -4,7 +4,8 @@ var docSubpages = [
     '/security',
     '/glossary',
     '/governance',
-    '/playbooks'
+    '/playbooks',
+    '/risk'
 ];
 
 function handler(event) {

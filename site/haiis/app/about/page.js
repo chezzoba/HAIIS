@@ -20,19 +20,8 @@ export default function About() {
         </div>
       </section>
 
-      {/* Project Status */}
-      <section id="status" style={{ padding: '1.5rem 2rem', background: '#f7f9fc', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
-        <div style={container}>
-          <p style={eyebrow}>Status</p>
-          <h2 style={h2Style}>Project Status</h2>
-          <p style={{ color: '#555', lineHeight: 1.8, maxWidth: '760px' }}>
-            HAIIS is an early-stage, open-access framework initiative focused on practical implementation guidance for healthcare AI. The project is currently in its foundation phase, with initial framework components, documentation, and collaboration pathways being developed for public release.
-          </p>
-        </div>
-      </section>
-
       {/* The Problem We're Solving */}
-      <section id="origin" style={{ padding: '1.5rem 2rem', background: '#fff' }}>
+      <section id="origin" style={{ padding: '1.5rem 2rem', background: '#f7f9fc', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
         <div style={container}>
           <p style={eyebrow}>The Problem</p>
           <h2 style={h2Style}>The Problem We're Solving</h2>
@@ -111,15 +100,26 @@ export default function About() {
         </div>
       </section>
 
+      {/* Project Status */}
+      <section id="status" style={{ padding: '1.5rem 2rem', background: '#fff' }}>
+        <div style={container}>
+          <p style={eyebrow}>Status</p>
+          <h2 style={h2Style}>Project Status</h2>
+          <p style={{ color: '#555', lineHeight: 1.8, maxWidth: '760px' }}>
+            HAIIS is an open-access framework focused on practical implementation guidance for healthcare AI. The core framework is live, including architecture patterns, security controls, data governance protocols, risk methodology, and implementation playbooks. The project continues to evolve through community feedback and real-world implementation experience.
+          </p>
+        </div>
+      </section>
+
       {/* Community CTA */}
-      <section id="community" style={{ background: '#fff', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0', padding: '3rem 2rem', textAlign: 'center' }}>
-        <div style={{ maxWidth: '640px', margin: '0 auto' }}>
+      <section id="community" style={{ background: '#f7f9fc', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0', padding: '3rem 2rem' }}>
+        <div style={container}>
           <p style={eyebrow}>Community</p>
-          <h2 style={{ ...h2Style, textAlign: 'center' }}>Built for the Healthcare Community</h2>
-          <p style={{ color: '#555', lineHeight: 1.8, marginBottom: '1rem' }}>
+          <h2 style={h2Style}>Built for the Healthcare Community</h2>
+          <p style={{ color: '#555', lineHeight: 1.8, maxWidth: '760px', marginBottom: '1rem' }}>
             The framework is intended to evolve through practical feedback, implementation experience, and collaboration across the healthcare ecosystem.
           </p>
-          <p style={{ color: '#555', lineHeight: 1.8, marginBottom: '2rem' }}>
+          <p style={{ color: '#555', lineHeight: 1.8, maxWidth: '760px', marginBottom: '2rem' }}>
             Our approach is: identify common challenges, develop practical solutions, document them clearly, and make them available to everyone. The framework grows through real-world implementation and community feedback.
           </p>
           <Link href="/collaborate" role="button">Join and Collaborate →</Link>

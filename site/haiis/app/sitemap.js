@@ -51,6 +51,12 @@ export default function sitemap() {
       priority: 0.7,
     },
     {
+      url: 'https://haiis.org/documentation/risk',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: 'https://haiis.org/documentation/security',
       lastModified: new Date(),
       changeFrequency: 'monthly',

@@ -142,7 +142,7 @@ export default function Framework() {
                   <li>Mitigation strategy templates</li>
                   <li>Healthcare-specific risk catalogs</li>
                 </ul>
-                <Link href="/documentation#categories" className={styles['cta-link']}>Explore risk methodology →</Link>
+                <Link href="/documentation/risk" className={styles['cta-link']}>Explore risk methodology →</Link>
               </div>
             </details>
 
