@@ -39,7 +39,7 @@ export default function Collaborate() {
           <h2 style={h2Style}>Who We're Looking For</h2>
           <div className="grid-2col" style={{ borderTop: '1px solid #e2e8f0', borderLeft: '1px solid #e2e8f0' }}>
             {[
-              { title: 'U.S. Hospitals', desc: 'Healthcare systems of any size looking to implement AI solutions' },
+              { title: 'Hospitals', desc: 'Healthcare systems of any size looking to implement AI solutions' },
               { title: 'Pharmaceutical Companies', desc: 'Pharma organizations developing AI for drug discovery and clinical trials' },
               { title: 'Healthtech Startups', desc: 'Innovators building AI-powered healthcare products and services' },
               { title: 'Education Partners', desc: 'Academic institutions and training organizations for curriculum development' },

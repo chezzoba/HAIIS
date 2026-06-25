@@ -137,31 +137,23 @@ const anatomy = [
   {
     num: '01',
     title: 'Risk Assessment',
-    desc: 'Twelve questions, each with why it matters, the inherent risk if left unaddressed, and best-practice guidance. You record Yes, No, or Partial, plus evidence and a remediation plan.',
+    desc: 'Twelve questions, each with why it matters, the inherent risk if left unaddressed, and best-practice guidance.',
   },
   {
     num: '02',
     title: 'Scoring Guide',
-    desc: 'Defines the answer and risk levels and rolls your responses into an overall posture band: Strong, Acceptable, Moderate, Elevated, or Critical.',
+    desc: 'Defines the answer and risk levels and rolls your responses into an overall posture band.',
   },
   {
     num: '03',
-    title: 'NIST AI RMF Mapping',
-    desc: 'Traces every question to specific NIST AI RMF 1.0 subcategories, so framework alignment is documented rather than asserted.',
+    title: 'Regulatory Mapping',
+    desc: 'Traces every question to specific NIST AI RMF 1.0 subcategories, so framework alignment is documented.',
   },
   {
     num: '04',
     title: 'Dashboard',
     desc: 'Aggregates the question-level risk scores into a per-pillar summary you can bring to a governance review.',
   },
-];
-
-const workflow = [
-  { n: '01', title: 'Answer each question with your team', desc: 'Sit clinical, technical, compliance, and security people at the same table. Mark each question Yes, No, or Partial, and capture the evidence behind the answer.' },
-  { n: '02', title: 'Let the workbook score it', desc: 'Each response computes a risk level and a score from 0 to 3, weighted by the inherent risk of the question. A High-risk gap answered No surfaces as a critical item; a strong control scores zero.' },
-  { n: '03', title: 'Read your posture band', desc: 'The Scoring Guide turns the counts into a posture: any High-risk gaps push you into Elevated or Critical, while zero High and zero Medium reads as Strong.' },
-  { n: '04', title: 'Remediate on the stated clock', desc: 'High items carry a 30-day clock and a governance escalation, Medium items 90 days in the risk register, and Low items a six-month improvement window.' },
-  { n: '05', title: 'Reassess on cadence', desc: 'Run a full pass before first deployment, review open High and Medium items quarterly, reassess annually, and trigger a fresh review after any incident or regulatory change.' },
 ];
 
 const frameworks = [
@@ -181,7 +173,7 @@ export default function RiskWorksheetsPage() {
         </Link>
         <h1>Risk Assessment Worksheets</h1>
         <p>
-          Seven cloud-agnostic workbooks that take a healthcare AI system through 84 structured questions
+          Seven cloud-agnostic workbooks that take a healthcare AI system through 84 structured questions for clinical safety, privacy, governance, resilience, security, fairness, and transparency.
         </p>
       </section>
 
@@ -190,14 +182,6 @@ export default function RiskWorksheetsPage() {
         <div style={container}>
           <p style={eyebrow}>Overview</p>
           <h2 style={h2Style}>What these worksheets cover</h2>
-          <p style={{ color: '#555', lineHeight: 1.8, maxWidth: '820px', marginBottom: '1rem', fontSize: '0.95rem' }}>
-            The set spans seven pillars of healthcare AI risk: clinical safety and efficacy, data privacy and compliance, governance and accountability, operational resilience, security and threat protection, fairness and equity, and transparency and explainability. Each pillar is a standalone Excel workbook containing 12 questions, 84 in total, and is built for clinical and regulatory reality.
-          </p>
-          <p style={{ color: '#555', lineHeight: 1.8, maxWidth: '820px', fontSize: '0.95rem' }}>
-            Every question states why it matters, rates the inherent risk if it goes unaddressed, and gives best-practice guidance, so a reviewer can tell what a strong control looks like instead of guessing. Behind each answer sits a formula: Yes, No, or Partial is combined with that inherent risk to produce a risk level, a score from 0 to 3, and a recommendation. A High-risk control left unaddressed is flagged for governance escalation within 30 days; a control that is fully in place scores zero and simply needs periodic verification.
-          </p>
-
-          <p style={{ ...eyebrow, marginTop: '1.75rem' }}>Inside each file</p>
           <div className={styles.anatomy}>
             {anatomy.map((a) => (
               <div key={a.title} className={styles.anatomyCell}>
@@ -243,28 +227,9 @@ export default function RiskWorksheetsPage() {
           ))}
         </div>
       </section>
-
-      {/* Workflow */}
-      <section style={{ padding: '1.5rem 2rem', background: '#fff' }}>
-        <div style={container}>
-          <p style={eyebrow}>Workflow</p>
-          <h2 style={h2Style}>Running an assessment</h2>
-          <div style={{ borderTop: '1px solid #e2e8f0', marginTop: '0.5rem' }}>
-            {workflow.map((step) => (
-              <div key={step.n} style={{ display: 'flex', gap: '2rem', alignItems: 'flex-start', padding: '1.5rem 0', borderBottom: '1px solid #e2e8f0' }}>
-                <span style={{ fontSize: '1.75rem', fontWeight: 700, color: '#d0d8e4', flexShrink: 0, minWidth: '3rem', lineHeight: 1 }}>{step.n}</span>
-                <div>
-                  <h3 style={{ fontSize: '1rem', color: '#1a1a1a', marginBottom: '0.35rem', fontWeight: 600 }}>{step.title}</h3>
-                  <p style={{ color: '#555', lineHeight: 1.7, margin: 0, fontSize: '0.95rem' }}>{step.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      
       {/* Framework alignment */}
-      <section style={{ padding: '1.5rem 2rem', background: '#f7f9fc', borderTop: '1px solid #e2e8f0' }}>
+      <section style={{ padding: '1.5rem 2rem', background: '#fff', borderTop: '1px solid #e2e8f0' }}>
         <div style={container}>
           <p style={eyebrow}>Regulatory Coverage</p>
           <h2 style={h2Style}>What the questions align to</h2>
